@@ -1,0 +1,259 @@
+// Become-instructor Page
+
+body:not(.logged-in) .become-teacher-form .learn-press-message.success  {
+  display: none;
+}
+
+.become-instructor-page {
+  margin-bottom: 122px;
+  .thim-sc-video-box {
+    .video {
+      margin-top: -126px;
+      z-index: 100;
+    }
+  }
+
+  .thim-sc-counter-box {
+    margin: -30px auto 40px;
+    .counter_box {
+      .number {
+        .text-number, .number_counter {
+          font-size: 56px;
+        }
+        .text-number:after {
+          display: none;
+        }
+      }
+      .title_counter {
+        .title {
+          text-transform: uppercase;
+        }
+      }
+      &:first-child {
+        .number_counter:before {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  .text-block {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.3px;
+    max-width: 845px;
+    margin: auto;
+
+  }
+}
+
+.overflow-visible {
+  z-index: 2;
+}
+
+.align-right {
+  .register-content {
+    float: right;
+  }
+}
+
+.register-content {
+  &.ban_click {
+    .register-form {
+      .register-fields {
+        li {
+          input, button {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+  @include clearfix();
+  max-width: 490px;
+  border: solid 6px rgba(35, 35, 35, 0.4);
+  margin-top: -200px;
+  @include rounded(7px);
+  .register-form {
+    padding: 55px 50px 50px 45px;
+    background: #fefefe;
+    .title {
+      margin-bottom: 25px;
+      .title-form {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .register {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.8px;
+        text-align: left;
+      }
+    }
+    .success {
+      padding-bottom: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      border-left-color: #e8554a;
+      margin-bottom: 20px;
+      &.noti-success {
+        border-left-color: #5cda8f;
+      }
+    }
+
+    .register-fields {
+      margin-left: 4px;
+      button {
+        margin-top: 9px;
+        color: #fff;
+        border: none;
+        @include rounded(6px);
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        cursor: pointer;
+      }
+      li {
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .label-form {
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 0.3px;
+          text-align: left;
+        }
+        input, button {
+          width: 100%;
+          height: 50px;
+          @include transition(0.5s ease-in-out);
+        }
+        input {
+          background-color: #fefefe;
+          border: solid 1px #e2e2e2;
+
+          &[type=text], &[type=email] {
+            @include rounded(5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.thim-content-talk {
+  margin-top: 83px;
+  margin-left: 80px;
+  position: relative;
+  p {
+    max-width: 534px;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1.46;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 53px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:before {
+    content: '‘‘';
+    height: 39px;
+    font-size: 160px;
+    line-height: 0.2;
+    letter-spacing: -12px;
+    top: 58px;
+    position: absolute;
+    left: -80px;
+  }
+}
+
+.wrap-quote {
+  padding-left: 10px;
+}
+
+#learn-press-become-teacher-form {
+  input[type=text], input[type=email] {
+    padding-left: 20px;
+  }
+}
+
+.vc_row.become-teacher {
+  display: flex;
+  align-items: center;
+  .wpb_text_column.wpb_content_element   {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.learnpress >div#learn-press-become-teacher-form.learn-press-form {
+  padding: 55px 50px 50px 45px;
+  max-width: 490px;
+  border: 6px solid rgba(35,35,35,.4);
+  margin-top: -200px;
+  background: #fefefe;
+  @include rounded(7px);
+  .vc_row.become-teacher & {
+    margin-top: 65px;
+  }
+  .title {
+    margin-bottom: 25px;
+    .title-form {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 0.4px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .register {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 0.8px;
+      text-align: left;
+    }
+  }
+
+  form {
+    >h3 {
+      display: none !important;
+    }
+    button {
+      width: 100%;
+      height: 50px;
+      margin-top: 9px;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: .4px;
+      cursor: pointer;
+      @include rounded(5px);
+      @include transition(.5s ease-in-out);
+    }
+
+    input[type=email], input[type=text] {
+      @include rounded(5px);
+    }
+    .form-fields .form-field label {
+      margin-bottom: 0;
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,514 @@
+/*
+ * Style Footer
+ */
+.thim-line-center > .panel-grid-cell:last-child {
+	border-left: 2px solid #8C97A5;
+}
+
+.thim-line-bottom {
+	border-bottom: 0.5px solid #8C97A5;
+}
+
+.thim-line-top {
+	border-top: 0.5px solid #8C97A5;
+}
+
+footer#colophon {
+	body.single-lp_course.lp-landing & {
+		margin-bottom: 60px;
+	}
+
+	.text-right {
+		@include flexbox();
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	ul {
+		margin: 0;
+
+		li {
+			list-style: none;
+			line-height: 22px;
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.fa {
+				font-size: 15px;
+				min-width: 25px;
+			}
+		}
+
+		&.sub-menu {
+			li {
+				margin: 15px 0 0 15px;
+			}
+		}
+	}
+
+	.footer {
+		padding: 84px 0 142px;
+
+		&.no-padding {
+			padding: 0;
+		}
+	}
+
+	.widget-title,
+	.widgettitle {
+		margin-bottom: 26px;
+		font-size: 18px;
+		text-transform: uppercase;
+		line-height: 1;
+		letter-spacing: 0.4px;
+		font-weight: 400;
+	}
+
+	.site-info {
+		text-align: center;
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.footer-sidebars {
+		@media (min-width: 768px) {
+			.footer-col {
+
+			}
+		}
+
+		.col-md-20 {
+			width: 20%;
+		}
+
+		p {
+			margin-bottom: 35px;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.5;
+
+			img {
+				margin-bottom: 4px;
+			}
+		}
+
+		.footer-info {
+			margin-bottom: 20px;
+		}
+
+		.list-link {
+			li {
+				margin-bottom: 12px;
+				line-height: 22px;
+
+				a {
+					line-height: 22px;
+					font-size: 15px;
+
+					&:before {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+
+		.thim-tweets .tweet-item {
+			top: -5px;
+		}
+	}
+
+	.copyright-content {
+		padding: 30px 0 30px;
+
+		ul {
+			margin: 0;
+			list-style: none;
+
+			li {
+				display: inline-block;
+			}
+		}
+
+		.copyright-text {
+			line-height: 38px;
+		}
+
+		#copyright-menu {
+			li {
+				margin: 0 10px;
+				margin-bottom: 0;
+				font-size: 16px;
+				line-height: 17px;
+				align-self: center;
+
+				&:last-child {
+					margin-right: 0;
+					border-right: 0;
+				}
+			}
+		}
+	}
+
+	.copyright-area {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.3px;
+
+		&.no-footer-sticky {
+			.copyright-content {
+				border-top: 1px solid #333434;
+			}
+		}
+	}
+
+	.footer-fixed .textwidget {
+		line-height: 26px;
+		letter-spacing: 0.2px;
+	}
+}
+
+footer {
+	.footer-fixed {
+		.thim-sc-social-links {
+			.socials {
+				li {
+					display: inline-table;
+				}
+			}
+		}
+	}
+}
+
+.after-main {
+	@include clearfix();
+	background-color: #ffffff;
+
+	.widget_thim_layout_builder {
+		img {
+			position: absolute;
+			top: 130px;
+			right: 97px;
+		}
+	}
+}
+
+footer#colophon.light {
+	$thim_footer_background_color: #FFF;
+	$thim_footer_color_title: #202121;
+	$thim_footer_color_text: #888;
+	$thim_footer_color_link: #888;
+	$thim_footer_color_copyright: #666;
+
+	background-color: $thim_footer_background_color;
+	color: $thim_footer_color_text;
+
+	a {
+		color: $thim_footer_color_link;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $thim_footer_color_title;
+	}
+
+	.copyright-area {
+		.copyright-content {
+			color: $thim_footer_color_copyright;
+			padding: 50px 0 47px;
+		}
+
+		#copyright-menu {
+			li {
+				border-right-color: $thim_footer_color_copyright;
+
+				a {
+					color: $thim_footer_color_copyright;
+				}
+			}
+		}
+	}
+
+	.footer-sidebars {
+		.list-link {
+			li {
+				a {
+					color: $thim_footer_color_link;
+				}
+			}
+		}
+	}
+}
+
+footer#colophon.dark {
+	$thim_footer_background_color: #202121;
+	$thim_footer_color_title: #FFF;
+	$thim_footer_color_text: #acacac;
+	$thim_footer_color_link: #acacac;
+	$thim_footer_color_copyright: #646565;
+	$thim_footer_font_size_text: 15px;
+	$thim_footer_font_size_title: 16px;
+
+	ul {
+		li {
+			font-size: $thim_footer_font_size_text;
+		}
+	}
+
+	background-color: $thim_footer_background_color;
+	color: $thim_footer_color_text;
+
+	a {
+		color: $thim_footer_color_link;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $thim_footer_color_title;
+	}
+
+	.copyright-area {
+		font-size: $thim_footer_font_size_text;
+
+		.copyright-content {
+			color: $thim_footer_color_copyright;
+		}
+
+		#copyright-menu {
+			li {
+				border-right: 0;
+				padding-right: 0;
+				border-right-color: $thim_footer_color_copyright;
+
+				a {
+					color: $thim_footer_color_copyright;
+				}
+			}
+		}
+	}
+
+	.footer-sidebars {
+		.list-link {
+			li {
+				a {
+					color: $thim_footer_color_link;
+				}
+			}
+		}
+	}
+
+	.footer {
+		padding-top: 125px;
+		padding-bottom: 60px;
+
+		.copyright-content {
+			padding-top: 36px;
+			padding-bottom: 37px;
+		}
+
+		.widget-title,
+		.widgettitle {
+			position: relative;
+			padding-bottom: 14px;
+			margin-bottom: 36px;
+			font-size: $thim_footer_font_size_title;
+
+			&:after {
+				content: '';
+				width: 25px;
+				border-bottom: 1px solid #FFF;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				display: block;
+			}
+		}
+	}
+}
+
+#copyright-menu {
+	margin: 0;
+	padding: 0;
+	@include flexbox();
+	justify-content: flex-end;
+
+	.menu-item {
+		display: inline-block;
+		float: left;
+		margin: 0 10px;
+
+		a {
+			&[href*="dribbble.com"],
+			&[href*="facebook.com"],
+			&[href*="flickr.com"],
+			&[href*="foursquare.com"],
+			&[href*="plus.google.com"],
+			&[href*="instagram.com"],
+			&[href*="linkedin.com"],
+			&[href*="pinterest.com"],
+			&[href*="reddit.com"],
+			&[href*="tumblr.com"],
+			&[href*="twitter.com"],
+			&[href*="vimeo.com"],
+			&[href*="wordpress.com"],
+			&[href*="wordpress.org"],
+			&[href*="youtube.com"],
+			&[href*="mailto:"],
+			&[href*="twitch.tv"],
+			&[href$="/feed/"] {
+				display: block;
+				text-indent: 9999px;
+				width: 38px;
+				white-space: nowrap;
+				height: 38px;
+				float: left;
+				line-height: 0;
+
+				&:after {
+					font-family: "FontAwesome";
+					text-indent: 0;
+					display: block;
+					float: left;
+					font-size: 17px;
+					line-height: 38px;
+					width: 38px;
+					height: 38px;
+					text-align: center;
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					@include rounded(50%);
+					color: #4d4d4d;
+				}
+
+				&:hover {
+					&:after {
+						color: #FFF;
+						background-color: red;
+						border-color: red;
+					}
+				}
+			}
+
+			&[href$="/feed/"]:after {
+				content: "\f09e";
+			}
+
+			&[href*="twitch.tv"]:after {
+				content: "\f1e8";
+			}
+
+			&[href*="youtube.com"]:after {
+				content: "\f167";
+			}
+
+			&[href*="wordpress.com"]:after,
+			&[href*="wordpress.org"]:after {
+				content: "\f19a";
+			}
+
+			&[href*="vimeo.com"]:after {
+				content: "\f194";
+			}
+
+			&[href*="tumblr.com"]:after {
+				content: "\f173";
+			}
+
+			&[href*="reddit.com"]:after {
+				content: "\f231";
+			}
+
+			&[href*="twitter.com"]:after {
+				content: "\f099";
+			}
+
+			&[href*="dribbble.com"]:after {
+				content: "\f17d";
+			}
+
+			&[href*="facebook.com"]:after {
+				content: "\f09a";
+			}
+
+			&[href*="flickr.com"]:after {
+				content: "\f16e";
+			}
+
+			&[href*="foursquare.com"]:after {
+				content: "\f180";
+			}
+
+			&[href*="plus.google.com"]:after {
+				content: "\f0d5";
+			}
+
+			&[href*="instagram.com"]:after {
+				content: "\f16d";
+			}
+
+			&[href*="linkedin.com"]:after {
+				content: "\f0e1";
+			}
+
+			&[href*="pinterest.com"]:after {
+				content: "\f231";
+			}
+		}
+	}
+}
+
+.newsletter-form {
+	position: relative;
+	width: 100%;
+	margin-top: 15px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.05);
+
+	&:before {
+		content: "\f2c3";
+		font-family: "Ionicons";
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 50px;
+		pointer-events: none;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		z-index: 1;
+		line-height: 38px;
+	}
+
+	input {
+		padding: 0 17px;
+		height: 40px;
+		width: 100%;
+		background: none;
+		outline: none;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		color: #989898;
+		border: solid 1px rgba(31, 32, 32, 0.2);
+	}
+
+	input[type=submit] {
+		width: 50px;
+		border: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		font-size: 0 !important;
+		background: none;
+	}
+}
+
+footer#colophon .footer-sidebars p img {
+	margin-bottom: -13px;
+}

@@ -1,0 +1,23 @@
+.thim-sc-gallery {
+  .filter-controls li {
+    a {
+      color: $thim_font_title_color;
+
+      &.active,
+      &:hover {
+        color: $thim_body_primary_color;
+      }
+      &.active:after {
+        background: $thim_body_primary_color;
+      }
+    }
+  }
+
+  .thim-gallery-popup {
+    span {
+      &:hover {
+        color: $thim_body_primary_color;
+      }
+    }
+  }
+}

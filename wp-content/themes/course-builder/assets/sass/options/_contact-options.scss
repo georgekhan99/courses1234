@@ -1,0 +1,67 @@
+.thim-testimonials {
+	.thim-sc-testimonials {
+		.slider-container {
+			.owl-stage-outer {
+				.content {
+					color: $thim_font_title_color;
+				}
+
+				&:before {
+					color: $thim_body_primary_color;
+				}
+			}
+			.owl-dots {
+				.owl-dot.active {
+					span {
+						background-color: $thim_body_primary_color;
+						&:after {
+							border: 1px solid $thim_body_primary_color;
+						}
+					}
+				}
+			}
+			&:before {
+				color: $thim_body_primary_color;
+			}
+		}
+
+	}
+}
+
+.vc_wp_text {
+	.wpcf7-form {
+		div.heading-button {
+			input[type="submit"] {
+				border: 1px solid $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-breadcrumb-primary-color {
+	.page-title {
+		.breadcrumb-content {
+			#breadcrumbs {
+				background: $thim_body_primary_color;
+			}
+		}
+		&.layout-2{
+			.breadcrumb-content .breadcrumbs-wrapper{
+				background: $thim_body_primary_color;
+			}
+		}
+	}
+}
+//contact form
+div.wpb_content_element {
+	.wpcf7-form {
+		.row {
+			.wpcf7-form-control-wrap {
+				input,
+				textarea {
+					color: $thim_font_body_color;
+				}
+			}
+		}
+	}
+}

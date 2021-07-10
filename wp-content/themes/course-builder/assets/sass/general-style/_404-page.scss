@@ -1,0 +1,78 @@
+//404 Page
+.error-404.not-found {
+	text-align: center;
+	padding: 0;
+	.page-content {
+		padding-top: 68px;
+		h3 {
+			text-transform: uppercase;
+			font-size: 60px;
+			font-weight: 100;
+			line-height: 45px;
+			letter-spacing: 7.8px;
+			color: #ffffff;
+			margin-top: 30px;
+		}
+		p {
+			font-size: 24px;
+			font-weight: 100;
+			line-height: 2.5;
+			letter-spacing: 1.4px;
+			color: #ffffff;
+			margin-top: 35px;
+			margin-bottom: 48px;
+		}
+		a {
+			color: #ffffff;
+			text-decoration: underline;
+			&:hover {
+				color: darken(#fff, 20%);
+			}
+		}
+	}
+
+}
+
+.error404 {
+	.page-title .breadcrumb-content #breadcrumbs li {
+		color: #FFF;
+		a {
+			color: #FFF;
+		}
+		span {
+			&.breadcrum-icon {
+				.fa:before {
+					color: #FFF;
+				}
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.error-404.not-found {
+			.page-content {
+				padding-top: 0;
+				.intro {
+					font-size: 40px;
+					line-height: normal;
+				}
+				p {
+					font-size: 14px;
+					line-height: normal;
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		.error-404.not-found {
+			.page-content {
+				padding-top: 0;
+				.intro {
+					font-size: 25px;
+					letter-spacing: 5px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.thim-sc-pricing {
+	.pricing-wrapper {
+		.pricing-item {
+
+			.price {
+				color: $thim_font_title_color;
+			}
+			.features {
+				p {
+					color: $thim_font_body_color;
+				}
+			}
+
+			.select {
+				a {
+					background: $thim_body_primary_color;
+					&:hover {
+						background: darken($thim_body_primary_color,20%);
+						.page-id-4205 & {
+							background: darken($thim_body_primary_color,10%);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.thim-sc-about-author-course {
+	.author-avatar {
+		.social {
+			li {
+				a {
+					color: $thim_font_body_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+	.author-bio {
+		.author-name {
+			a:hover {
+				color: $thim_body_primary_color;
+			}
+			&:before {
+				color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+

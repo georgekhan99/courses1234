@@ -1,0 +1,294 @@
+.page-title {
+	position: relative;
+	.main-top {
+		&.parallax {
+			background-attachment: fixed;
+		}
+		clear: both;
+		position: relative;
+		overflow: hidden;
+		z-index: 8;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		@include flexbox();
+		align-items: center;
+		.overlay-top-header {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+		.content {
+			z-index: 3;
+			.text-title {
+				text-align: right;
+				padding-right: 50px;
+				h1,
+				h2 {
+					margin: 0;
+					font-size: 75px;
+					font-weight: 100;
+					line-height: 83px;
+					letter-spacing: 1.5px;
+				}
+				&:after {
+					content: '';
+					right: 0;
+					width: 1px;
+					border-right: 1px solid #FFF;
+					position: absolute;
+					top: -10px;
+					bottom: -10px;
+					@include opacity(0.15);
+				}
+			}
+			.text-description {
+				padding-left: 50px;
+				font-size: 16px;
+				font-weight: 100;
+				line-height: 24px;
+				letter-spacing: 0.3px;
+				text-align: left;
+				@include flexbox();
+				align-self: center;
+				padding-top: 18px;
+				strong {
+					font-weight: 300;
+					text-transform: uppercase;
+				}
+				.br {
+					display: block;
+					margin-bottom: 6px;
+				}
+			}
+		}
+	}
+
+	.breadcrumb-content {
+		position: absolute;
+		bottom: -22px;
+		z-index: 99;
+		left: 0;
+		right: 0;
+		text-align: center;
+		.learn-press-course-buttons .button.wc-forward {
+			left: 0;
+		}
+		#breadcrumbs {
+			padding: 10px 57px;
+			@include rounded(30px);
+			margin: 0;
+			background-color: #333;
+			display: inline-block;
+			li {
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 1.38;
+				letter-spacing: 0.3px;
+				display: inline-block;
+				a {
+					color: #FFF;
+				}
+				&:last-child:after {
+					display: none;
+				}
+			}
+			span.breadcrum-icon {
+				margin: 0 7px;
+				.fa {
+					&:before {
+						content: '/';
+					}
+				}
+			}
+		}
+		.woocommerce-breadcrumb {
+			padding: 10px 57px;
+			@include rounded(30px);
+			margin: 0;
+			background-color: #333;
+			display: inline-block;
+			a {
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 1.38;
+				letter-spacing: 0.3px;
+				display: inline;
+				color: #FFF;
+			}
+			span.breadcrum-icon {
+				margin: 0 5px;
+				&:before {
+					content: '/';
+				}
+			}
+		}
+		&.breadcrumb-plus {
+			#breadcrumbs {
+				li {
+					color: #fff;
+					a {
+						color: #fff;
+						&:hover {
+							opacity: 0.7;
+						}
+					}
+					span.breadcrum-icon .fa:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	&.layout-2 {
+		overflow: hidden;
+		.main-top {
+			.content {
+				.text-title {
+					text-align: center;
+					padding-right: 0;
+					h1, h2 {
+						font-size: 42px;
+						font-weight: 500;
+						letter-spacing: 0.8px;
+						line-height: normal;
+					}
+					&:after {
+						display: none;
+					}
+				}
+				.text-description {
+					text-align: center;
+					padding-left: 0;
+					display: block;
+					max-width: 900px;
+					margin: auto;
+					font-size: 18px;
+					line-height: 26px;
+					letter-spacing: 0.4px;
+					padding-top: 12px;
+				}
+			}
+		}
+
+		.breadcrumb-content {
+			bottom: -133px;
+
+			.breadcrumbs-wrapper {
+
+				height: 168px;
+				background: #FFF;
+				max-width: 886px;
+				border-radius: 100px;
+
+				#breadcrumbs {
+					position: relative;
+					top: -27px;
+					padding: 16px 30px;
+				}
+
+				.learn-press-course-buttons {
+					> * {
+						margin: 0 3px;
+					}
+
+					.learn-press-course-wishlist {
+						padding: 0 35px;
+						display: inline-block;
+						height: 55px;
+						cursor: pointer;
+						border: none;
+						bottom: 140px;
+						color: #fff;
+						font-size: 16px;
+						text-transform: uppercase;
+						border-radius: 30px;
+						transition: 0.3s ease-in-out;
+						top: 0;
+						right: 0;
+						position: relative;
+						&:before {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.layout-3 {
+		.breadcrumb-content {
+			position: relative;
+			bottom: initial;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+			text-align: initial;
+			#breadcrumbs {
+				padding: 18px 0;
+				background-color: transparent;
+			}
+		}
+
+		.main-top {
+			.content {
+				.text-title {
+					text-align: center;
+					padding-right: 0;
+					&:after {
+						display: none;
+					}
+				}
+				.text-description {
+					text-align: center;
+					padding-left: 0;
+					display: block;
+					max-width: 900px;
+					margin: auto;
+				}
+			}
+		}
+
+	}
+}
+
+// Breadcrumb profile page
+.lp-profile {
+	.page-title {
+		.breadcrumb-content {
+			#breadcrumbs {
+				&.profile-list-social {
+					padding: 16px 38px;
+
+					.item {
+						@include transition(all 0.5s);
+						a {
+							color: #fff;
+						}
+					}
+
+					.item:not(:last-child) {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+
+		&.layout-3 {
+			.breadcrumb-content {
+				position: absolute;
+				bottom: -28px;
+				text-align: center;
+				background: transparent;
+			}
+		}
+	}
+}
+
+.page-title .content .text-title {
+	h1, h2 {
+		text-transform: capitalize;
+	}
+}

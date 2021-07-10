@@ -1,0 +1,280 @@
+form#learn-press-checkout {
+  .learn-press-checkout-comment {
+    textarea {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #e5e5e5;
+    }
+  }
+
+  button[type=submit] {
+    display: inline-block;
+    padding: 0 35px;
+    height: 55px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    -khtml-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+body.checkout div.learnpress {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  > #learn-press-checkout-login,
+  > #learn-press-checkout-register {
+    width: 48%;
+    max-width: 100%;
+    border: solid 6px rgba(35, 35, 35, 0.4);
+    border-radius: 5px;
+    padding: 60px 50px;
+    min-height: 353px;
+    display: inline-block;
+    vertical-align: top;
+    .learn-press-form-login,
+    .learn-press-form-register {
+      h3 {
+        font-size: 20px;
+        line-height: 1.1;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      input[type=text], input[type=password], input[type=email] {
+        border: solid 1px #e2e2e2;
+        height: 50px;
+        @include rounded(5px);
+        padding: 0 20px;
+
+        ::-moz-placeholder { /* Firefox 19+ */
+          color: #888;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          color: #888;
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #888;
+        }
+      }
+
+      button[type=submit] {
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        border: unset;
+        cursor: pointer;
+        @include rounded(5px);
+      }
+
+      .rwmb-label label {
+        display: none;
+      }
+    }
+    button {
+      outline: none;
+    }
+  }
+
+  > #learn-press-checkout-login {
+    margin-right: 20px;
+  }
+
+  > a {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    @include clear;
+  }
+
+  > form#learn-press-checkout {
+    padding-bottom: 30px;
+  }
+
+}
+
+body.woocommerce-checkout.checkout .entry-content div.learnpress {
+  display: none !important;
+}
+
+body.logged-in.checkout .site-content div.learnpress {
+  display: block;
+}
+.checkout-form-login-toggle,
+.checkout-form-register-toggle {
+  font-weight: 500;
+  &:after {
+    margin-left: 10px;
+    content:"";
+    font-family:Ionicons;
+  }
+}
+
+form.learn-press-checkout {
+  .place-order-action button {
+    outline: 0;
+    height: 48px !important;
+    line-height: 48px !important;
+  }
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  table  {
+    margin-bottom: 80px;
+    border: 1px solid #e7e7e7;
+    tr {
+      background: none !important;
+    }
+    td, th {
+      font-size: 16px;
+      color: inherit;
+      background: none !important;
+      border: 1px solid #e7e7e7 !important;
+    }
+    tfoot {
+      th {
+        border-right: 0 !important;
+        text-align: right;
+      }
+      td {
+        border-left: 0 !important;
+      }
+    }
+
+  }
+  .learn-press-checkout-comment textarea {
+    margin-bottom: 80px;
+  }
+  #learn-press-payment ul.payment-methods {
+    background: none;
+    padding: 0;
+    margin-bottom: 10px;
+    li {
+      label {
+        font-weight: bold;
+        background: none !important;
+        padding: 0;
+      }
+      .payment-method-form {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+        border: none;
+        padding-left: 18px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    input[type=radio] {
+      border-radius: 50%;
+      line-height: 10px;
+      font-size: 14px;
+      border: 1px solid #b4b9be;
+      background: #fff;
+      color: #555;
+      clear: none;
+      cursor: pointer;
+      display: inline-block;
+      height: 16px;
+      margin: -4px 4px 0 0;
+      outline: 0;
+      padding: 0 !important;
+      text-align: center;
+      vertical-align: middle;
+      width: 16px;
+      min-width: 16px;
+      -webkit-appearance: none;
+      -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      -webkit-transition: .05s border-color ease-in-out;
+      transition: .05s border-color ease-in-out;
+    }
+    input[type=radio]:checked:before {
+      content: '\2022';
+      border-radius: 50px;
+      font-size: 24px;
+      width: 6px;
+      height: 6px;
+      margin: 3px;
+      line-height: 6px;
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: FontAwesome;
+      font-weight: 400;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+
+body.checkout:not(.logged-in):not(.woocommerce) .entry-content .learnpress {
+  display: block;
+  padding-bottom: 1px;
+  .button-continue-guest-checkout {
+    button {
+      height: 48px;
+      display: inline-block;
+      padding: 0 30px;
+      color: #fff !important;
+      line-height: 48px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: all .5s;
+    }
+  }
+  #checkout-guest-email {
+    input[type=email] {
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #ddd;
+    }
+  }
+
+  #checkout-order-action #learn-press-button-guest-checkout-back {
+    height: 48px;
+    display: inline-block;
+    padding: 0 30px;
+    color: #fff !important;
+    line-height: 48px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .5s;
+    margin-left: 10px;
+  }
+
+}
+
+body input#terms {
+  border-color: #eee !important;
+  outline: none !important;
+  -webkit-appearance: checkbox !important;
+  &:before {
+    content: '' !important;
+  }
+}
+

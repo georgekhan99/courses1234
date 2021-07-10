@@ -1,0 +1,64 @@
+//Pricing Table
+#shaon-pricing-table-plus {
+	.minimal {
+		.highlight {
+			&.featured {
+				.detail {
+					background: $thim_body_primary_color;
+					.icon {
+						color: darken($thim_body_primary_color, 20%);
+					}
+					&:after {
+						background: $thim_body_primary_color;
+						border-color: $thim_body_primary_color;
+					}
+
+				}
+				.select {
+					.pt-button {
+						background: $thim_body_primary_color;
+						&:hover {
+							background: darken($thim_body_primary_color, 20%);
+							border-color: darken($thim_body_primary_color, 20%);
+						}
+					}
+				}
+			}
+		}
+		.list-interval .features ul li a {
+			color: $thim_font_body_color;
+			&:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+
+		.detail {
+			.icon {
+				color: $thim_body_primary_color;
+			}
+		}
+		.select {
+			.pt-button {
+				border-color: $thim_body_primary_color;
+				color: $thim_body_primary_color;
+				&:hover {
+					background: $thim_body_primary_color;
+				}
+			}
+		}
+		.features {
+			ul {
+				li {
+					.item-mobile {
+						a {
+							color: $thim_font_body_color;
+							&:hover {
+								color: $thim_body_primary_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

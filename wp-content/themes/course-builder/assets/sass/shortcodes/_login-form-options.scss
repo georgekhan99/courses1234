@@ -1,0 +1,62 @@
+.thim-login {
+  form {
+    .input {
+      font-family: $thim_font_title_font_family;
+
+    }
+    .button {
+      font-family: $thim_font_title_font_family;
+    }
+  }
+}
+
+.mo-openid-app-icons {
+  .btn {
+    font-family: $thim_font_title_font_family;
+  }
+}
+
+.header-right .thim-sc-login {
+  color: $thim_body_primary_color;
+}
+
+.thim-sc-login .widget_thim-login ul.user-info {
+  background-color: $thim_body_primary_color;
+}
+
+#resetpassform {
+  .sk-three-bounce {
+    background-color: $thim_body_primary_color;
+  }
+}
+
+.header-right .widget.widget_thim-login.circle-style {
+  .thim-login-popup {
+    a {
+      color: $thim_body_primary_color !important;
+      &:hover {
+        color: darken($thim_body_primary_color,20%) !important;
+      }
+    }
+    span {
+      color: $thim_body_primary_color !important;
+    }
+  }
+  .user-name {
+    a, span, &:before {
+      body.logged-in & {
+        color: $thim_body_primary_color !important;
+      }
+    }
+  }
+}
+
+.thim-sc-login, .thim-login {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    &:focus {
+      border-color: $thim_body_primary_color !important;
+    }
+  }
+}

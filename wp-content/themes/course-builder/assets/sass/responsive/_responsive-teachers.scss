@@ -1,0 +1,51 @@
+@media (max-width: 1024px) {
+	.step-teachers .thim-sc-steps .media-wrapper {
+		margin: 0;
+	}
+
+	.responsive{
+		.thim-instructors .avatar-item{
+			@include box-shadow(0 2px 3px 0 rgba(0,0,0,.08));
+
+			.avatar-instructors .author-social{
+				visibility: visible;
+				@include opacity(1);
+
+				&:after{
+					height: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.page-title .main-top .content .text-title h1, .page-title .main-top .content .text-title h2 {
+		font-size: 50px;
+	}
+
+}
+
+@media (max-width: 736px) {
+	.page-title .main-top .content {
+		.text-title {
+			padding: 0 15px;
+			text-align: center;
+		}
+		.text-description {
+			color: #e0e0e0;
+			text-align: center;
+			padding: 0 15px;
+			display: inline-block;
+		}
+	}
+	.responsive {
+		.thim-instructors{
+			padding-top: 70px;
+
+			.item{
+				justify-content: center;
+			}
+		}
+	}
+}

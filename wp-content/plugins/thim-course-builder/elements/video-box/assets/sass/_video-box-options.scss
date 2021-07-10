@@ -1,0 +1,47 @@
+.thim-sc-video-box {
+	.video {
+		.video-box {
+			.play-button {
+				a {
+					&:hover {
+						border-color: $thim_body_primary_color;
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+	.content-box {
+		.share {
+			.label {
+				color: $thim_font_title_color;
+			}
+			ul {
+				li {
+					a {
+						&:hover {
+							background-color: $thim_body_primary_color;
+							border-color: $thim_body_primary_color;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.layout-3 {
+		.video {
+			.video-box {
+				&:before {
+					border-color: transparent transparent $thim_body_primary_color transparent;
+				}
+			}
+		}
+		&:after {
+			background-color: $thim_body_primary_color;
+		}
+	}
+
+}
+

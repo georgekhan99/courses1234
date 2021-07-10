@@ -1,0 +1,141 @@
+.thim-sc-testimonials {
+	.slider-container {
+		.slider {
+			.item {
+				.user-info {
+					a {
+						color: $thim_body_primary_color;
+
+						&:hover {
+							color: $thim_font_title_color;
+						}
+					}
+				}
+			}
+		}
+
+		.slider-controls {
+			> a {
+				&:hover {
+					&:after {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+
+		}
+	}
+
+	&.layout-2 {
+		.slider {
+			.control-nav {
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+
+	&.layout-3 {
+		.slider-container {
+			&:before {
+				color: $thim_body_primary_color;
+			}
+
+			.owl-stage-outer {
+				.owl-item {
+					color: $thim_font_title_color;
+				}
+			}
+
+			.owl-dots {
+				.owl-dot {
+					&.active {
+						span {
+							&:after {
+								border: 1px solid $thim_body_primary_color;
+							}
+
+							background-color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.layout-4 {
+		.slider {
+			.slides-content {
+				.slide-content {
+					.content {
+						.user-info {
+							color: $thim_font_title_color;
+						}
+
+						.thim-sc-social-links {
+							li {
+								a {
+									&:after {
+										color: $thim_body_primary_color;
+
+									}
+
+									&:hover {
+										&:after {
+											background-color: $thim_body_primary_color;
+											border-color: $thim_body_primary_color;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.control-nav {
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+
+	&.layout-5 {
+		&:before {
+			background-color: $thim_body_primary_color;
+		}
+	}
+
+	&.layout-8 {
+		.slider-container {
+			.slider {
+				.item {
+					.user-info {
+						.title {
+							&:hover {
+								color: $thim_body_primary_color;
+							}
+						}
+					}
+				}
+
+				.owl-nav {
+					div {
+						&:hover {
+							background-color: $thim_thim_global_mix_color_color1;
+							background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+							background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+						}
+					}
+				}
+			}
+		}
+	}
+}

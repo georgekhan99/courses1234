@@ -1,0 +1,265 @@
+.thim-sc-text-box {
+	.btn{
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:after {
+			content: '';
+			font-family: ionicons;
+			margin-left: 14px;
+		}
+	}
+
+	&.left {
+		.title-1 {
+			font-family: TimesNewRomanPS-MT;
+			font-size: 36px;
+			font-weight: bold;
+			font-style: italic;
+			line-height: 1.22;
+			letter-spacing: 0.7px;
+			margin-top: 152px;
+		}
+		.title-2 {
+			margin-top: 15px;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1.2;
+			letter-spacing: 0.4px;
+		}
+		.btn {
+			height: 39px;
+			line-height: 39px;
+			padding: 0 36px;
+			color: #fff;
+			@include rounded(30px);
+			margin-top: 56px;
+			.text {
+				font-size: 16px;
+				letter-spacing: 0.3px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&.center {
+		padding-bottom: 130px;
+		text-align: center;
+		.title-1 {
+			padding-bottom: 15px;
+			font-size: 16px;
+			line-height: 1.5;
+			letter-spacing: 0.3px;
+			color: #878787;
+		}
+		.title-2 {
+			font-size: 42px;
+			font-weight: 100;
+			letter-spacing: 0.8px;
+			color: #202121;
+			max-width: 754px;
+			margin: auto;
+			line-height: normal;
+		}
+		.btn {
+			margin-top: 48px;
+			@include rounded(30px);
+			height: 56px;
+			background-color: #ffffff;
+			@include box-shadow(none);
+			.text {
+				font-size: 16px;
+				line-height: 1.5;
+				letter-spacing: 0.3px;
+				text-transform: uppercase;
+			}
+			line-height: 56px;
+			padding: 0 45px;
+		}
+		.btn:hover {
+			.text {
+				color: #ffffff;
+			}
+		}
+	}
+	&.style-3 {
+		@include transition();
+		background-color: #ffffff;
+		border: solid 1px $border-color;
+		padding: 58px 94px 60px;
+		text-align: center;
+		@include rounded(5px);
+		margin-left: 2px;
+		margin-right: 2px;
+		&:hover {
+			@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.08));
+			border-color: #FFF;
+		}
+		.title-1 {
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 0.83;
+			text-align: center;
+			&:after {
+				content: '';
+				width: 50px;
+				height: 1px;
+				position: relative;
+				display: block;
+				left: 0;
+				right: 0;
+				margin: 17px auto 22px;
+			}
+		}
+
+		.title-2 {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.56;
+			text-align: center;
+			margin: 34px 0 31px;
+		}
+
+		.btn {
+			border: 1px solid;
+			@include rounded(30px);
+			padding: 0 35px;
+			height: 39px;
+			line-height: 38px;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 0.3px;
+			&:hover {
+				color: #FFF;
+			}
+			outline: none;
+			@include box-shadow(none);
+			&:after {
+				content: '';
+				font-family: Ionicons;
+				margin-left: 8px;
+				font-size: 16px;
+				line-height: 22px;
+				position: relative;
+				top: 1px;
+			}
+
+		}
+
+	}
+	&.style-4 {
+
+		.title-1 {
+			font-size: 62px;
+			line-height: normal;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-bottom: 15px;
+		}
+
+		.title-2 {
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 0.4px;
+			font-weight: 300;
+			margin-bottom: 51px;
+		}
+
+		.btn {
+			border: 1px solid;
+			border-radius: 30px;
+			font-size: 18px;
+			line-height: 55px;
+			letter-spacing: 0.4px;
+			text-transform: uppercase;
+			padding: 0 45px;
+			height: 56px;
+		}
+	}
+	&.size-small {
+		.title-1 {
+			font-size: 18px;
+			color: #202121;
+			font-weight: 400;
+			letter-spacing: 0.4px;
+			line-height: normal;
+			margin-bottom: 27px;
+		}
+
+		.title-2 {
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.3px;
+			font-weight: 300;
+		}
+
+		.btn {
+			height: 51px;
+			font-size: 16px;
+			line-height: 49px;
+			letter-spacing: 0.3px;
+			padding: 0 40px;
+			background-color: transparent;
+			&:hover {
+				color: #FFF;
+			}
+		}
+		&.text-home-6 {
+			.title-1 {
+				font-size: 30px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.6px;
+				text-align: left;
+				color: #ffffff;
+				text-transform: none;
+				margin-bottom: 10px;
+			}
+
+			.title-2 {
+				font-size: 16px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.5;
+				letter-spacing: 0.3px;
+				text-align: left;
+				color: #b0b0b0;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}
+
+.thim-background-overlay {
+	.thim-sc-text-box {
+		&.left {
+			.title-1 {
+				color: #ffffff;
+			}
+			.title-2 {
+				color: #ffffff;
+			}
+		}
+		&.style-4 {
+
+			.title-1 {
+				color: #FFF;
+			}
+
+			.title-2 {
+				color: #e0e0e0;
+			}
+
+			.btn {
+				color: #FFF;
+				background-color: transparent;
+				border-color: #FFF;
+			}
+		}
+	}
+}

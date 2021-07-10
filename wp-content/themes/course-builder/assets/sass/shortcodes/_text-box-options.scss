@@ -1,0 +1,56 @@
+.thim-sc-text-box {
+	.btn:hover {
+		background-color: $thim_body_primary_color;
+		border-color: $thim_body_primary_color;
+	}
+	&.left {
+		.btn {
+			background-color: $thim_body_primary_color;
+		}
+		.btn:hover {
+			background-color: darken($thim_body_primary_color, 20%);
+			border-color: darken($thim_body_primary_color, 20%);
+		}
+	}
+	&.center {
+		.btn {
+			border: 1px solid $thim_body_primary_color;
+			color: $thim_body_primary_color;
+			.text {
+				color: $thim_body_primary_color;
+			}
+		}
+	}
+	&.style-3 {
+		.title-1 {
+			color: $thim_font_title_color;
+			&:after {
+				border-bottom: 1px solid $thim_font_title_color;
+			}
+		}
+
+		.title-2 {
+			color: $thim_font_body_color;
+		}
+
+		.btn {
+			color: $thim_body_primary_color;
+			border-color: $thim_body_primary_color;
+			&:hover {
+				background-color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+
+	}
+	&.style-4 {
+		.btn {
+			color: $thim_body_primary_color;
+			border-color: $thim_body_primary_color;
+			&:hover{
+				background-color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+}

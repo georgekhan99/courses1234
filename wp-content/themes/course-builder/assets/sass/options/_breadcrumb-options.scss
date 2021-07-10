@@ -1,0 +1,103 @@
+.page-title {
+	.main-top {
+		height: $thim_page_title_height;
+		.content {
+			z-index: 3;
+			.text-title {
+				h1,
+				h2 {
+					color: $thim_page_title_text_color;
+				}
+			}
+			.text-description {
+				color: $thim_page_title_description_color;
+				strong {
+					color: $thim_page_title_description_strong_color;
+				}
+			}
+		}
+	}
+
+	.breadcrumb-content {
+		#breadcrumbs {
+			background-color: $thim_breadcrumb_background_color;
+			li {
+				color: $thim_body_primary_color;
+				a {
+					color: $thim_breadcrumb_text_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+				span.breadcrum-icon {
+					.fa {
+						&:before {
+							color: $thim_breadcrumb_text_color;
+						}
+					}
+				}
+			}
+
+			&.profile-list-social {
+				.item {
+					a:hover {
+						color: $thim_font_title_color;
+					}
+				}
+			}
+		}
+		.woocommerce-breadcrumb {
+			background-color: $thim_breadcrumb_background_color;
+			color: $thim_body_primary_color;
+			a {
+				color: $thim_breadcrumb_text_color;
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+			span.breadcrum-icon {
+				color: $thim_breadcrumb_text_color;
+			}
+		}
+		&.breadcrumb-plus {
+			#breadcrumbs {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+
+	&.layout-2 {
+		.main-top {
+			.content {
+				.text-description {
+					color: $thim_page_title_description_color;
+				}
+			}
+		}
+		.breadcrumb-content {
+			&.breadcrumb-plus {
+				.breadcrumbs-wrapper {
+					background-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+	&.layout-3 {
+		.breadcrumb-content {
+			background-color: $thim_breadcrumb_background_color;
+		}
+	}
+}
+
+// Breadcrumb profile page
+.lp-profile {
+	.page-title {
+		.breadcrumb-content {
+			#breadcrumbs {
+				&.profile-list-social {
+					background-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}

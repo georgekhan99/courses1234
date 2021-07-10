@@ -1,0 +1,86 @@
+/*
+ * Style for button */
+
+input[type="submit"] {
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	padding: 0 25px;
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	cursor: pointer;
+	@include transition(all 0.5s);
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn-primary {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 40px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.btn-secondary {
+	background: #fff;
+	padding: 0 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 48px;
+	cursor: pointer;
+	@include rounded(30px);
+}
+
+.btn {
+	[class^=ion] {
+		margin-left: 10px;
+	}
+}
+
+
+//widget button demo kit
+.thim-button-gradient {
+	.button-gradient {
+		display: block;
+		padding: 0 28px;
+		height: 46px;
+		@include rounded(23px);
+		@include background-vertical(#60d3c6, #47d899);
+		text-align: center;
+		font-weight: 600;
+		line-height: 46px;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #333;
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			@include albertcalc(width, 2px);
+			@include albertcalc(height, 2px);
+			background: #fff;
+			z-index: -1;
+			border-radius: inherit;
+		}
+
+		&:hover {
+			color: #fff;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}

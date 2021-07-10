@@ -1,0 +1,20 @@
+#back-to-top {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	font-size: 26px;
+	bottom: 29px;
+	right: 20px;
+	cursor: pointer;
+	@include transition(all 0.3s);
+	@include rounded(50%);
+	text-align: center;
+	line-height: 38px;
+	@include transform(translateY(100px));
+	z-index: 999;
+	&.scrolldown {
+		@include transform(translateY(0));
+	}
+}
+

@@ -1,0 +1,172 @@
+.three-col.item_portfolio {
+  width: 33.33%;
+}
+
+.wapper_portfolio.gutter .item_portfolio {
+  margin-bottom: 20px;
+}
+
+.wapper_portfolio .content_portfolio {
+  list-style: none;
+  margin: 0;
+  .element-item {
+    float: left;
+  }
+}
+//Filter
+
+.wapper_portfolio .filters {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: -10px;
+  .portfolio-tabs {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+    li {
+      list-style: none;
+      display: inline-block;
+
+      a {
+        position: relative;
+        text-transform: uppercase;
+        margin: 0 15px;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 3px;
+        &:after {
+          content: '';
+          width: 100%;
+          background: transparent;
+          height: 2px;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          transition: all .5s;
+        }
+      }
+    }
+  }
+}
+
+.wapper_portfolio .item_portfolio {
+  .portfolio-image {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    .portfolio-hover {
+      background: #15233d;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      opacity: 0;
+      @include transition(opacity .5s);
+      padding: 30px;
+      .thumb-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          top: 0;
+          left: 0;
+          border-top: solid 1px #fff;
+          border-bottom: solid 1px #fff;
+          transition: all .5s;
+          @include scale(0, 1);
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          top: 0;
+          left: 0;
+          border-left: solid 1px #fff;
+          border-right: solid 1px #fff;
+          transition: all .5s;
+         @include scale(1, 0);
+        }
+        .mask-content {
+          vertical-align: middle;
+          text-align: center;
+          position: static;
+          top: auto;
+          transform: none;
+          .popup {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            margin-top: -20px;
+          }
+          .view-gallery {
+            font-size: 26px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            line-height: 38px;
+            color: #fff;
+          }
+
+          .info {
+            position: absolute;
+            width: 100%;
+            transform: none;
+            bottom: 30px;
+            padding: 20px 20px 0;
+            transition: all .5s;
+            .related-portfolio & {
+              top: 50%;
+              left: 50%;
+              bottom: auto;
+              transform: translate(-50%,-50%);
+            }
+            .cat_portfolio a {
+              color: #fff;
+            }
+            h3 {
+              font-size: 26px;
+              text-transform: uppercase;
+              font-weight: normal;
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+
+      &:hover {
+        opacity: 1;
+        .thumb-bg:after,
+        .thumb-bg:before {
+         @include scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+body.tax-portfolio_category .page-title .breadcrumb-content {
+  display: none;
+}
+
+.wapper_portfolio .item_portfolio.four-col .portfolio-image .portfolio-hover {
+  padding: 20px;
+  .info h3 {
+    font-size: 20px !important;
+  }
+}

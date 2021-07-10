@@ -1,0 +1,197 @@
+.responsive {
+	@media (max-width: 1440px) {
+		.thim-sc-counter-box .counter-box .counter_box.has-line:before {
+			width: 40px;
+			left: -52px;
+		}
+	}
+	@media (max-width: 1400px) {
+		.align-right .register-content {
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 1024px) {
+		.thim-sc-video-box.layout-2 .video .video-box {
+			left: 476px;
+			top: 169px;
+		}
+		.thim-sc-counter-box .counter-box .counter_box.has-line:before {
+			display: none;
+		}
+		.register-content .register-form .title .register {
+			font-size: 30px;
+		}
+	}
+	@media (max-width: 768px) {
+		.become-instructor-page .thim-sc-video-box .video {
+			margin-top: 0;
+		}
+		.thim-sc-video-box.layout-2 {
+			.video {
+				.video-box {
+					left: 351px;
+					top: 170px;
+					height: 292px;
+					.play-button a .icon-play {
+						font-size: 20px !important;
+					}
+				}
+
+			}
+		}
+		.thim-sc-steps.custom-style {
+			padding-top: 30px;
+			padding-bottom: 60px;
+			.media-box {
+				.media-wrapper {
+					margin-left: 0;
+				}
+			}
+			.content-box .steps-wrapper {
+				margin-right: 0;
+				bottom: 0;
+				.sc-title,
+				.sub-title {
+					text-align: center;
+				}
+				.sub-title {
+					&:after {
+						margin: 0 auto;
+						left: 0;
+					}
+				}
+				.steps {
+					.nav .nav-item:after {
+						width: 15px;
+					}
+					.tab-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+		.register-content {
+			margin-top: 0;
+			.register-form {
+				padding: 20px;
+			}
+		}
+
+		.become-instructor-page .thim-sc-counter-box .counter_box .number .text-number, .become-instructor-page .thim-sc-counter-box .counter_box .number .number_counter {
+			font-size: 30px;
+		}
+
+	}
+	
+	@media (max-width: 767px)  {
+		.vc_row.become-teacher {
+			display: block;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.become-instructor-page .thim-sc-counter-box .counter_box .number .text-number, .become-instructor-page .thim-sc-counter-box .counter_box .number .number_counter {
+			font-size: 23px;
+		}
+		.thim-sc-video-box.layout-2 {
+			width: 360px;
+			.video {
+				height: 220px;
+				background-size: contain;
+				.video-box {
+					height: 150px;
+					width: auto;
+					left: 60px;
+					right: 64px;
+					margin: auto;
+					top: 12px;
+					transform: none;
+				}
+			}
+		}
+		.thim-sc-counter-box {
+			overflow: hidden;
+		}
+		.align-right .register-content {
+			float: none;
+			margin: 0 auto;
+		}
+		.thim-content-talk {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.vc_row.become-teacher .learnpress>div#learn-press-become-teacher-form.learn-press-form {
+			width: 100%;
+			max-width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+		.thim-sc-steps.custom-style .content-box .steps-wrapper .sc-title {
+			font-size: 23px;
+		}
+		.become-instructor-page {
+			margin-bottom: 30px;
+		}
+		.become-instructor-page .thim-sc-counter-box .counter_box {
+			display: block;
+			margin-right: 0 !important;
+		}
+		.thim-sc-counter-box .counter-box .counter_box .title_counter {
+			padding: 0 15px;
+			.title {
+				font-size: 13px;
+			}
+		}
+	}
+	@media (max-width: 360px) {
+		.thim-sc-video-box.layout-2 {
+			width: 300px;
+			.video .video-box {
+				height: 124px;
+				top: 30px;
+				left: 49px;
+				right: 51px;
+			}
+		}
+		#main-content .site-content {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.thim-sc-steps .steps-wrapper .steps .nav .nav-item {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 0;
+			&:after {
+				display: none;
+			}
+		}
+		.thim-sc-counter-box .counter-box {
+			flex-direction: column;
+			.counter_box {
+				&.has-line:before {
+					display: none;
+				}
+				.number .number_counter:before {
+					display: none;
+				}
+			}
+		}
+		.register-content .register-form .title {
+			.title-form {
+				font-size: 14px;
+			}
+			.register {
+				font-size: 23px;
+			}
+		}
+		.thim-content-talk p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+}

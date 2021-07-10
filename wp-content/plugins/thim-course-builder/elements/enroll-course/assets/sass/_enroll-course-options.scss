@@ -1,0 +1,10 @@
+.thim-sc-enroll-course {
+	.learn-press-course-buttons {
+		.button {
+			background-color: $thim_body_primary_color;
+			&:hover {
+				background-color: darken($thim_body_primary_color, 20%);
+			}
+		}
+	}
+}

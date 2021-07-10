@@ -1,0 +1,68 @@
+.thim-sc-new-video {
+	.video {
+		.new-video {
+			position: relative;
+			width: 100%;
+			height: 696px;
+			box-shadow: 12.9px 15.3px 15px 0 #69696914;
+			background-color: #e1e1e1;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			.play-button {
+				position: absolute;
+				top: 50%;
+				left: -44px;
+				transform: translate(0, -50%);
+				width: 88px;
+				height: 86px;
+				box-shadow: 12.9px 15.3px 15px 0 #69696914;
+				border: 1px solid #01dda6;
+				background-color: #01dda6;
+				text-align: center;
+				line-height: 86px;
+
+				a {
+					color: #ffffff;
+
+					i {
+						color: #ffffff;
+
+						&:before {
+							content: "\f488";
+							display: inline-block;
+							font-family: "Ionicons";
+							font-style: normal;
+							font-weight: normal;
+							font-size: 40px;
+						}
+					}
+				}
+
+				&:hover {
+					background-color: #ffffff;
+
+					a {
+						i {
+							color: #01dda6;
+						}
+					}
+				}
+			}
+
+			.icon-right {
+				position: absolute;
+				right: -50px;
+				bottom: 36px;
+				z-index: 9;
+			}
+
+			.icon-bottom {
+				position: absolute;
+				left: 44px;
+				bottom: -25px;
+				z-index: 9;
+			}
+		}
+	}
+}

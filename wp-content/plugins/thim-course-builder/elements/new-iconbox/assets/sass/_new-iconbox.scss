@@ -1,0 +1,91 @@
+.thim-new-iconbox {
+
+	&.layout-1 {
+		background: #fff;
+		padding: 34px 30px 33px 28px;
+		box-shadow: 12.9px 15.3px 15px 0 #69696914;
+		display: table;
+		width: 100%;
+		margin-bottom: 30px;
+
+		.icon-box {
+			display: table-cell;
+			vertical-align: middle;
+
+			i {
+				font-size: 48px;
+			}
+		}
+
+		.title {
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 19px;
+
+			p {
+				margin: 0;
+				font-size: 18px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.33;
+				letter-spacing: normal;
+				text-align: left;
+				color: #000000;
+			}
+		}
+	}
+
+	&.layout-2 {
+		text-align: center;
+		padding: 44px 0;
+
+		.icon-box {
+			i {
+				display: inline-block;
+				font-size: 28px;
+				color: #ffff;
+				margin-bottom: 15px;
+			}
+		}
+
+		.title {
+			p {
+				margin: 0;
+				font-size: 16px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.5;
+				letter-spacing: normal;
+				text-align: center;
+				color: #ffffff;
+			}
+		}
+	}
+
+	&.has_border {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 51px;
+			top: 50%;
+			background: #ffffff;
+			transform: translateY(-50%);
+			left: 0;
+		}
+	}
+
+	&:hover {
+		&.layout-1 {
+			.title {
+				p {
+					color: #01dda6;
+				}
+			}
+		}
+	}
+}

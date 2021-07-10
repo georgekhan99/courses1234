@@ -1,0 +1,18 @@
+body {
+  &.logged-in {
+    .account-login-page {
+      .social-login-form {
+        display: none;
+      }
+      .thim-form-login.vc_col-sm-6  {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .account-login-page {
+    display: flex;
+    align-items: center;
+  }
+}

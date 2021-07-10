@@ -1,0 +1,675 @@
+/*
+ * Style sidebar blog
+ */
+
+.search-form {
+  position: relative;
+  line-height: 50px;
+  border: none;
+  label {
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+  }
+  .search-field {
+    line-height: 50px;
+    background: #fff;
+    height: 50px;
+    padding: 0 60px 0 15px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #eee;
+    @include transition(all .3s ease-in-out);
+  }
+  .search-submit {
+    position: absolute;
+    top: 0;
+    background: none;
+    border: none;
+    right: 20px;
+    color: #888888;
+    font-size: 20px;
+  }
+  .search-submit:hover {
+    cursor: pointer;
+  }
+  .search-submit:focus {
+    outline: none;
+  }
+}
+
+.theiaStickySidebar {
+  padding-top: 130px;
+}
+
+.widget_search {
+  margin-bottom: 71px;
+  .search-form {
+    margin-right: 10px;
+    width: 317px;
+    max-width: 100%;
+    .search-field {
+      padding-left: 3px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.63;
+      letter-spacing: 0.3px;
+      color: #888888;
+      border-color: #ffffff;
+      border-bottom-color: #e7e7e7;
+    }
+    input::-webkit-input-placeholder {
+      @include placeholder(#888888);
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.63;
+      letter-spacing: 0.3px;
+      color: #888888;
+    }
+  }
+  .search-form:after {
+    color: #888888;
+  }
+}
+
+.widget-area aside.widget_categories {
+  font-size: 16px;
+
+  color: #000;
+  h3.widget-title {
+    font-size: 24px;
+
+  }
+}
+
+.widget-area aside.widget_thim-courses-categories {
+  font-size: 16px;
+
+  color: #000;
+  h3.widget-title {
+    font-size: 24px;
+
+  }
+}
+
+.widget-area .widget {
+  position: relative;
+  @include clearfix();
+  .widget-title {
+    position: relative;
+    padding-bottom: 9px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 35px;
+      height: 1px;
+    }
+  }
+
+  &.widget_archive,
+  &.widget_categories,
+  &.widget_thim-courses-categories,
+  &.widget_pages,
+  &.widget_meta,
+  &.widget_recent_comments,
+  &.widget_recent_entries,
+  &.widget_nav_menu {
+    ul li {
+      .children,
+      .sub-menu {
+        padding-left: 15px;
+        li {
+          font-size: 16px;
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &.widget_recent_comments {
+    ul {
+      li {
+        &:before {
+          content: "\f0da";
+          font-family: FontAwesome;
+          margin-right: 10px;
+          color: #333333;
+          font-size: 14px;
+        }
+        a {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.widget_rss {
+    ul {
+      li {
+        .rsswidget {
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+    .rss-date {
+      font-size: 16px;
+      font-style: italic;
+    }
+  }
+
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+      display: block;
+      margin-bottom: 30px;
+      a {
+        font-weight: normal;
+        text-transform: capitalize;
+        line-height: 1.38;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  select {
+    max-width: 100%;
+  }
+
+  // Thim Recent Posts
+  &.widget_thim_recent_posts {
+    ul {
+      margin: 10px 0 0;
+      li {
+        margin-bottom: 40px;
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        padding-left: 130px;
+        min-height: 100px;
+        &:last-child {
+          margin: 0;
+        }
+        &.no-thumbnail {
+          padding: 0;
+        }
+        .post_thumbnail {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .title {
+          margin: 0;
+          line-height: 24px;
+          font-size: 14px;
+          position: relative;
+          top: -4px;
+          a {
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: none;
+            color: #333333;
+            line-height: 24px;
+            @include transition(all 0.5s);
+          }
+        }
+        .time {
+          margin-top: 20px;
+          font-size: 12px;
+          font-style: italic;
+          color: #666666;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  //Thim Social Link
+  &.widget_social_link_widget {
+    ul {
+      width: 100%;
+      float: left;
+      margin-top: 5px;
+      li {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-bottom: 10px;
+        padding: 0;
+
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          color: #ffffff;
+          line-height: 40px;
+          font-size: 16px;
+          width: 100%;
+          float: left;
+          border: none;
+          height: 40px;
+          text-align: left;
+          border-radius: 0;
+        }
+        i {
+          width: 47px;
+          float: left;
+          margin-right: 28px;
+          position: relative;
+          text-align: center;
+          font-size: 14px;
+          line-height: 40px;
+          display: inline-block;
+          &:after {
+            content: '';
+            height: 26px;
+            width: 1px;
+            background: #ffffff;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -13px;
+          }
+        }
+        &.facebook {
+          background: #3B5998;
+        }
+        &.twitter {
+          background: #55acee;
+        }
+        &.skype {
+          background: #00aff0;
+        }
+        &.pinterest {
+          background: #cb2027;
+        }
+        &.google {
+          background: #dd4b39;
+        }
+        &.tumblr {
+          background: #32506d;
+        }
+        &.linkedin {
+          background: #007bb5;
+        }
+        &.rss {
+          background: #ff6600;
+        }
+        &.instagram {
+          background: #125688;
+        }
+        &.youtube {
+          background: #bb0000;
+        }
+      }
+    }
+  }
+  .tagcloud {
+    @include clearfix();
+    padding-top: 47px;
+    a {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px !important;
+      text-transform: uppercase;
+      border: 1px solid $border-color;
+      padding: 0 20px;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      float: left;
+      &:hover {
+        background-color: $border-color;
+      }
+    }
+  }
+}
+
+aside {
+  .widget {
+    table {
+      margin-bottom: 0;
+    }
+    &.widget_thim_layout_builder {
+      margin-bottom: 5px;
+      .thim-sc-testimonials {
+        &.layout-3 {
+          max-width: 318px;
+          background-color: #f6f6f7;
+          .slider-container {
+            .owl-stage-outer {
+              position: relative;
+              top: 28px;
+              left: -48px;
+              .owl-stage {
+                .owl-item {
+                  .item {
+                    padding-left: 7px;
+                    border: none;
+                    .content {
+                      font-size: 20px;
+                      font-style: italic;
+                      line-height: 1.5;
+                      letter-spacing: 0.4px;
+                    }
+                    .user-info {
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 1.86;
+                      margin-bottom: 65px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .owl-dots {
+              margin-left: 58px;
+              position: relative;
+              z-index: 5;
+
+              .owl-dot {
+                margin-bottom: 34px;
+              }
+            }
+          }
+          .slider-container:before {
+            font-size: 100px;
+            text-align: left;
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            line-height: 0.32;
+            letter-spacing: -7px;
+          }
+        }
+      }
+    }
+    &.widget_categories {
+      margin-bottom: 44px;
+      max-width: 318px;
+      h3.widget-title {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #202121;
+      }
+      .widget-title:after {
+        content: "";
+        border-bottom: solid 1px #000000;
+        position: absolute;
+        top: 31px;
+        left: 0;
+        width: 35px;
+      }
+
+      .cat-item {
+        border: none
+      }
+
+      ul {
+        margin-top: -15px;
+        li {
+          position: relative;
+          &:before {
+            content: "\f21b";
+            position: absolute;
+            left: -14px;
+            top: 0;
+            line-height: 36px;
+            display: block;
+            font-family: ionicons;
+            font-size: 5px;
+          }
+          .children {
+            padding: 12px 0;
+            padding-bottom: 0;
+            li {
+              &:before {
+                content: '+';
+                background: transparent;
+                top: 5px;
+                font-size: 12px;
+              }
+            }
+            .children {
+              li {
+                &:before {
+                  content: "\f3d3";
+                  background: transparent;
+                  top: 5px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          margin-left: 25px;
+          padding: 0;
+          margin-bottom: 0;
+          a {
+            border: none;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.25;
+            letter-spacing: 0.3px;
+            color: #202121;
+          }
+        }
+      }
+    }
+    &.widget_thim-courses-categories {
+      margin-bottom: 44px;
+      max-width: 318px;
+      h3.widget-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #202121;
+      }
+      .widget-title:after {
+        content: "";
+        border-bottom: solid 1px #000000;
+        position: absolute;
+        top: 31px;
+        left: 0;
+        width: 35px;
+      }
+      .cat-item {
+        border: none;
+      }
+      ul {
+        margin-top: -15px;
+        li {
+          padding: 0;
+          display: list-item;
+          list-style: none;
+          margin-bottom: 0;
+          a {
+            border: none;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.25;
+            letter-spacing: 0.3px;
+            color: #202121;
+          }
+        }
+      }
+    }
+    &.widget_recent_entries {
+      max-width: 318px;
+      h3.widget-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #202121;
+        margin-bottom: 33px;
+      }
+      .wrapper {
+        margin-top: 30px;
+        overflow: hidden;
+        .thumbnail {
+          width: 109px;
+          float: left;
+          clear: left;
+        }
+        .entry-date {
+          float: left;
+          width: 109px;
+          height: 109px;
+          background-color: #f6f6f7;
+          .entry-day {
+            margin-top: 32px;
+            margin-left: 36px;
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 0.63;
+          }
+          .entry-month {
+            margin-left: 36px;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.22;
+            letter-spacing: 0.9px;
+            margin-top: 11px;
+            text-transform: uppercase;
+          }
+        }
+        .content {
+          margin-left: 128px;
+          margin-top: -4px;
+          .title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.38;
+            letter-spacing: 0.3px;
+            color: #202121;
+          }
+          .post-date {
+            margin-top: 9px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.57;
+            letter-spacing: 0.3px;
+            color: #888888;
+          }
+        }
+      }
+    }
+  }
+}
+
+.archive-course-widget-outer {
+  max-width: 318px;
+  .course-entry {
+    .course-cover {
+      float: left;
+      width: 109px;
+      margin-right: 19px;
+      img {
+        height: 109px;
+      }
+    }
+    .course-detail {
+      .course-title {
+        font-size: 16px;
+        line-height: 1.38;
+        letter-spacing: 0.3px;
+        color: #202121;
+      }
+      .course-description {
+        display: none;
+      }
+    }
+    .course-meta-data {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      letter-spacing: 0.3px;
+      color: #ec5f4c;
+    }
+    .course-meta-field {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #ec5f4c;
+    }
+  }
+}
+
+.widget-area .widget ul ul {
+  padding-top: 30px;
+}
+
+#secondary {
+  select,
+  .selection,
+  .select2-container .select2-selection--single,
+  .select2-container {
+    width: 100%;
+  }
+  .widget {
+    margin-bottom: 60px;
+  }
+}
+
+.lp-landing.thim-lp-layout-1 .sticky-sidebar.flex-first {
+  right: unset;
+}
+
+.lp-landing.thim-lp-layout-1 .sticky-sidebar {
+  top: 80px;
+  position: relative !important;
+}
+
+.wrapper-info-bar aside#secondary {
+  margin-top: 60px;
+}
+
+
+
+.widget-area .thim_widget_categories {
+  margin-bottom: 50px;
+  ul {
+    list-style: none;
+    li {
+      display: block;
+      margin-bottom: 0;
+      a {
+        font-weight: 300;
+        line-height: 2.25;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: inherit;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+aside .widget.widget_thim-courses-categories ul li.sub-child {
+  padding-left: 20px;
+}

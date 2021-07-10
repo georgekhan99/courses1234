@@ -1,0 +1,64 @@
+.thim-course-block-3{
+	.title{
+		color: $thim_font_title_color;
+	}
+
+	.masonry-filter{
+		.filter{
+			color: $thim_font_title_color;
+
+			&.is-checked{
+				color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+			&:hover {
+				color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+
+	.course-item{
+		.course-title{
+			a{
+				color: $thim_font_title_color;
+			}
+
+			&:hover{
+				a{
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+
+		.participants{
+			.instructor{
+				color: $thim_body_primary_color;
+
+				&:hover{
+					color: $thim_font_body_color;
+				}
+			}
+		}
+	}
+	.wrapper-title .view-courses-button {
+		&:hover{
+			color: $thim_body_primary_color;
+		}
+	}
+}
+
+.thim-buttons-center{
+	.wpb_wrapper{
+		.thim-sc-button{
+			.btn{
+				border: 1px solid $thim_body_primary_color;
+				color: $thim_body_primary_color;
+
+				&:hover{
+					background-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}

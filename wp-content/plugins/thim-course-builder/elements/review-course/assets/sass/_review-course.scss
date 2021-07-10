@@ -1,0 +1,68 @@
+.thim-sc-review-course {
+	max-width: 1030px;
+	margin: auto;
+	.course-reviews-list {
+		list-style: none;
+		margin-left: 0;
+		.sub-review {
+			margin-top: 20px;
+			padding: 30px;
+			background-color: #fff;
+			border: none;
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 60px;
+			}
+			.author-name {
+				text-transform: capitalize;
+				line-height: 22px;
+				font-size: 18px;
+				font-weight: 400;
+				margin: 0;
+			}
+			.description {
+				font-size: 16px;
+				line-height: 22px;
+				margin-top: 19px;
+				letter-spacing: 0.3px;
+			}
+			.review-star {
+				.review-stars-rated {
+					max-width: 80px;
+					width: auto;
+					display: block;
+					.review-stars {
+						&.empty, &.filled {
+							font-size: 14px;
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+	.read-more-link {
+		text-align: center;
+		.read-more {
+			display: inline-block;
+			min-width: 225px;
+			padding: 0 30px;
+			height: 55px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 54px;
+			color: #fff;
+			@include rounded(30px);
+			border: none;
+			margin-bottom: 130px;
+			text-transform: uppercase;
+			cursor: pointer;
+			@include transition(.3s ease-in-out);
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+}

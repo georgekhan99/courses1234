@@ -1,0 +1,31 @@
+.thim-sc-review-course {
+	.review-star {
+		.review-stars-rated {
+			.review-stars {
+				&.empty, &.filled {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+	.course-reviews-list {
+		.sub-review {
+			.author-name {
+				a {
+					color: $thim_font_title_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.read-more {
+		background-color: $thim_body_primary_color;
+		&:hover {
+			background-color: darken($thim_body_primary_color, 20%);
+		}
+	}
+}
+

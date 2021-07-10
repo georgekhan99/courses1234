@@ -1,0 +1,138 @@
+/**
+* Topbar style */
+#thim-header-topbar {
+	font-size: 14px;
+	line-height: normal;
+	font-weight: 300;
+	letter-spacing: 0.3px;
+	.thim-sc-login {
+		.ion-android-person {
+			padding-right: 5px;
+		}
+	}
+	.thim-sc-course-search {
+		display: inline-block;
+		margin: inherit;
+		color: #dedede;
+		.courses-list-search {
+			@include opacity(0);
+			display: none;
+			z-index: 99999;
+		}
+		input[name=s] {
+			background: rgba(3, 44, 75, 0.2);
+			@include rounded(0);
+			@include opacity(0);
+			width: 56px;
+			height: 56px;
+			visibility: inherit;
+			@include transition();
+			@include placeholder(#dedede);
+			color: #dedede;
+			font-size: 14px;
+		}
+		button {
+			font-size: 20px;
+			width: 56px;
+			height: 56px;
+			line-height: 50px;
+			color: #dedede;
+			background-color: rgba(3, 44, 75, 0.2);
+			cursor: pointer;
+			&:before {
+				display: none;
+			}
+		}
+		&.hover,
+		&:hover {
+			input[name=s] {
+				width: 400px;
+				visibility: visible;
+				@include opacity(1);
+			}
+			.courses-list-search {
+				@include opacity(1);
+				display: inline-block;
+			}
+		}
+		.thim-loading-icon {
+			&:before {
+				display: none;
+			}
+			> * {
+				margin: 4px auto;
+			}
+		}
+	}
+	.pull-right {
+		.wpb_wrapper {
+			@include flexbox();
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+
+	ul {
+		margin: 0;
+		li {
+			list-style: none;
+		}
+		&.list-inline {
+			li {
+				line-height: 56px;
+				margin-right: 19px;
+				[class^=ion],
+				.fa {
+					margin-right: 5px;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+		margin-bottom: 0;
+	}
+
+	.top-white {
+		.thim-sc-course-search {
+			button {
+				color: #fff;
+			}
+			input[name=s] {
+				color: #fff;
+			}
+		}
+	}
+}
+
+#thim-header-topbar{
+	.container{
+		display: flex;
+
+		& > .widget_thim_layout_builder{
+			@include flex(1 0);
+		}
+
+		& > .elementor-widget-wp-widget-woocommerce_widget_cart,
+		& > .widget_shopping_cart{
+			@include flex(0 0 56px);
+			position: relative;
+		}
+
+		.elementor-widget-wp-widget-woocommerce_widget_cart,
+		.widget_shopping_cart{
+			color: #fff;
+			.text{
+				display: none;
+			}
+
+			.minicart_hover {
+				text-align: center;
+				height: 100%;
+			}
+		}
+	}
+}

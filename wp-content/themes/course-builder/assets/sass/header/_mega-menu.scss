@@ -1,0 +1,198 @@
+
+@media (min-width: 992px) {
+	.tc-menu-layout-builder{
+		.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+			margin-bottom: 0 !important;
+		}
+		.sub-menu {
+			top: 100% !important;
+			right: auto !important;
+			//display: block !important;
+			padding: 25px 30px !important;
+			min-width: 800px !important;
+			width: auto !important;
+			>p {
+				display: none;
+			}
+
+			.widget-title,
+			.widgettitle{
+				font-size: 16px;
+				line-height: 20px;
+				text-align: left;
+				text-transform: capitalize;
+			}
+			.widget {
+				padding: 0 !important;
+
+				ul {
+					margin: 0;
+					li {
+						padding: 0;
+						&:after {
+							display: none;
+						}
+						a {
+							padding: 8px 0 !important;
+							transition: all .3s;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.width-navigation .main-menu>li.menu-item.tc-menu-layout-builder>a {
+		padding-right: 0;
+	}
+}
+
+
+// Old Code
+.navigation {
+	.width-navigation {
+		.inner-navigation {
+			// Mega menu
+			.mega-menu-wrapper {
+
+				#mega-menu-primary {
+					li.menu-item a[class^='dashicons']:before {
+						font-family: dashicons;
+					}
+					// sub menu items (megamenu)
+					> li.menu-megamenu > ul.sub-menu {
+
+						@media (min-width: 601px) {
+							@for $of from 1 through 8 {
+								@for $cols from 1 through $of {
+									li.menu-columns-#{$cols}-of-#{$of} {
+										width: (100% / $of) * $cols;
+									}
+								}
+							}
+						}
+					}
+
+					li.menu-flyout {
+						&.align-bottom-right {
+							text-align: right;
+						}
+						&.item-align-right {
+							> .sub-menu {
+								left: auto;
+								right: 0;
+							}
+						}
+					}
+				}
+
+				.mega-menu {
+					float: left;
+					position: static;
+					.menu-item {
+						&.hide-on-desktop {
+							@media (min-width: 769px) {
+								display: none;
+							}
+						}
+					}
+
+					.menu-megamenu {
+						@media (min-width: 769px) {
+							position: static;
+						}
+						li {
+							vertical-align: top;
+							a {
+								padding: 14px 0;
+							}
+							ul {
+								margin: 0;
+								li {
+									padding: 0;
+								}
+							}
+							&:after {
+								left: 0;
+								right: 0;
+								bottom: 0;
+							}
+						}
+
+						.sub-menu {
+							> li {
+								&:after {
+									display: none;
+								}
+							}
+						}
+
+					}
+				}
+				.menu-right {
+					float: left;
+					> .widget{
+						.btn-book{
+							&:before{
+								top: -15px;
+								bottom: -10px;
+							}
+							.inner-bottom{
+								bottom: -20px;
+							}
+						}
+						&.elementor-widget-wp-widget-woocommerce_widget_cart,
+						&.widget_shopping_cart{
+							.widget_shopping_cart_content{
+								top: 57px;
+							}
+						}
+					}
+				}
+			}
+			// Mega menu
+		}
+	}
+	.tm-table {
+		position: relative;
+	}
+}
+
+.mega-menu {
+	@media (max-width: 768px) {
+		.menu-item {
+			&.hide-sub-menu-on-mobile {
+				.icon-toggle,
+				.mega-sub-menu {
+					visibility: hidden;
+					display: none;
+				}
+			}
+		}
+	}
+	//	Widget products
+	.widget_products {
+		img {
+			max-width: 60px;
+		}
+	}
+	//	End: widget products
+}
+
+
+@media (max-width: 480px) {
+	.responsive.single-lp_course #main-content #lp-single-course .course-summary .landing-1 .course-info,
+	.responsive.single-lp_course #main-content #lp-single-course .course-summary .landing-1 .course-info .list-inline,
+	.responsive.single-lp_course #main-content #lp-single-course .course-summary .landing-2 .course-info .list-inline {
+		display: block !important;
+	}
+	.single .course-info .list-inline .list-inline-item.item-author span.avatar {
+		display: none;
+	}
+}
+header#masthead.template-layout-2.affix-top .header-v2.style2 .widget.widget_thim-login .user-info a {
+	color: #888;
+}
+.everest-tab-main-wrapper > .etab-header-wrap > ul.etab-title-tabs > li {
+	list-style: none !important;
+}

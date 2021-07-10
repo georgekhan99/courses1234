@@ -1,0 +1,47 @@
+.thim-courses-block-2 {
+	.intro-item {
+		&:before {
+			background-color: $thim_body_primary_color;
+		}
+
+		.title {
+			font-family: $thim_font_title_font_family;
+		}
+
+		.view-courses-button {
+			color: $thim_font_title_color;
+			&:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+	}
+
+	.course-item {
+		&.new-course {
+			&:before {
+				border-top: 86px solid $thim_body_primary_color;
+			}
+		}
+		.content-item {
+			.name {
+				&:hover a {
+					color: $thim_body_primary_color;
+				}
+			}
+
+			.title {
+				&:hover a {
+					color: $thim_body_primary_color;
+				}
+			}
+
+			.price {
+				color: $thim_body_primary_color;
+
+				.course-price {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}

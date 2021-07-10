@@ -1,0 +1,36 @@
+.thim-sc-icon-box {
+	&.layout-3 {
+		.icon-box-wrapper {
+			.box-icon {
+				color: $thim_body_primary_color;
+			}
+			.description{
+				color: $thim_font_body_color;
+			}
+			&:hover {
+				.box-content .title {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+
+	&.layout-4 {
+		&:hover {
+			.box-icon {
+				background: rgba($thim_body_primary_color, 0.6);
+			}
+		}
+	}
+}
+
+.vc_row-has-fill {
+	.thim-sc-icon-box {
+		&.layout-4 {
+			&:hover .box-icon {
+				background: rgba($thim_body_primary_color, 0.6);
+			}
+		}
+	}
+}
+

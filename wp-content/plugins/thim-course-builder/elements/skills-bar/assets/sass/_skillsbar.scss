@@ -1,0 +1,49 @@
+.thim-sc-skills-bar {
+	@include flexbox();
+	padding: 15px 0;
+	&.text-center {
+		justify-content: center;
+	}
+	.circle {
+		width: 175px;
+		margin: 6px 6px 20px;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		line-height: 1.2;
+		canvas {
+			vertical-align: top;
+			width: 122px;
+		}
+		.number {
+			position: absolute;
+			top: 35px;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			line-height: 40px;
+			font-size: 30px;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+		.title {
+			font-size: 18px;
+			text-transform: uppercase;
+			display: block;
+			margin-top: 22px;
+			letter-spacing: 0.4px;
+			font-weight: 400;
+		}
+		.sub-title {
+			font-size: 16px;
+			position: absolute;
+			top: 40%;
+			left: 0;
+			right: 0;
+			@include translate(0, -30%);
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

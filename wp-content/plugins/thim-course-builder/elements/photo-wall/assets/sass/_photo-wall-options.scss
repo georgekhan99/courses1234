@@ -1,0 +1,18 @@
+.thim-sc-photo-wall {
+	.grid {
+		.grid-item {
+			.inner-item {
+				&:after {
+					background-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+	.loadmore {
+		a {
+			&:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+	}
+}

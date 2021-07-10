@@ -1,0 +1,6 @@
+[START=WIDGET LOGIC OPTIONS]
+widget_logic-options-filter	false
+widget_logic-options-wp_reset_query	false
+widget_logic-options-show_errors	false
+widget_logic-options-load_point	"parse_query"
+[STOP=WIDGET LOGIC OPTIONS]

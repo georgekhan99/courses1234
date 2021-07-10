@@ -1,0 +1,68 @@
+.thim-sc-enroll-course {
+	padding-top: 134px;
+	padding-bottom: 215px;
+	max-width: 1093px;
+	margin: auto;
+	text-align: center;
+	.title-course {
+		font-size: 50px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		line-height: normal;
+		letter-spacing: 1px;
+		a {
+			color: #fff;
+		}
+	}
+	.excerpt {
+		font-size: 18px;
+		margin-left: 50px;
+		margin-right: 48px;
+		line-height: 28px;
+		margin-bottom: 52px;
+		letter-spacing: 0.4px;
+	}
+
+	.learn-press-course-buttons {
+		.button {
+			font-family: inherit;
+			color: #fff;
+			font-size: 16px;
+			border: none;
+			min-width: 315px;
+			padding: 0 64px;
+			height: 55px;
+			@include rounded(30px);
+			cursor: pointer;
+			@include transition(.3s ease-in-out);
+			display: inline-block;
+			line-height: 55px;
+			font-weight: 400;
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+
+	&.hide_text {
+		padding-top: 0;
+		padding-bottom: 0;
+		.learn-press-course-buttons {
+			.button {
+				padding: 0 88px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.vc_row-has-fill {
+	.thim-sc-enroll-course {
+		.title-course {
+			color: #FFF;
+		}
+		.excerpt {
+			color: #f6f6f7;
+		}
+	}
+}

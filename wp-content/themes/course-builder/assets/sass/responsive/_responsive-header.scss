@@ -1,0 +1,389 @@
+body {
+	&.responsive {
+
+		@media (max-width: 1400px) {
+			#masthead .header-wrapper .widget.widget_shopping_cart {
+				padding: 0 25px;
+			}
+		}
+
+		@media (min-width: 1025px) {
+
+			.header-v1.header-wrapper.container {
+				width: 100% !important;
+			}
+
+		}
+
+		@media (min-width: 769px) {
+			&.admin-bar .sticky-header.site-header {
+				top: 32px !important;
+			}
+		}
+
+
+		@media (max-width: 1366px) {
+			.header-v2.style2 .width-navigation .main-menu > li.menu-item:not(:last-child) {
+				margin-right: 25px;
+			}
+		}
+
+		@media (max-width: 1024px) and (min-width: 769px) {
+
+			.tc-megamenu-wrapper.mega-sub-menu.sub-menu {
+				display: none !important;
+			}
+
+		}
+
+		@media (max-width: 768px) {
+
+			.tc-megamenu-wrapper.mega-sub-menu.sub-menu {
+				p {
+					margin-bottom: 0;
+				}
+
+				.widget_nav_menu {
+					.widgettitle {
+						display: none;
+					}
+
+					ul.menu {
+						margin-top: 0;
+						list-style: none;
+					}
+
+				}
+
+				.wpb_wrapper > div:not(.vc_wp_custommenu ) {
+					display: none !important;
+				}
+			}
+
+		}
+		@media (max-width: 1024px) {
+
+			.header-v1 .main-header.row {
+				margin: 0;
+			}
+
+			.creative-left {
+
+				header#masthead .menu-mobile-effect.navbar-toggle {
+					padding-left: 0;
+				}
+
+				.header-v1.header-wrapper .header-right .widget {
+					padding-right: 0;
+				}
+
+				.header-right {
+					.widget {
+						padding-right: 0;
+						margin-right: 0;
+
+						.thim-login-popup {
+							padding: 0;
+						}
+					}
+				}
+
+			}
+
+			.menu-mobile-effect.navbar-toggle {
+				border: none !important;
+			}
+
+			.creative-right header#masthead.template-layout-2 {
+
+				.width-navigation {
+					padding-right: 40px;
+				}
+
+				.width-logo {
+					text-align: left !important;
+				}
+
+				.menu-mobile-effect {
+					position: absolute;
+					right: 10px;
+					left: auto;
+					top: 50%;
+					margin-top: -32px;
+				}
+			}
+
+			header#masthead {
+				.tc-menu-layout-builder {
+					> .sub-menu,
+					.icon-toggle {
+						display: none !important;
+					}
+				}
+
+				.menu-mobile-effect.navbar-toggle {
+					display: inline-flex;
+					float: left;
+				}
+
+				&.template-layout-2 {
+
+					padding-top: 0;
+					padding-bottom: 0 !important;
+
+					.header-wrapper {
+						padding: 15px 0;
+
+						&:before {
+							display: none !important;
+						}
+					}
+
+					&.palette-custom.site-header {
+						&:before {
+							display: none;
+						}
+					}
+
+					.main-header {
+						padding-top: 0;
+						padding-bottom: 0;
+
+						.width-logo {
+							padding: 0;
+							text-align: center;
+						}
+					}
+
+				}
+
+				.width-navigation {
+
+					> ul, .main-menu {
+						display: none !important;
+					}
+
+					.header-right {
+
+						.widget:not(.widget_thim-login) {
+							display: none;
+						}
+					}
+
+				}
+
+				.width-logo {
+					float: left;
+				}
+
+				.logo {
+					display: none;
+				}
+
+				.mobile-logo {
+					display: inline-block;
+				}
+
+				.header-v1 {
+					padding-top: 15px;
+					padding-bottom: 15px;
+
+					.header-right {
+						.widget:not(.widget_thim-login) {
+							display: none;
+						}
+					}
+				}
+			}
+
+			header#masthead.site-header.affix.has-retina-logo .mobile-logo {
+				display: inline-block;
+			}
+		}
+
+		@media (max-width: 767px) {
+			#thim-popup-login {
+
+				.thim-login-container {
+					max-width: 80%;
+					min-height: 80vh;
+
+					label[for=become_teacher] {
+						text-align: center;
+					}
+
+					.login-banner {
+						display: none;
+					}
+
+					.register-form,
+					.login-form {
+						width: 100%;
+					}
+
+					#wp-submit,
+					#popupLoginSubmit {
+						max-width: 50%;
+						margin: auto;
+					}
+
+					.link-to-form {
+						right: 0;
+						margin: auto;
+						text-align: center;
+						color: #202121 !important;
+
+						a {
+							font-weight: 500;
+							cursor: pointer;
+							color: #202121 !important;
+						}
+					}
+
+					.title {
+						text-align: center;
+					}
+
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+
+
+			header#masthead .header-v1 {
+				.main-header.row {
+					margin: 0;
+
+					.header-left {
+						width: 20%;
+					}
+
+					.header-center {
+						width: calc(100% - 50%);
+					}
+
+					.header-right {
+						width: 30%;
+					}
+
+				}
+			}
+
+			.creative-left {
+				.responsive header#masthead .main-header .header-center {
+					padding-right: 0;
+				}
+			}
+
+			.creative-right {
+				header#masthead .main-header .header-center {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+			}
+
+			&.admin-bar .site-header {
+				top: 45px !important;
+			}
+		}
+
+		@media (min-width: 480px) {
+			.creative-right {
+
+				header#masthead.template-layout-2 .menu-mobile-effect {
+					right: 0;
+				}
+
+			}
+		}
+
+		@media (max-width: 480px) {
+
+			#thim-popup-login .thim-login-container #popupLoginSubmit,
+			#thim-popup-login .thim-login-container #wp-submit {
+				max-width: 100%;
+			}
+
+			header#masthead .header-v1 .main-header.row {
+
+				.widget .user-name {
+					padding: 0;
+				}
+
+				.header-left {
+					order: 1;
+				}
+
+				.header-center {
+					padding-left: 0;
+					order: 2;
+					width: calc(100% - 20%);
+				}
+
+				.header-right {
+					width: 100%;
+					order: 0;
+					padding-bottom: 10px;
+
+					.widget {
+						padding: 0;
+					}
+				}
+			}
+
+			#thim-popup-login {
+				.thim-login-container {
+					max-width: 92%;
+
+					.title {
+						font-size: 20px;
+					}
+				}
+			}
+
+			.creative-right {
+
+				header#masthead .main-header .header-center {
+					flex: 0 0 70%;
+					max-width: 70%;
+				}
+
+				header#masthead .main-header .header-left.col-lg-3 {
+					flex: 0 0 25%;
+					max-width: 25%;
+					padding-right: 0;
+				}
+
+				header#masthead.template-layout-2 {
+
+					.main-header .width-logo {
+						width: 150px;
+					}
+
+					.width-navigation {
+						padding-right: 0;
+					}
+
+					.header-right .widget {
+						padding-left: 0;
+						padding-right: 0;
+					}
+
+				}
+
+			}
+
+			.widget_thim-login {
+				display: flex;
+				align-items: center;
+
+				&:before {
+					display: none !important;
+				}
+			}
+
+		}
+
+	}
+}

@@ -1,0 +1,117 @@
+/*!
+Theme Name: Course Builder
+Theme URI: http://wordpresslms.thimpress.com/
+Author: ThimPress
+Author URI: http://thimpress.com
+Description: Premium Course Builder theme for all LMS, colleges, schools, educational institutions, learning centers, learning hubs. This theme is best used as an Education WordPress Theme.
+Version: 3.2.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: course-builder
+Domain Path: /languages/
+*/
+body{font-display:swap}
+// Import variables
+@import "variables";
+// Import Mixins
+@import "mixins/flex";
+@import "mixins/animate";
+@import "mixins/mixins-master";
+@import "mixins/extend";
+// Import reset style
+@import "reset-style/reset-style";
+// Import style header
+@import "header/header";
+@import "header/main-menu";
+@import "header/mega-menu";
+// Import Breadcrumb
+@import "breadcrumb/breadcrumb";
+// Import style blog
+@import "sidebar/sidebar";
+@import "blog/blog-archive";
+@import "blog/blog-single";
+// Import style portfolio
+@import "portfolio/archive";
+@import "portfolio/single";
+// Import style footer
+@import "footer/footer";
+// Import features style
+@import "features/preloading/loading";
+@import "features/preloading/spinkit";
+@import "features/back-to-top/back-to-top";
+// Import button style
+@import "buttons/buttons";
+// Import Common style
+@import "general-style/general-style";
+@import "general-style/contact";
+// Import style home page
+@import "home-page/home-page";
+// New demo
+@import "home-page/new-demo";
+// LearnPress
+@import "learnpress/learnpress";
+// LearnPress 4
+
+@import "learnpress/learnpress-v4";
+//events
+@import "events/events";
+// Import bbPress forums style
+@import "forums/forums";
+@import "woocommerce/woo";
+@import "membership/membership-checkout";
+@import "buddypress/buddypress";
+
+
+
+/* Short code **/
+@import "../../shortcodes/elements/brands/assets/sass/brands";
+@import "../../shortcodes/elements/button/assets/sass/button";
+@import "../../shortcodes/elements/count-down/assets/sass/count-down";
+@import "../../shortcodes/elements/counter-box/assets/sass/counter-box";
+@import "../../shortcodes/elements/course-search/assets/sass/course-search";
+@import "../../shortcodes/elements/courses-block-1/assets/sass/courses-block-1";
+@import "../../shortcodes/elements/courses-block-2/assets/sass/courses-block-2";
+@import "../../shortcodes/elements/courses-block-3/assets/sass/courses-block-3";
+@import "../../shortcodes/elements/courses-block-4/assets/sass/courses-block-4";
+@import "../../shortcodes/elements/courses-carousel/assets/sass/courses-carousel";
+@import "../../shortcodes/elements/courses-collection/assets/sass/courses-collection";
+@import "../../shortcodes/elements/courses-megamenu/assets/sass/courses-megamenu";
+@import "../../shortcodes/elements/enroll-course/assets/sass/enroll-course";
+@import "../../shortcodes/elements/events/assets/sass/events";
+@import "../../shortcodes/elements/features-list/assets/sass/features-list";
+@import "../../shortcodes/elements/gallery/assets/sass/gallery";
+@import "../../shortcodes/elements/gallery-carousel/assets/sass/gallery-carousel";
+@import "../../shortcodes/elements/google-map/assets/sass/googlemap";
+@import "../../shortcodes/elements/heading/assets/sass/heading";
+@import "../../shortcodes/elements/icon-box/assets/sass/icon-box";
+@import "../../shortcodes/elements/image-box/assets/sass/image-box";
+@import "../../shortcodes/elements/instructors/assets/sass/instructors";
+@import "../../shortcodes/elements/introduction-box/assets/sass/introduction-box";
+@import "../../shortcodes/elements/login-form/assets/sass/login-form";
+@import "../../shortcodes/elements/new-iconbox/assets/sass/new-iconbox";
+@import "../../shortcodes/elements/new-image-box/assets/sass/new-image-box";
+@import "../../shortcodes/elements/new-instructor/assets/sass/new-instructor";
+@import "../../shortcodes/elements/new-post/assets/sass/new-post";
+@import "../../shortcodes/elements/new-video/assets/sass/new-video";
+@import "../../shortcodes/elements/photo-wall/assets/sass/photo-wall";
+@import "../../shortcodes/elements/post-block-1/assets/sass/post-block-1";
+@import "../../shortcodes/elements/pricing/assets/sass/pricing";
+@import "../../shortcodes/elements/register-form/assets/sass/register-form";
+@import "../../shortcodes/elements/review-course/assets/sass/review-course";
+@import "../../shortcodes/elements/scroll-heading/assets/sass/scroll-heading";
+@import "../../shortcodes/elements/skills-bar/assets/sass/skillsbar";
+@import "../../shortcodes/elements/social-links/assets/sass/social-links";
+@import "../../shortcodes/elements/steps/assets/sass/steps";
+@import "../../shortcodes/elements/testimonials/assets/sass/testimonials";
+@import "../../shortcodes/elements/text-box/assets/sass/text-box";
+@import "../../shortcodes/elements/user-info/assets/sass/user-info";
+@import "../../shortcodes/elements/video-box/assets/sass/video-box";
+@import "options/learnpress/learnpressv4-options-default";
+
+// Import demo elementor
+@import "demo-el/header-footer";
+@import "demo-el/el-widgets";
+// Import responsive
+@import "responsive/responsive";
+

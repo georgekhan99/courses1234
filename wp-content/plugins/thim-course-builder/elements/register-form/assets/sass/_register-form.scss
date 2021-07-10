@@ -1,0 +1,56 @@
+.thim-login.new_register_form {
+	width: 100%;
+	border: none;
+	padding: 0;
+
+	form {
+		input {
+			font-size: 14px;
+			height: 55px;
+			border-radius: 5px;
+			border: 1px solid #fff;
+			background-color: transparent;
+			padding: 22px 20px;
+			line-height: 1.86;
+			letter-spacing: .42px;
+			color: #fff;
+			@include placeholder(#ffffff);
+		}
+
+		.user_name, .password {
+			padding-right: 9px;
+			width: 50%;
+			float: left;
+		}
+
+		.email, .re-password {
+			padding-left: 9px;
+			width: 50%;
+			float: left;
+		}
+
+		.submit {
+			input {
+				width: 180px;
+				border-radius: 25px !important;
+				box-shadow: -7.5px 13px 35px 0 rgba(0, 0, 0, 0.05);
+				background-color: #ffffff;
+				font-size: 14px;
+				font-weight: 600 !important;
+				color: #333333;
+				min-width: 180px !important;
+				height: 51px !important;
+				padding: 0 !important;
+				text-transform: uppercase !important;
+				text-align: center;
+				border: none;
+				margin-top: 15px;
+
+				&:hover {
+					background-color: #333333;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

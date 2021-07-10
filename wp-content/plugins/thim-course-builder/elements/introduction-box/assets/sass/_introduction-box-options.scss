@@ -1,0 +1,41 @@
+.intro-box-content-wrapper {
+  a.more-detail {
+    color: $thim_body_primary_color;
+
+    &:before {
+      background-color: $thim_body_primary_color;
+    }
+  }
+  .intro-box-slider {
+    .title {
+      &:after {
+        background-color: $thim_font_title_color;
+      }
+    }
+  }
+
+  .label-container {
+    body:not(.mix-colors) & {
+      svg ellipse {
+        stroke: $thim_body_primary_color !important;
+      }
+      label:after {
+        color: $thim_body_primary_color;
+      }
+    }
+    .next, .prev {
+      &:after {
+        body.mix-colors & {
+          background: -webkit-linear-gradient($thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.intro-box-content-wrapper .label-container .next:after,
+.intro-box-content-wrapper .label-container .prev:after {
+  -webkit-text-fill-color: $thim_body_primary_color !important;
+}

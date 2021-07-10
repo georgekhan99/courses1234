@@ -1,0 +1,232 @@
+.thim-sc-intro-box {
+	position: relative;
+	margin-bottom: 174px;
+	&.has-bg:before {
+		background: #f6f6f7;
+		width: 500%;
+		top: 0;
+		left: -100%;
+		right: -100%;
+		height: 35%;
+		content: '';
+		position: absolute;
+	}
+}
+
+.intro-box-background {
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
+
+.intro-box-content-wrapper {
+	position: absolute;
+	bottom: -174px;
+	left: 50%;
+	width: 958px;
+	margin-left: -479px;
+	background-color: #fff;
+	@include box-shadow(0 15px 35px 0 rgba(0, 29, 44, 0.1));
+
+	.slider-wrapper {
+		overflow: hidden;
+		margin: 30px;
+	}
+
+	.intro-box-slider {
+		width: 500%;
+		@include transition(all .5s ease-in-out);
+
+		.title {
+			position: relative;
+			margin-bottom: 25px;
+			font-weight: 400;
+
+			&:before {
+				position: absolute;
+				content: '';
+				width: 20px;
+				height: 1px;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 20px;
+				height: 1px;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+		.description {
+			line-height: 1.75;
+			margin-bottom: 32px;
+		}
+	}
+
+	.box-display {
+		display: inline-block;
+		width: 20%;
+		float: left;
+	}
+
+	.box-wrapper {
+		display: flex;
+		.single-image {
+			@include flex(none);
+		}
+
+		.content-wrapper {
+			@include flex(auto);
+			padding-left: 30px;
+			padding-top: 28px;
+		}
+	}
+
+	// Navigation
+	//.intro-box-nav {
+	input {
+		display: none;
+	}
+
+	.label-container {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		label {
+			display: none;
+
+		}
+
+		.next, .prev {
+			width: 46px;
+			height: 46px;
+			position: absolute;
+			bottom: 95px;
+			margin: 0;
+			cursor: pointer;
+			@include rounded(50%);
+			&:hover:after {
+				-webkit-animation-name: hvr-icon-wobble-horizontal;
+				animation-name: hvr-icon-wobble-horizontal;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-timing-function: ease-in-out;
+				-webkit-animation-iteration-count: 1;
+				animation-iteration-count: 1;
+			}
+			&:after {
+				-webkit-transform: translateZ(0);
+				transform: translateZ(0);
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+			}
+			&:after {
+				position: absolute;
+				font-family: "Ionicons";
+				font-size: 30px;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.svg1, .svg2 {
+			width: 46px;
+			height: 46px;
+			position: absolute;
+			bottom: 95px;
+			cursor: pointer;
+			@include rounded(50%);
+		}
+
+		.next {
+			left: calc(100% + 35px);
+
+			&:after {
+				content: "\f3d3";
+				right: -1px;
+			}
+		}
+
+		.svg2 {
+			left: calc(100% + 35px);
+		}
+
+		.prev {
+			right: calc(100% + 35px);
+
+			&:after {
+				content: "\f3d2";
+				left: -1px;
+			}
+		}
+
+		.svg1 {
+			right: calc(100% + 35px);
+		}
+	}
+	//}
+
+	#auto-play:checked ~ .intro-box-slider {
+		animation: alls 20s linear infinite;
+	}
+
+	@for $i from 1 through 10 {
+		#slide#{$i}:checked ~ .label-container .manage#{$i} {
+			display: inline-block;
+		}
+
+		@if ($i != 1) {
+			#slide#{$i}:checked ~ .slider-wrapper .intro-box-slider {
+				margin-left: -(($i - 1) * 100%);
+			}
+		}
+	}
+
+	a.more-detail {
+		position: relative;
+		background-color: inherit;
+		overflow: hidden;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			//background-color: #2174ff;
+			bottom: 1px;
+			visibility: hidden;
+			@include opacity(0);
+			@include transition(all .5s);
+			//@include translateX(-100%);
+		}
+
+		&:after {
+			content: "\f3d3";
+			font-family: Ionicons;
+			position: absolute;
+			margin-left: 12px;
+			@include transition(all .5s);
+		}
+
+		&:hover {
+			&:after, &:before {
+				@include opacity(1);
+				visibility: visible;
+			}
+
+			&:before {
+				@include translateX(0);
+			}
+		}
+	}
+}
+
+

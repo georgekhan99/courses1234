@@ -1,0 +1,248 @@
+/*
+ * Style Blog */
+
+// Common style blog for archive and single
+
+// Style for the top box
+.top-box {
+	.blog-filter {
+		.icon {
+			&.switcher-active {
+				background-color: $thim_body_primary_color;
+			}
+		}
+		.icon:hover {
+			background-color: $thim_body_primary_color;
+		}
+	}
+	.search-form {
+		.search-field:focus {
+			border-bottom: solid 1px $thim_body_primary_color;
+		}
+		.search-submit:focus {
+			color: $thim_body_primary_color;
+		}
+	}
+}
+
+// style for page content
+.list-articles {
+	article {
+		.flexslider {
+			.flex-direction-nav {
+				.flex-next:hover, .flex-prev:hover {
+					background-color: $thim_body_primary_color;
+				}
+			}
+		}
+		// style for the date
+		.entry-date {
+			color: $thim_body_primary_color;
+		}
+	}
+	// style for the content
+	.entry-content {
+		.entry-title {
+			a:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+		.entry-meta {
+			> span {
+				a {
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+		.readmore {
+			a {
+				border: solid 1px $thim_body_primary_color;
+			}
+			a:hover {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-loadmore {
+	.load-more {
+		background-color: $thim_body_primary_color;
+		.thim-loading-icon {
+			background-color: $thim_body_primary_color;
+		}
+	}
+	.load-more:hover {
+		background-color: darken($thim_body_primary_color, 20%);
+	}
+	&.loading {
+		.load-more {
+			.thim-loading-icon {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+// Pagination Style
+.loop-pagination {
+	li {
+		span {
+			border: solid 1px $thim_body_primary_color;
+			background-color: $thim_body_primary_color;
+		}
+	}
+	li:hover {
+		background-color: $thim_body_primary_color;
+		a {
+			border-color: $thim_body_primary_color;
+		}
+	}
+}
+
+.single {
+	article {
+		.entry-meta {
+			.author {
+				a {
+					color: $thim_body_primary_color;
+				}
+			}
+			a:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+		.entry-top {
+			.entry-date {
+				background-color: $thim_body_primary_color;
+			}
+		}
+
+		.left-content {
+			.social-share .share-text {
+				color: $thim_font_title_color;
+			}
+		}
+		.entry-content {
+			blockquote {
+				color: $thim_font_title_color;
+				&:before {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+		.tag-list {
+			.tags {
+				color: $thim_font_title_color;
+			}
+			a:not(.tags) {
+				&:hover {
+					background-color: $thim_body_primary_color;
+					border-color: $thim_body_primary_color;
+				}
+			}
+		}
+
+		.thim-about-author {
+			.left .thim-author-social li a:hover {
+				color: $thim_body_primary_color;
+			}
+			.right {
+				.author-top {
+					.name {
+						color: $thim_font_title_color;
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+					.role:after {
+						border-color: $thim_font_title_color;
+					}
+				}
+			}
+		}
+
+		.nav-single {
+			.post-nav {
+				.content-nav {
+					label {
+						color: $thim_font_title_color;
+					}
+					label,
+					.post-title {
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+				.icon-nav a:hover {
+					background-color: $thim_body_primary_color;
+					border-color: $thim_body_primary_color;
+				}
+			}
+		}
+
+		.related-archive {
+			.item {
+				.thumbnail-wrapper {
+					.entry-date {
+						color: $thim_body_primary_color;
+					}
+				}
+				.entry-meta .author a {
+					color: $thim_font_body_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+
+			.entry-title:hover {
+				color: $thim_body_primary_color;
+			}
+
+			.related-carousel.owl-theme .owl-nav [class*='owl-']:hover {
+				background-color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+#comments {
+	.list-comments {
+		.inner-info {
+			.author-name {
+				a {
+					color: $thim_font_title_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+			.comment-date:after {
+				border-color: $thim_font_title_color;
+			}
+		}
+	}
+	.comment-respond {
+		.comment-form {
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				&:focus,
+				&:hover {
+					border-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}
+
+.thim-social-share ul li .link:hover {
+	background-color: $thim_body_primary_color;
+	border-color: $thim_body_primary_color;
+}
+

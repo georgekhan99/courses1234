@@ -1,0 +1,55 @@
+/*
+ * Button style from customizer */
+
+input[type="submit"] {
+	background-color: $thim_body_primary_color;
+
+	&:hover {
+		background-color: darken($thim_body_primary_color, 10%);
+	}
+}
+
+.mc4wp-form {
+	input[type=submit] {
+		background-color: $thim_body_primary_color;
+
+		&:hover {
+			background-color: darken($thim_body_primary_color, 10%);
+		}
+	}
+}
+
+.btn-secondary {
+	border: 1px solid $thim_body_primary_color;
+	color: $thim_body_primary_color;
+
+	&:hover {
+		background: $thim_body_primary_color;
+		color: #ffffff;
+		border-color: $thim_body_primary_color;
+	}
+}
+
+.btn-primary {
+	background: $thim_body_primary_color;
+	border: 1px solid $thim_body_primary_color;
+
+	&:hover {
+		background: darken($thim_body_primary_color, 20%);
+		border-color: darken($thim_body_primary_color, 20%);;
+	}
+}
+
+//widget button demo kit
+.thim-button-gradient {
+	.button-gradient {
+		background-color: $thim_thim_global_mix_color_color1;
+		background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+		background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+	}
+}

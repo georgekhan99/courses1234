@@ -1,0 +1,14 @@
+.thim-courses-megamenu {
+  .course-item {
+    .course-detail {
+      .title {
+        a {
+          color: $thim_body_primary_color;
+          &:hover {
+            color: $thim_sub_menu_text_color;
+          }
+        }
+      }
+    }
+  }
+}

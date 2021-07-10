@@ -1,0 +1,494 @@
+header#masthead {
+	#magic-line {
+		background: $thim_main_menu_hover_color;
+	}
+
+	.width-logo {
+		width: $thim_width_logo;
+	}
+
+	.width-navigation {
+		width: calc(100% - #{$thim_width_logo});
+
+		.header-right {
+			.menu-right {
+				.button_search {
+					background: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+
+	&.palette-transparent {
+		.main-header {
+			.width-navigation {
+				.main-menu {
+					> li {
+						> a {
+							&:hover {
+								color: $thim_body_primary_color;
+							}
+						}
+					}
+
+					.current-menu-item {
+						> a {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+
+				li .sub-menu li a {
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+
+			.header-right {
+				.widget_thim-login {
+					&:before {
+						color: $thim_body_primary_color;
+						border-color: $thim_body_primary_color;
+					}
+
+					a {
+						&:hover {
+							color: $thim_body_primary_color !important;
+						}
+					}
+				}
+			}
+		}
+
+		&.affix {
+			#primary-menu {
+				> li {
+					> a {
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.palette-custom {
+		.widget_thim-login {
+			&:before {
+				color: $thim_main_menu_color;
+			}
+		}
+
+		.elementor-widget-wp-widget-woocommerce_widget_cart,
+		.widget_shopping_cart {
+			.ion {
+				color: $thim_main_menu_color;
+			}
+		}
+
+		.width-navigation {
+			font-size: $thim_main_menu_font_size;
+
+			.main-menu {
+				> li {
+					> a {
+						font-family: $thim_main_menu_font_family;
+						font-weight: $thim_main_menu_font_weight;
+						font-style: $thim_main_menu_font_style;
+						font-size: $thim_main_menu_font_size;
+						line-height: $thim_main_menu_line_height;
+						color: $thim_main_menu_color;
+						text-transform: $thim_main_menu_text_transform;
+
+						&:hover {
+							color: $thim_main_menu_hover_color;
+						}
+					}
+				}
+
+				> .current-menu-item {
+					> a {
+						color: $thim_main_menu_hover_color;
+					}
+				}
+			}
+
+			.menu ul {
+				> li {
+					> a {
+						font-family: $thim_main_menu_font_family;
+						font-weight: $thim_main_menu_font_weight;
+						font-style: $thim_main_menu_font_style;
+						font-size: $thim_main_menu_font_size;
+						line-height: $thim_main_menu_line_height;
+						color: $thim_main_menu_color;
+
+						&:hover {
+							color: $thim_main_menu_hover_color;
+						}
+					}
+				}
+
+				> .current-menu-item {
+					a {
+						color: $thim_main_menu_hover_color;
+					}
+				}
+			}
+
+			li {
+				.sub-menu {
+					background-color: $thim_sub_menu_background_color;
+
+					li {
+						a {
+							color: $thim_sub_menu_text_color;
+							font-family: $thim_main_menu_font_family;
+							font-style: $thim_main_menu_font_style;
+
+							&:hover {
+								color: $thim_sub_menu_text_color_hover;
+							}
+						}
+
+						&.current-menu-item,
+						&.current_page_item {
+							a {
+								color: $thim_sub_menu_text_color_hover;
+							}
+						}
+					}
+				}
+
+				&.current-page-parent,
+				&.current-page-ancestor {
+					> a {
+						color: $thim_main_menu_hover_color;
+					}
+				}
+			}
+
+			.widget_thim-login {
+				a {
+					color: $thim_main_menu_color;
+
+					&:hover {
+						color: $thim_main_menu_hover_color;
+					}
+				}
+
+				.user-info {
+					a {
+						color: $thim_sub_menu_text_color;
+
+						&:hover {
+							color: $thim_sub_menu_text_color_hover;
+						}
+					}
+				}
+			}
+
+		}
+
+		&.site-header {
+			background-color: $thim_header_background_color;
+
+			//&.affix.custom-sticky {
+			//	background-color: $thim_sticky_menu_background_color;
+			//
+			//	#primary-menu > li {
+			//		> a {
+			//			color: $thim_sticky_menu_text_color;
+			//
+			//			&:hover {
+			//				color: $thim_sticky_menu_text_color_hover;
+			//			}
+			//		}
+			//	}
+			//}
+		}
+	}
+
+	&.site-header.palette-white.template-layout-1 {
+		.widget_thim-login {
+			a {
+				&:hover {
+					color: $thim_main_menu_hover_color;
+				}
+			}
+		}
+	}
+}
+
+.mobile-menu-container {
+	.inner-off-canvas {
+		background-color: $thim_mobile_menu_background_color;
+
+		&:after {
+			border-color: $thim_mobile_menu_background_color transparent transparent transparent;
+		}
+
+		ul {
+			li {
+				> a {
+					color: $thim_text_color_header_mobile;
+					font-family: $thim_main_menu_font_family;
+
+					&:hover {
+						color: $thim_text_color_hover_header_mobile;
+					}
+				}
+
+				.sub-menu {
+					a {
+						&:hover {
+							color: $thim_text_color_hover_header_mobile;
+						}
+					}
+				}
+
+				&.current-menu-item,
+				&.current-menu-parent,
+				&.current-menu-ancestor,
+				&.current-page-parent,
+				&.current-page-ancestor {
+					> a {
+						color: $thim_text_color_hover_header_mobile;
+					}
+				}
+			}
+		}
+
+		.navbar-nav li {
+			.sub-menu {
+				li {
+					&.current-menu-item, &.current-page-parent, &.current-page-ancestor {
+						a {
+							color: $thim_text_color_hover_header_mobile;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-mobile-effect {
+	span {
+		background-color: $thim_text_color_header_mobile;
+	}
+}
+
+/**
+* Topbar style */
+#thim-header-topbar {
+	color: $thim_topbar_text_color;
+	background-color: $thim_topbar_background_color;
+
+	a {
+		color: $thim_topbar_text_color;
+
+		&:hover {
+			color: darken($thim_body_primary_color, 20%);
+		}
+	}
+
+	.elementor-widget-wp-widget-woocommerce_widget_cart,
+	.widget_shopping_cart {
+		.widget_shopping_cart_content {
+			color: $thim_font_body_color;
+		}
+	}
+
+	.thim-sc-course-search {
+		.courses-list-search {
+			li {
+				a {
+					color: $thim_font_body_color;
+
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.top-white {
+		.thim-sc-course-search {
+			button {
+				background-color: $thim_body_primary_color;
+			}
+
+			input[name=s] {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-mini-cart {
+	background: $thim_body_primary_color;
+	border-color: $thim_body_primary_color;
+}
+
+.thim-sc-course-search.popup .form-search-wrapper form button {
+	background-color: $thim_body_primary_color;
+}
+
+header#masthead.palette-custom.header-magic-line .width-navigation li .sub-menu {
+	li {
+		a {
+			color: $thim_sub_menu_text_color !important;
+
+			&:hover {
+				color: $thim_sub_menu_text_color_hover !important;
+			}
+		}
+
+		&.current-menu-item,
+		&.current_page_item {
+			a {
+				color: $thim_sub_menu_text_color_hover !important;
+			}
+		}
+	}
+}
+
+.thim-sc-course-search.popup .form-search-wrapper form .courses-list-search > li:first-child {
+	border-top: 1px solid $thim_body_primary_color;
+}
+
+#thim-header-topbar .container .elementor-widget-wp-widget-woocommerce_widget_cart,
+#thim-header-topbar .container .widget_shopping_cart {
+	background-color: darken($thim_body_primary_color, 8%);
+}
+
+.thim-search-wrapper form {
+	&:after {
+		color: $thim_body_primary_color;
+	}
+
+	input {
+		font-family: $thim_font_body_font_family;
+	}
+}
+
+header#masthead.template-layout-2 {
+	&.palette-transparent {
+		.header-v2.style2 {
+			.width-navigation .main-menu li {
+				&.current-menu-item > a,
+				> a:hover {
+					color: $thim_body_primary_color !important;
+				}
+			}
+		}
+	}
+}
+
+.responsive .mobile-menu-container .inner-off-canvas .navbar-nav > li.current-menu-parent > a,
+header#masthead.site-header.palette-transparent .width-navigation .main-menu > li.current-menu-item,
+header#masthead.site-header.palette-transparent .width-navigation .main-menu > li.current-menu-parent {
+	& > a {
+		color: $thim_body_primary_color !important;
+	}
+
+	.icon-toggle {
+		color: $thim_body_primary_color !important;
+	}
+}
+
+header#masthead.site-header.palette-custom .width-navigation .main-menu > li.current-menu-parent {
+	& > a {
+		color: $thim_main_menu_hover_color !important;
+	}
+
+	.icon-toggle {
+		color: $thim_main_menu_hover_color !important;
+	}
+}
+
+#thim-popup-login label[for=become_teacher],
+#thim-popup-login label[for=termFormField] {
+	color: $thim_font_body_color;
+
+	a {
+		color: $thim_body_primary_color;
+
+		&:hover {
+			color: $thim_font_title_color;
+		}
+	}
+
+}
+.thim-sc-course-search.popup .toggle-form{
+	border: solid 1px $thim_body_primary_color;
+	color: $thim_body_primary_color;
+}
+.thim-sc-course-search.popup .toggle-form:hover {
+	color: $thim_body_primary_color;
+}
+
+.mega-sub-menu {
+	.widgettitle,
+	.widget-title {
+		color: $thim_sub_menu_text_color;
+	}
+}
+
+header#masthead.palette-custom.site-header.affix.custom-sticky #primary-menu > li.current-menu-item > a {
+	color: $thim_main_menu_hover_color;
+}
+
+@media (max-width: 1024px) {
+	.menu-mobile-effect span.thim-mobile-login .menu-item-log-out,
+	.menu-mobile-effect span.thim-mobile-login {
+		background: $thim_mobile_menu_background_color;
+	}
+	.responsive header#masthead {
+		&.affix-top {
+			background: $thim_mobile_menu_header_sticky_background_color !important;
+		}
+
+		&.affix {
+			background: $thim_mobile_menu_header_background_color !important;
+		}
+
+		.menu-mobile-effect.navbar-toggle .icon-wrap span.icon-bar {
+			background: $thim_mobile_menu_hamburger_color !important;
+		}
+	}
+}
+
+.login-password #show_pass.active {
+	color: $thim_font_title_color;
+}
+
+#thim-popup-login .login-form input[type="email"], #thim-popup-login .login-form input[type="text"], #thim-popup-login .login-form input[type="password"], #thim-popup-login .login-form .lp-form-field input[type=password], .lp-form-field #thim-popup-login .login-form input[type=password], #thim-popup-login .register-form input[type="email"], #thim-popup-login .register-form input[type="text"], #thim-popup-login .register-form input[type="password"], #thim-popup-login .register-form .lp-form-field input[type=password], .lp-form-field #thim-popup-login .register-form input[type=password] {
+	&:focus {
+		border-color: $thim_body_primary_color;
+	}
+}
+
+header#masthead.palette-custom .width-navigation .widget_thim-login a.lost-pass-link {
+	color: $thim_font_body_color;
+}
+
+header#masthead .style_kit .main-header .header-right .widget_thim-login a:hover {
+	color: $thim_body_primary_color;
+}
+
+header#masthead.site-header.affix.custom-sticky {
+	background-color: $thim_sticky_menu_background_color !important;
+}
+
+header#masthead.site-header.affix.custom-sticky	#primary-menu > li > a {
+	color: $thim_sticky_menu_text_color;
+}
+
+header#masthead.site-header.affix.custom-sticky	#primary-menu > li > a:hover {
+	color: $thim_sticky_menu_text_color_hover;
+}

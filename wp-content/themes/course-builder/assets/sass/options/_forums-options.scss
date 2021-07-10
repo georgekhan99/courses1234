@@ -1,0 +1,43 @@
+.bbpress {
+	#bbpress-forums {
+		.bbp-header {
+			background: $thim_body_primary_color !important;
+		}
+
+		.bbp-body ul {
+			.bbp-forum-title {
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+
+			.bbp-author-name {
+				color: $thim_body_primary_color;
+			}
+		}
+
+		button[type=submit]{
+			background-color: $thim_body_primary_color;
+
+			&:hover {
+				background-color: darken($thim_body_primary_color, 20%);
+			}
+		}
+	}
+
+	input[type=checkbox] {
+		&:checked:before {
+			color: $thim_body_primary_color;
+		}
+	}
+}
+
+.single-forum.bbpress #bbpress-forums .bbp-body .bbp-topic-permalink:hover{
+	color: $thim_body_primary_color;
+}
+
+body.bbpress #bbpress-forums #bbp-search-form input#bbp_search:focus{
+	& + .icon-search{
+		color: $thim_body_primary_color;
+	}
+}

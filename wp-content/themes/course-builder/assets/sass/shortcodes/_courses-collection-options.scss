@@ -1,0 +1,176 @@
+.thim-background-overlay, .vc_row-has-fill {
+	.thim-collection-info {
+		.view-all-button {
+			color: $thim_font_title_color;
+
+			&:hover {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-collection-info {
+	.title {
+		color: $thim_font_title_color;
+	}
+
+	.view-all-button {
+		background-color: $thim_body_primary_color;
+
+		&:hover {
+			background-color: darken($thim_body_primary_color, 20%);
+		}
+	}
+}
+
+.thim-courses-collection {
+	.scrollbar {
+		.handle {
+			background-color: $thim_body_primary_color;
+		}
+	}
+
+	//Rounded Corner layout
+	&.rounded-courses-collection {
+		.scrollbar {
+			.handle {
+				background-color: $thim_body_primary_color;
+			}
+		}
+	}
+
+	//Squared Corner layout
+	&.squared-courses-collection {
+		.collection-item {
+			.collection-wrapper {
+				.name {
+					color: $thim_font_title_color;
+
+					a {
+						color: $thim_font_title_color;
+
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+
+				.number-courses {
+					color: $thim_body_primary_color;
+				}
+			}
+
+			&:hover {
+				.collection-wrapper {
+					.name {
+						color: $thim_font_title_color;
+					}
+				}
+			}
+		}
+
+		.collection-frame {
+			.controls {
+				.page-controls {
+					$color: $thim_font_title_color;
+
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+
+			.slidee {
+				.collection-item:hover {
+					.thumbnail {
+						.wrapper {
+							.ion-qr-scanner {
+								color: $thim_body_primary_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.rounded-view-all-button {
+	a {
+		background-color: $thim_body_primary_color;
+
+		&:hover {
+			background: darken($thim_body_primary_color, 20%);
+		}
+	}
+}
+
+// Squared corner 2 layout
+
+.course-collection-squared-2 {
+	.section-content-wrapper .name:hover {
+		color: $thim_body_primary_color;
+	}
+
+	.view-all-collections a {
+		body.mix-colors & {
+			background-image: linear-gradient(to right, $thim_thim_global_mix_color_color1 0%, $thim_thim_global_mix_color_color2 51%, $thim_thim_global_mix_color_color1 100%);
+			font-family: $thim_font_body_font_family;
+		}
+	}
+}
+
+//layout kit
+.thim-courses-collection-wrapper-kit {
+	.thim-collection-info-kit {
+		.title {
+			font-size: 40px;
+			font-weight: 600;
+			line-height: 1.2;
+			text-align: left;
+			color: #333333;
+			margin-bottom: 7px;
+		}
+
+		.description {
+			font-size: 15px;
+			line-height: 1.73;
+			text-align: left;
+			color: #848484;
+		}
+	}
+
+	.thim-courses-collection {
+		margin-top: 55px;
+
+		.collection-slick {
+			.slider-collection {
+				.owl-item {
+					.collection-item {
+						.collection-wrapper {
+							.name {
+								font-family: $thim_font_body_font_family;
+							}
+						}
+					}
+				}
+
+				.owl-nav {
+					div {
+						&:hover {
+							background-color: $thim_thim_global_mix_color_color1;
+							background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+							background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+							filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+						}
+					}
+				}
+			}
+		}
+	}
+}

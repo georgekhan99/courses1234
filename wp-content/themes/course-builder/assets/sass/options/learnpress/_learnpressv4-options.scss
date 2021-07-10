@@ -1,0 +1,53 @@
+#learn-press-checkout .learnpress #learn-press-checkout-form .lp-checkout-form__before #checkout-order .lp-checkout-order__inner table th{
+	color: $thim_font_body_color;
+}
+
+#checkout-payment #checkout-order-action button{
+	&:hover {
+		background: darken($thim_body_primary_color, 20%);
+		border-color: darken($thim_body_primary_color, 20%);
+	}
+}
+
+.lp-single-course.lp-4 #learn-press-course .course-summary .course-learning-summary #learn-press-course-tabs .course-tab-panels .course-tab-panel #learn-press-course-curriculum .curriculum-scrollable .curriculum-sections .section .section-content .course-item:hover .meta-rank .rank{
+	color: $thim_font_title_color;
+}
+
+.lp-single-course.lp-4 #popup-course #popup-header .thim-course-item-popup-right .back_course,
+.lp-single-course.lp-4 #popup-course #popup-content #learn-press-content-item .content-item-scrollable .content-item-wrap .content-item-summary .form-button .lp-button:hover{
+	background: darken($thim_body_primary_color,20%);
+}
+
+.lp-single-course.lp-4 #popup-course #popup-sidebar #learn-press-course-curriculum .curriculum-scrollable .curriculum-sections .section .section-content .course-item.current .meta-rank .rank{
+	color: $thim_font_title_color !important;
+}
+
+.lp-single-course.lp-4 #popup-course #popup-content #learn-press-content-item .content-item-scrollable .content-item-wrap .content-item-summary .form-button.form-button-finish-course .lp-button:hover{
+	background: darken($thim_body_primary_color,20%);
+}
+#learn-press-checkout .learnpress #learn-press-checkout-form .lp-checkout-form__after #checkout-account-guest h4{
+	font-weight: $thim_font_title_font_weight;
+}
+#learn-press-checkout .learnpress #learn-press-checkout-form .lp-checkout-form__after #checkout-account-login h4{
+	font-weight: $thim_font_title_font_weight;
+}
+
+#popup-course #popup-content #button-submit-quiz:hover {
+	background: darken($thim_body_primary_color,15%);
+}
+
+#learn-press-checkout .learnpress #learn-press-checkout-form .lp-checkout-form__after #checkout-payment #checkout-order-action .lp-button:hover,
+.lp-lesson-comment-btn:hover,
+body.lp-learning #lp-single-course.lp-4 .header-course .header-content .learn-press-course-results-progress .form-button-finish-course button:hover,
+.lp-single-course.lp-4 .learn-press-course-results-progress .button-wrapper .form-button .lp-button:hover{
+	background: darken($thim_body_primary_color,15%);
+}
+
+.lp-lesson-comment-btn:hover,
+#thim-landing-course-menu-tab .has-wishlist .learn-press-course-buttons button.course-wishlist:hover,
+#learn-press-profile .lp-4 #profile-content .button-when-logged.has-wishlist .learn-press-course-wishlist.on,
+.lp-lesson-comment-btn,
+.lp-pmpro-membership-list .pmpro_btn-select:hover,
+#thim-landing-course-menu-tab .has-wishlist .learn-press-course-buttons button.course-wishlist.on{
+	color: white;
+}

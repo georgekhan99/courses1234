@@ -1,0 +1,14 @@
+.thim-sc-course-search {
+	&.style_kit {
+		button {
+			background-color: $thim_thim_global_mix_color_color1;
+			background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+			background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+			background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+			background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+			background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+			background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+		}
+	}
+}

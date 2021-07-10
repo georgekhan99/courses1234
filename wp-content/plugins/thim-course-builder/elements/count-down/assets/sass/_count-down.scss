@@ -1,0 +1,49 @@
+.thim-sc-count-down {
+	letter-spacing: 0.4px;
+	line-height: 0.6;
+	text-align: center;
+	.title {
+		margin-bottom: 31px;
+		font-size: 28px;
+		font-weight: 100;
+	}
+	.counter {
+		font-weight: 300;
+		&.style2{
+			.count-item::before{
+				top: 27px;
+			}
+		}
+		.count-item {
+			margin: 0 37px;
+			position: relative;
+			display: inline-block;
+			.number {
+				font-size: 70px;
+				display: block;
+				line-height: 70px;
+				margin-bottom: 11px;
+			}
+			.label {
+				font-size: 18px;
+				line-height: 18px;
+				font-weight: 100;
+			}
+			&.style-2::before{
+				top: 27px;
+			}
+			&:before {
+				content: ':';
+				position: absolute;
+				left: -47px;
+				top: 12px;
+				font-size: 70px;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,140 @@
+.responsive {
+	@media (max-width: 1400px) {
+		#shaon-pricing-table-plus .minimal .select .pt-button {
+			padding: 0 20px;
+		}
+	}
+	@media (max-width: 1024px) {
+		#shaon-pricing-table-plus {
+			.minimal {
+				.select {
+					.pt-button {
+						padding: 0 20px;
+					}
+				}
+				.detail {
+					h4 {
+						font-weight: 500 !important;
+					}
+					.amount {
+						font-size: 23px;
+					}
+					.title {
+						font-size: 14px;
+						line-height: normal;
+					}
+					.interval {
+						font-size: 13px;
+						line-height: normal;
+						margin-top: 0;
+					}
+				}
+
+				.features {
+					ul {
+						li {
+							line-height: normal;
+							font-size: 14px;
+							padding: 10px 0;
+						}
+					}
+				}
+				.highlight {
+					width: 20%;
+					.detail {
+						&:after {
+							display: none;
+						}
+					}
+					&.list-interval {
+						width: 40%;
+					}
+					&.featured {
+						.detail {
+							.amount {
+								font-size: 28px;
+							}
+						}
+					}
+				}
+
+			}
+		}
+		.thim-sc-text-box.style-3 {
+			padding: 30px;
+			.title-1 {
+				font-size: 20px;
+			}
+			.title-2 {
+				font-size: 15px;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		#shaon-pricing-table-plus {
+			.minimal {
+				.highlight {
+					width: 33.33%;
+					&.list-interval {
+						display: none;
+					}
+				}
+				.features ul li {
+					.item-mobile {
+						display: inline-block;
+					}
+					i {
+						display: none;
+					}
+					&.hidden-mobile {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.vc_row.vc_column-gap-35 > .vc_column_container {
+			padding: 15px 0;
+		}
+
+		.thim-sc-text-box.style-3 {
+			padding: 30px 20px;
+			.title-1 {
+				font-size: 23px;
+				line-height: normal;
+			}
+			.title-2 {
+				font-size: 14px;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		#shaon-pricing-table-plus {
+			.minimal {
+				.detail {
+					padding: 20px 0;
+					h4 {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+				.features {
+					ul {
+						padding: 0 20px !important;
+					}
+				}
+				.highlight {
+					width: 100%;
+					&.featured {
+						.detail {
+							padding: 20px 0 !important;
+							h4 {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

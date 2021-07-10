@@ -1,0 +1,32 @@
+body.thim-body-elementor {
+
+  header {
+    #thim-header-topbar {
+      .container {
+        display: flex;
+      }
+      .elementor-widget-wrap > .elementor-element {
+        width: auto;
+        float: left;
+      }
+    }
+
+    .elementor-element br {
+      display: none;
+    }
+
+    .elementor-widget p,
+    .elementor-element {
+      margin-bottom: 0 !important;
+    }
+
+    .elementor-widget-wp-widget-woocommerce_widget_cart {
+      width: 56px;
+    }
+
+    .top-right .elementor-widget-wrap {
+      justify-content: flex-end;
+    }
+
+  }
+}

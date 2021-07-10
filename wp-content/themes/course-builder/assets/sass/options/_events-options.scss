@@ -1,0 +1,152 @@
+.tp_event {
+  .date {
+    color: $thim_body_primary_color;
+  }
+
+  .title {
+    a {
+      color: $thim_font_title_color;
+      &:hover {
+        color: $thim_body_primary_color;
+      }
+    }
+  }
+}
+
+.single-tp_event {
+  article {
+    .sticky-sidebar {
+      .share-text {
+        color: $thim_font_title_color;
+      }
+    }
+
+    .tp_event_counter {
+      background-color: $thim_body_primary_color;
+    }
+
+    .event_register_submit {
+      background: $thim_body_primary_color;
+      &:hover {
+        background: darken($thim_body_primary_color, 20%);
+      }
+    }
+  }
+}
+
+#event-lightbox {
+  .event_auth_form_field {
+    input {
+      &:focus {
+        border-color: $thim_body_primary_color;
+      }
+    }
+  }
+  .event_register_foot {
+    button {
+      &:hover {
+        background: $thim_body_primary_color;
+      }
+    }
+  }
+}
+
+.entry-register {
+  .event_auth_button {
+    background-color: $thim_body_primary_color !important;
+    &:hover {
+      background-color: darken($thim_body_primary_color, 5%) !important;
+    }
+  }
+}
+
+.list-tab-event {
+  .nav-tabs {
+     a {
+      color: $thim_font_title_color;
+       &.active {
+         &:before {
+           background: $thim_body_primary_color;
+         }
+       }
+    }
+  }
+  .read-more:not(.grid) a:hover {
+    background: $thim_body_primary_color;
+  }
+  .tab-content.event-grid .content-inner:hover {
+    border-color: $thim_body_primary_color;
+    .thumbnail-content .read-more.grid a {
+      background: $thim_body_primary_color;
+      &:hover {
+        background: darken($thim_body_primary_color,20%);
+      }
+    }
+  }
+}
+
+.list-tab-event .tab-content .tab-pane .tp_event .image:before {
+  background: $thim_body_primary_color;
+}
+
+.nav-tabs a {
+  &:hover {
+    color: $thim_body_primary_color;
+  }
+  &.active {
+    color: $thim_body_primary_color;
+    &:after {
+      background: $thim_body_primary_color;
+    }
+  }
+}
+
+.sidebar-events .widget_book-event {
+  .book-title {
+    background-color: $thim_body_primary_color;
+  }
+
+  .event_register_area {
+    .info-event {
+      li {
+        .value {
+          color: $thim_font_title_color;
+        }
+        &.event-cost .value {
+          color: $thim_body_primary_color;
+        }
+      }
+    }
+  }
+  .event_register_foot {
+    .event_auth_button {
+      background: $thim_body_primary_color;
+      &:hover {
+        background: darken($thim_body_primary_color,20%);
+      }
+    }
+    .event_button_disable {
+      background: $thim_body_primary_color;
+    }
+  }
+}
+
+.back-to-events {
+  a {
+    background: $thim_body_primary_color;
+    &:hover {
+      background: darken($thim_body_primary_color,20%);
+    }
+  }
+}
+
+.list-tab-event .display-layout a.switcher-active,
+.list-tab-event .display-layout a:hover,
+.thim-header-block .thim-sc-course-search  button {
+  background: $thim_body_primary_color;
+}
+
+.widget_categories ul li:before,
+.list-tab-event .tab-content .tab-pane .tp_event .time-from .month {
+  color: $thim_body_primary_color;
+}

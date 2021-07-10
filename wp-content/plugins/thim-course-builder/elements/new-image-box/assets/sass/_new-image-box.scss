@@ -1,0 +1,79 @@
+.thim-sc-new-image-box {
+	.row {
+		margin: 0 7.5px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.wrap-image-box {
+		.col-md-4 {
+			padding: 4.5px;
+		}
+
+		.item {
+			//css
+			position: relative;
+
+			.content {
+				position: absolute;
+				bottom: 0;
+				left: 30px;
+				opacity: 0;
+				transition: all 0.3s;
+				z-index: 9;
+
+				img {
+					margin-bottom: 18px;
+					height: 38px;
+					width: auto;
+				}
+
+				h6.title {
+					font-size: 18px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1;
+					letter-spacing: normal;
+					color: #ffffff;
+					margin: 0;
+					padding: 0;
+				}
+
+				&.left {
+					text-align: left;
+				}
+
+				&.right {
+					text-align: right;
+					right: 30px;
+					left: 0;
+				}
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				opacity: 0;
+				background-image: linear-gradient(to bottom, #000000, #000000);
+				transition: all 0.3s;
+			}
+
+			&:hover {
+				.content {
+					opacity: 1;
+					bottom: 25px;
+				}
+
+				&:after {
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}

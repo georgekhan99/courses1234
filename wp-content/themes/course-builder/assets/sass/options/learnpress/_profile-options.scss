@@ -1,0 +1,372 @@
+.lp-profile {
+	#learn-press-user-profile {
+		.list-contact {
+			.item {
+				.contact-icon {
+					&:hover {
+						color: $thim_body_primary_color;
+						border-color: $thim_body_primary_color;
+					}
+				}
+				.contact-content {
+					a:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.group-settings {
+		.tabs-title {
+			.tab {
+				a {
+					color: $thim_font_body_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+
+				&.active {
+					a {
+						color: $thim_font_title_color;
+					}
+
+					&:after {
+						background-color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.lp-form-field {
+		input, textarea {
+			color: $thim_font_body_color;
+		}
+		input:focus, textarea:focus {
+			color: $thim_font_title_color;
+			border-color: $thim_body_primary_color;
+		}
+
+		input:focus {
+			.input-group-addon {
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+
+	.additional-information {
+		.lp-form-field-input {
+			input:focus ~ .icon {
+				color: $thim_body_primary_color;
+			}
+		}
+
+		.lp-form-field {
+			.lp-form-field-input {
+				.clear-field {
+					&:after {
+						background-color: $thim_font_body_color;
+					}
+				}
+				input[type=text]:focus {
+					& ~ .clear-field {
+						color: $thim_body_primary_color;
+
+						&:after {
+							background-color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.after-main {
+		form.wpcf7-form {
+			label {
+				color: $thim_font_title_color;
+			}
+
+			input, textarea {
+				&:focus {
+					border-color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}
+
+//Wishlist
+.learn-press-wishlist-courses {
+	li {
+		a {
+			&:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+		button {
+			background: $thim_body_primary_color;
+			&:hover {
+				background: darken($thim_body_primary_color, 10%);
+			}
+		}
+	}
+}
+
+.lp_order_details {
+	~ a {
+		background: $thim_body_primary_color;
+		&:hover {
+			background: darken($thim_body_primary_color, 10%);
+		}
+	}
+}
+
+.order_details {
+	tbody {
+		tr {
+			td {
+				a {
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.thim-course-results-progress {
+	&.learn-press-course-results-progress {
+		.lp-progress-bar .lp-progress-value {
+			background: $thim_body_primary_color;
+		}
+	}
+}
+
+#learn-press-profile-nav{
+	ul.tabs{
+		& > li{
+			a{
+				color: $thim_font_title_color;
+			}
+
+			ul.profile-tab-sections > li:hover a{
+				color: $thim_font_title_color;
+			}
+
+			& > ul.profile-tab-sections{
+				& > li{
+					& > a:after{
+						background-color: $thim_body_primary_color;
+					}
+				}
+			}
+
+			&:hover:not(.active) > a{
+				color: $thim_font_title_color;
+			}
+		}
+	}
+}
+
+#learn-press-user-profile #learn-press-profile-nav{
+	ul.tabs{
+		li.active > a{
+			color: $thim_body_primary_color;
+		}
+	}
+}
+
+ul.learn-press-tabs{
+	& > li{
+		&.active {
+			border-top-color: $thim_body_primary_color;
+		}
+	}
+}
+
+.submit.update-profile {
+	button[type=submit] {
+		background-color: $thim_body_primary_color;
+	}
+}
+
+.promoted-checkbox,
+.lp-profile-section.publicity .form-field .form-field-input {
+	label:active::after {
+		background-color: $thim_body_primary_color;
+	}
+
+	label {
+		&:after {
+			border: 2px solid $thim_body_primary_color;
+		}
+	}
+
+	svg {
+		stroke: $thim_body_primary_color;
+	}
+}
+
+#profile-content-orders{
+	.profile-recover-order{
+		& > p{
+			color: $thim_font_title_color;
+		}
+
+		input[type=text]{
+			font-family: $thim_font_body_font_family;
+
+			&:focus{
+				border-color: $thim_body_primary_color;
+			}
+		}
+
+		.button-recover-order{
+			background-color: $thim_body_primary_color;
+		}
+	}
+}
+
+#learn-press-profile-tab-course-wishlist{
+	button.learn-press-course-wishlist{
+		background-color: $thim_body_primary_color;
+
+		&:hover{
+			background-color: darken($thim_body_primary_color, 20%);
+		}
+	}
+}
+
+body.lp-profile .lp-user-profile {
+	.learn-press-form-login,
+	.learn-press-form-register {
+		form {
+			p >a {
+				color: $thim_font_body_color;
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+			input {
+				&:focus {
+					border-color: $thim_body_primary_color;
+				}
+			}
+			button {
+				background-color: $thim_body_primary_color;
+
+				&:hover{
+					background-color: darken($thim_body_primary_color, 20%);
+				}
+			}
+		}
+	}
+}
+
+
+.profile-container {
+	.user-tab {
+		.author-name {
+			&:after {
+				background: lighten($thim_body_primary_color,30%);
+			}
+		}
+
+		.user-information {
+			.profile-list-social {
+				li {
+					a {
+						&:hover {
+							background: $thim_body_primary_color;
+							border-color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+
+		}
+		.list-contact {
+			li {
+				a {
+					color: $thim_font_title_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.profile-tabs {
+		.learn-press-tabs {
+			li {
+				a {
+					color: $thim_font_title_color;
+				}
+				&.active,
+				&:hover {
+					a {
+						border-color: lighten($thim_body_primary_color,20%);
+						background: lighten($thim_body_primary_color,20%);
+					}
+				}
+			}
+		}
+	}
+	.lp-tab-sections {
+		li {
+			color: $thim_font_title_color;
+			&.active,
+			&:hover {
+				border-color: lighten($thim_body_primary_color,20%);
+				background: lighten($thim_body_primary_color,20%);
+			}
+		}
+	}
+
+	#your-profile {
+		button {
+			background: $thim_body_primary_color;
+			&:hover {
+				background: darken($thim_body_primary_color,20%);
+			}
+
+		}
+	}
+}
+
+//Update
+.profile-container {
+	.profile-tabs {
+		.learn-press-subtab-content {
+			.lp-sub-menu {
+				li {
+					a {
+						color: $thim_font_body_color;
+					}
+
+					span {
+						border-bottom: 2px solid $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.order-recover {
+	button {
+		background: $thim_body_primary_color;
+		&:hover {
+			background: darken($thim_body_primary_color,20%);
+		}
+	}
+}
+
+.lp-list-table thead tr th {
+	background: lighten($thim_body_primary_color,20%) !important;
+}

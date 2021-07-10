@@ -1,0 +1,249 @@
+.thim-courses-block-2 {
+	padding-bottom: 94px;
+
+	.no-gutter {
+		margin: 0;
+
+		& > [class*='col-'] {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.intro-item {
+			.wrapper{
+				position: absolute;
+				top: 50%;
+				padding-left: 30px;
+				@include translate(0,-50%);
+			}
+		}
+	}
+
+	.intro-item {
+		position: relative;
+		z-index: 5;
+		@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.15));
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			@include scale(1.06, 1.05);
+			z-index: -1;
+		}
+
+		.title {
+			font-size: 34px;
+			text-transform: capitalize;
+			line-height: 1;
+			margin-bottom: 33px;
+			padding-left: 9px;
+			letter-spacing: 0.7px;
+			font-weight: 300;
+			color: #ffffff;
+		}
+
+		.description {
+			font-size: 18px;
+			color: #fff;
+			line-height: 1.44;
+			margin-bottom: 63px;
+			padding-left: 9px;
+			letter-spacing: 0.4px;
+		}
+
+		.view-courses-button {
+			display: inline-block;
+			font-size: 14px;
+			letter-spacing: 0.3px;
+			text-transform: uppercase;
+			padding: 11px 28px 9px 29px;
+			background-color: #fff;
+			font-weight: 400;
+			@include rounded(30px);
+			@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.08));
+
+			&:hover {
+				@include box-shadow(4.5px 5.4px 10px 0 rgba(0, 0, 0, 0.06));
+			}
+		}
+	}
+
+	.course-item {
+		&.hide-label {
+			&:before,
+			.course-label {
+				display: none !important;
+				opacity: 0 !important;
+			}
+		}
+
+		&:hover {
+			.content-item{
+				.price {
+					.course-origin-price {
+						color: #fff;
+					}
+
+					.course-price {
+						color: #fff;
+						&.free {
+							color: #fff !important;
+						}
+					}
+				}
+			}
+
+
+			.featured-img {
+				&:before {
+					@include opacity(1);
+				}
+
+				&:after {
+					@include opacity(0);
+				}
+			}
+
+			&.new-course{
+				&:before{
+					border-top: 86px solid #df6c4f;
+				}
+			}
+		}
+
+		&.new-course {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 0;
+				left: 0;
+				border-right: 86px solid transparent;
+				@include transition(all 0.5s);
+				z-index: 4;
+			}
+
+			.course-label {
+				position: absolute;
+				font-size: 18px;
+				color: #fff;
+				top: 18px;
+				left: 10px;
+				z-index: 1000;
+				@include rotate(-45deg);
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+
+		.featured-img {
+			position: relative;
+
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: calc(100% - 110px);
+				left: 0;
+				bottom: 0;
+				pointer-events: none;
+				@include transition(all 0.5s);
+			}
+
+			&:before {
+				background-image: linear-gradient(top, rgba(223, 108, 79, 0), rgba(223, 108, 79, 0.7));
+				background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(223,108,79,0)), to(rgba(223,108,79,0.7)));
+				background-image: -webkit-linear-gradient(top, rgba(223,108,79,0), rgba(223,108,79,0.7));
+				@include opacity(0);
+
+			}
+
+			&:after {
+				z-index: 2;
+				@include background-gradient(rgba(33, 32, 32, 0), rgba(33, 32, 32, 0.7));
+				@include opacity(1);
+			}
+
+			&:hover {
+				&:before {
+					@include opacity(1);
+				}
+
+				&:after {
+					@include opacity(0);
+				}
+			}
+		}
+
+		.content-item {
+			position: absolute;
+			bottom: 0;
+			z-index: 3;
+			width: 100%;
+			padding: 0 30px 35px 30px;
+
+			.name {
+				line-height: 1;
+				margin-bottom: 14px;
+				text-transform: capitalize;
+				display: inline-block;
+
+				a {
+					font-size: 16px;
+					font-style: italic;
+					letter-spacing: 0.3px;
+					color: #fff;
+				}
+			}
+
+			.title {
+				margin-bottom: 29px;
+
+				a {
+					display: block;
+					line-height: 1.33;
+					font-size: 18px;
+					letter-spacing: 0.4px;
+					font-weight: 400;
+					color: #fff;
+				}
+			}
+
+			.price {
+				display: inline-flex;
+				align-items: center;
+
+				.course-price {
+					font-size: 20px;
+					font-weight: 500;
+					letter-spacing: 0.4px;
+					margin-right: 11px;
+					@include transition(all 0.4s);
+				}
+
+				.free {
+					color: #df6c4f !important;
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+
+				.course-origin-price {
+					order: 2;
+					font-size: 16px;
+					font-style: italic;
+					letter-spacing: 0.3px;
+					@include transition(all 0.3s);
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+}

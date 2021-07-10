@@ -1,0 +1,368 @@
+.thim-sc-login .thim-login-popup {
+	.register,
+	.login {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.thim-form-login{
+	.message-error {
+		color: #a94442;
+		background: #f2dede;
+		margin: 20px 0;
+		@include rounded(5px);
+		line-height: 20px;
+		padding: 10px 15px;
+		font-size: 13px;
+		width: 478px;
+		max-width: 100%;
+	}
+}
+
+.thim-login {
+	width: 478px;
+	max-width: 100%;
+	border: solid 6px rgba(35, 35, 35, 0.4);
+	padding: 60px 50px;
+	@include rounded(6px);
+	display: inline-block;
+	margin-bottom: 8px;
+	.subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.4px;
+		font-weight: 300;
+		color: #202121;
+		text-transform: uppercase;
+	}
+	.title {
+		font-size: 40px;
+		line-height: 44px;
+		letter-spacing: 0.8px;
+		font-weight: 500;
+		color: #202121;
+		margin: 0 0 32px;
+	}
+	form {
+		p {
+			margin: 0;
+		}
+		label {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 50px;
+			margin-bottom: 22px;
+		}
+		.lost-pass-link {
+			font-size: 16px;
+			font-weight: 300;
+		}
+		.input {
+			font-size: 16px;
+			letter-spacing: 0.3px;
+			color: #888888;
+			font-weight: 300;
+			width: 100%;
+			padding: 10px 20px;
+			border: solid 1px $border-color;
+			background-color: #fefefe;
+			height: 50px;
+			border-radius: 5px;
+			margin-bottom: 22px;
+		}
+		.button {
+			width: 100%;
+			border-radius: 5px;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 20px;
+			text-align: center;
+			font-size: 18px;
+			letter-spacing: 0.4px;
+			font-weight: 400;
+			text-transform: capitalize;
+		}
+	}
+	.link-bottom {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 0.3px;
+		text-align: center;
+		color: #878787;
+		width: 100%;
+		display: inline-block;
+		margin-top: 19px;
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+.social-login-form {
+	.wpb_content_element {
+		margin-bottom: 0;
+		> .wpb_wrapper {
+			width: 478px;
+			max-width: 100%;
+			padding: 66px 50px;
+			float: right;
+			display: inline-block;
+		}
+	}
+	.subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: .4px;
+		font-weight: 300;
+		color: #202121;
+		text-transform: uppercase;
+	}
+	.btn-social {
+		max-width: 100%;
+	}
+}
+
+.mo-openid-app-icons {
+	> p {
+		font-size: 40px;
+		line-height: 44px;
+		letter-spacing: .8px;
+		font-weight: 500;
+		color: #202121;
+		margin: 0 0 32px !important;
+	}
+	.btn {
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		color: #ffffff;
+	}
+	.btn-social > :first-child {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 50px;
+		line-height: 34px;
+		font-size: 16px;
+		text-align: center;
+		border-right: 1px solid #fff;
+		padding: 0;
+	}
+}
+
+.thim-sc-login{
+	position: relative;
+	padding: 0 20px;
+	display: inline-block;
+	&.link-to-account a {
+		color: #202121 !important;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.widget_thim-login {
+
+		.user-name{
+			position: relative;
+			&:hover .author{
+				visibility: visible;
+				@include opacity(1);
+				@include translateX(-12px);
+			}
+		}
+
+		.author{
+			position: absolute;
+			right: 100%;
+			visibility: hidden;
+			pointer-events: none;
+			@include opacity(0);
+			@include transition(opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24), -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24));
+			@include translate3d(0, 0, 0);
+		}
+
+		.avatar{
+			width: 30px;
+			height: 30px;
+			background-color: #ccc;
+		}
+
+		&:hover{
+			ul.user-info{
+				display: block;
+			}
+		}
+
+		ul.user-info{
+			margin: 0;
+			list-style: none;
+			background: #fff;
+			margin-left: -150px;
+			z-index: 20;
+			display: none;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			min-width: 210px;
+			@include box-shadow(0 2px 3px rgba(0, 0, 0, 0.09));
+
+			.menu-item{
+				&:hover{
+					background-color: rgba(3, 44, 75, 0.2);
+				}
+				a{
+					padding: 15px 20px;
+					display: block;
+					color: #202121;
+				}
+			}
+		}
+	}
+}
+
+#thim-header-topbar{
+	.thim-sc-login{
+		.widget_thim-login{
+			a{
+				&:hover{
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+#resetpassform{
+	.resetpass-submit{
+		position: relative;
+	}
+
+	.sk-three-bounce{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.sk-child{
+			background-color: #fff;
+		}
+	}
+
+	.message-notice{
+		margin-top: 15px;
+	}
+
+	.alert{
+		padding: 5px 20px;
+		font-size: 14px;
+	}
+}
+
+#loginform{
+	.wrap-fields{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-top: -10px;
+	}
+
+	label{
+		line-height: inherit;
+	}
+}
+
+.header-right .widget.widget_thim-login.circle-style {
+	padding: 0 !important;
+	margin-right: 8px;
+	&:before {
+		display: none !important;
+	}
+
+	.thim-login-popup,
+	.user-name {
+		font-size: 14px;
+		padding-left: 20px;
+		padding-right: 20px;
+		display: inline-block;
+		background: #fff;
+		letter-spacing: 0.3px;
+		text-align: left;
+		height: 35px;
+		line-height: 35px;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		@include rounded(20px);
+		a, span {
+			&.register-link {
+				margin-right: 3px;
+			}
+		}
+	}
+
+	.user-name {
+		&:before {
+			body.logged-in & {
+				content: '';
+				font-family: ionicons;
+				margin-right: 10px;
+				display: inline-block;
+				text-align: center;
+				line-height: 35px;
+				font-size: 16px;
+			}
+		}
+		body.logged-in & {
+			padding: 0 20px !important;
+		}
+	}
+
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+	.thim-login {
+		padding: 35px 30px;
+	}
+	.thim-login .title,
+	.social-login-form .wp-social-login-connect-with {
+		font-size: 30px;
+	}
+	.thim-login .link-bottom {
+		line-height: 1.4em;
+	}
+	.social-login-form .wpb_content_element>.wpb_wrapper {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+body{
+	&.thim-body-elementor{
+		header{
+			.elementor-widget{
+				.thim-login-popup{
+					.slash{
+						color: #202121;
+					}
+				}
+				#thim-popup-login{
+					.thim-login-container{
+						p{
+							margin-bottom: 20px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

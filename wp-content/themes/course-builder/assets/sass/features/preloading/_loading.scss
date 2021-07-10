@@ -1,0 +1,83 @@
+@mixin thim-loading-off($color: #FFF) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: 0;
+	@include opacity(0);
+	z-index: -1;
+
+	.custom-image {
+		height: 40px;
+		margin: 3px auto;
+	}
+
+	.sk-folding-cube,
+	.sk-rotating-plane,
+	.sk-spinner-pulse,
+	.sk-wandering-cubes,
+	.sk-cube-grid,
+	.sk-double-bounce,
+	.sk-fading-circle,
+	.sk-chasing-dots,
+	> .sk-circle,
+	.sk-wave {
+		margin: 9px auto;
+		width: 35px;
+		height: 35px;
+		> .sk-circle {
+			margin: 0 auto;
+		}
+	}
+
+	> .sk-wandering-cubes {
+		margin: 7px auto;
+	}
+	> .sk-three-bounce {
+		width: 80px;
+		margin: 14px auto;
+	}
+	> .sk-wave {
+		width: 50px;
+	}
+	.sk-folding-cube .sk-cube:before,
+	.sk-rotating-plane,
+	.sk-spinner-pulse,
+	.sk-three-bounce .sk-child,
+	.sk-wandering-cubes .sk-cube,
+	.sk-cube-grid .sk-cube,
+	.sk-double-bounce .sk-child,
+	.sk-fading-circle .sk-circle:before,
+	.sk-circle .sk-child:before,
+	.sk-chasing-dots .sk-child,
+	.sk-wave .sk-rect {
+		background-color: $color;
+	}
+}
+
+@mixin thim-loading-on() {
+	@include opacity(1);
+	z-index: 1;
+}
+
+.thim-loadmore {
+	.load-more {
+		position: relative;
+		outline: none;
+		@include box-shadow(none);
+		&:active,
+		&:focus {
+			outline: none;
+			@include box-shadow(none);
+		}
+	}
+	.thim-loading-icon {
+		@include thim-loading-off();
+	}
+	&.loading {
+		.thim-loading-icon {
+			@include thim-loading-on();
+		}
+	}
+}

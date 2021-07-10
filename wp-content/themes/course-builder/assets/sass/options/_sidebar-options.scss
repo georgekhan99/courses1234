@@ -1,0 +1,129 @@
+// Sidebar
+.search-form {
+	.search-field {
+		&:focus {
+			border-bottom: solid 1px $thim_body_primary_color;
+		}
+		.search-submit:focus {
+			color: $thim_body_primary_color;
+		}
+	}
+}
+
+.widget-area .widget {
+	.widget-title {
+		color: $thim_font_title_color;
+
+		&:before {
+			background-color: $thim_font_title_color;
+		}
+	}
+
+	&.thim_widget_categories ul li {
+		color: $thim_font_title_color;
+	}
+
+	&.widget_thim_recent_posts {
+		ul {
+			li {
+				.title {
+					a {
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.widget_rss {
+		ul {
+			li {
+				.rsswidget {
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.widget-area {
+
+	ul li a {
+		color: $thim_font_body_color;
+		&:hover {
+			color: $thim_body_primary_color;
+		}
+	}
+
+	.calendar_wrap a {
+		color: $thim_body_primary_color;
+	}
+
+	.tagcloud a {
+		color: $thim_body_primary_color;
+	}
+}
+
+aside {
+	.widget {
+		&.widget_recent_entries {
+			.wrapper {
+				.entry-date {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+		&.thim-sc-testimonials {
+			.slider-container:before {
+				color: $thim_body_primary_color;
+			}
+		}
+		&.widget_thim-courses-categories {
+			ul {
+				li {
+					a:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+aside {
+	.widget {
+		&.widget_categories {
+			ul {
+				li {
+					a:hover {
+						color: $thim_body_primary_color;
+					}
+					&:before {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+		&.widget_recent_entries {
+			.wrapper {
+				.content {
+					.title {
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+aside .widget .thim-sc-testimonials.layout-3 .user-info {
+	color: $thim_body_primary_color;
+	.regency {
+		color: $thim_font_title_color;
+	}
+}

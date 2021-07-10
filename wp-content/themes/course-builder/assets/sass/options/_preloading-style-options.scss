@@ -1,0 +1,19 @@
+#thim-preloading {
+	background-color: #FFF;
+}
+
+.thim-loading-icon {
+	.sk-folding-cube .sk-cube:before,
+	.sk-rotating-plane,
+	.sk-spinner-pulse,
+	.sk-three-bounce .sk-child,
+	.sk-wandering-cubes .sk-cube,
+	.sk-cube-grid .sk-cube,
+	.sk-double-bounce .sk-child,
+	.sk-fading-circle .sk-circle:before,
+	.sk-circle .sk-child:before,
+	.sk-chasing-dots .sk-child,
+	.sk-wave .sk-rect {
+		background-color: $thim_body_primary_color;
+	}
+}

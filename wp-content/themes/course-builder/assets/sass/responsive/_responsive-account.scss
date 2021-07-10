@@ -1,0 +1,159 @@
+.responsive {
+  @media (max-width: 1024px) {
+    .mo-openid-app-icons {
+      > p {
+        font-size: 30px;
+        line-height: normal;
+      }
+    }
+    .social-login-form .wpb_content_element > .wpb_wrapper {
+      padding: 30px 20px;
+    }
+    .thim-login {
+      padding: 30px 20px;
+      .title {
+        font-size: 30px;
+        line-height: normal;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &.lp-profile #learn-press-user-profile .list-contact {
+      display: block !important;
+    }
+
+    &.lp-profile .learn-press-user-profile .info-general .biographical .title {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    &.lp-profile #learn-press-user-profile .list-contact .item:not(:last-child) {
+      border: none !important;
+    }
+
+    &.lp-profile .page-title.layout-2 .main-top .content .text-title {
+      margin-top: 0;
+    }
+
+    &.lp-profile {
+      .page-title.layout-2 .breadcrumb-content {
+        bottom: -15px;
+      }
+     .breadcrumbs-wrapper {
+       height: auto;
+       background: none;
+     }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &.logged-in.admin-bar header.sticky-header.affix.menu-show {
+      top: 46px !important;
+    }
+
+    div.account-login-page {
+      display: block;
+    }
+    .social-login-form .wpb_content_element > .wpb_wrapper {
+      float: none;
+      margin: 0 auto;
+      display: block;
+    }
+    .thim-login {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .thim-form-login {
+      > .vc_column-inner {
+        padding-left: 15px !important;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    .social-login-form .wpb_content_element > .wpb_wrapper {
+      padding: 0;
+    }
+    .thim-login {
+      border: 0;
+      padding: 0;
+      form {
+        .lost-pass-link,
+        .login-remember {
+          width: 100%;
+          margin-bottom: 0;
+          text-align: left;
+          line-height: normal;
+          display: block;
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) and (min-width: 360px) {
+    &.lp-landing .course-format-icon {
+      display: inline-block !important;
+    }
+  }
+  @media (max-width: 600px) {
+    &.checkout div.learnpress>#learn-press-checkout-login,
+    &.checkout div.learnpress>#learn-press-checkout-register {
+      width: 100%;
+      min-height: 1px;
+    }
+
+    &.learnpress .button-continue-guest-checkout {
+      padding-top: 30px !important;
+    }
+
+    &.lp-landing #learn-press-course-curriculum .curriculum-sections .section .section-header {
+      padding-left: 0;
+    }
+  }
+  @media (max-width: 375px) {
+    &.woocommerce #payment #place_order, &.woocommerce-page #payment #place_order {
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    &.woocommerce-page.woocommerce-checkout .site-content form.checkout #customer_details .col-2 #payment {
+      padding: 10px;
+    }
+    &.woocommerce #payment #place_order, &.woocommerce-page #payment #place_order {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body.checkout.responsive div.learnpress {
+    flex-direction: column;
+    >#learn-press-checkout-login, >#learn-press-checkout-register {
+      margin: 0 auto;
+    }
+    >#learn-press-checkout-register {
+      margin-top: 50px;
+      margin-left: 0 !important;
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+
+  body.checkout.responsive div.learnpress {
+    >#learn-press-checkout-login, >#learn-press-checkout-register {
+     padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+
+  body.responsive.checkout.learnpress:not(.woocommerce-checkout) .site-content {
+    padding-bottom: 130px;
+  }
+
+}

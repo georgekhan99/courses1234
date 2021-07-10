@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-05 08:54+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-collections.php:51
+#, php-format
+msgid ""
+"<strong>%s</strong> addon version %s requires %s version %s or higher is "
+"<strong>installed</strong> and <strong>activated</strong>."
+msgstr ""
+
+#: learnpress-collections.php:52
+msgid "LearnPress Collections"
+msgstr ""
+
+#: learnpress-collections.php:54
+msgid "LearnPress"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:71
+msgctxt "Post Type General Name"
+msgid "Collections"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:72
+msgctxt "Post Type Singular Name"
+msgid "Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:73
+#: inc/class-lp-collection-post-type.php:75
+#: inc/class-lp-collection-post-type.php:122 inc/functions.php:35
+#: inc/load.php:100 inc/load.php:108 inc/widget.php:72
+msgid "Collections"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:74
+msgid "Parent Item:"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:76
+msgid "View Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:77
+msgid "Add New Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:78
+msgid "Add New"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:79
+msgid "Edit Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:80
+msgid "Update Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:81
+msgid "Search Collection"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:82
+msgid "No collection found"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:83
+msgid "No collection found in Trash"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:147
+msgid "Collection Settings"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:169
+#: inc/class-lp-collection-post-type.php:219
+msgid "Courses"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:175
+msgid "Collecting related courses into one collection."
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:176
+msgid "There is no course to select. Create <a href=\""
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:184
+msgid "Courses per page"
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:188
+msgid "Number of courses per each page. Default is 10."
+msgstr ""
+
+#: inc/class-lp-collection-post-type.php:237
+msgid "No Items"
+msgstr ""
+
+#: inc/functions.php:26
+#, php-format
+msgid "Search Results: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: inc/functions.php:29
+#, php-format
+msgid "&nbsp;&ndash; Page %s"
+msgstr ""
+
+#: inc/load.php:114
+msgid "Select collections that contains this course."
+msgstr ""
+
+#: inc/load.php:115
+msgid "There is no collection to select. Create <a href=\""
+msgstr ""
+
+#: inc/load.php:121
+msgid "Select collections"
+msgstr ""
+
+#: inc/widget.php:25
+msgid "Courses Collections"
+msgstr ""
+
+#: inc/widget.php:26
+msgid "Display course collections"
+msgstr ""
+
+#: inc/widget.php:76
+msgid "Title:"
+msgstr ""
+
+#: inc/widget.php:82
+msgid "Number of collections to show:"
+msgstr ""
+
+#: templates/archive-collection-course.php:36
+msgid "No course found!"
+msgstr ""

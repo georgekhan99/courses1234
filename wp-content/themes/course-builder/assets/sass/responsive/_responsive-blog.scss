@@ -1,0 +1,198 @@
+.blog.responsive {
+	@media (max-width: 1400px) {
+		.thim-sc-text-box.left .title-1 {
+			font-size: 30px;
+		}
+		.thim-sc-text-box.left .title-2 {
+			font-size: 16px;
+		}
+	}
+	//General blog responsive
+	@media (max-width: 768px) {
+		.container {
+			padding-top: 80px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.thim-sc-text-box.center .title-2 {
+			font-size: 30px;
+		}
+
+		.thim-loadmore {
+			&:before {
+				bottom: 35px;
+			}
+
+			.load-more {
+				padding-left: 39px;
+				padding-right: 39px;
+				height: 39px;
+				font-size: 14px;
+			}
+		}
+
+		.thim-sc-text-box.center .btn {
+			height: 45px;
+			line-height: 45px;
+			padding: 0 40px;
+		}
+
+	}
+
+	//Grid Blog layout
+	.list-articles.style-grid {
+		@media (max-width: 768px) {
+			article {
+				.entry-top {
+					.entry-date {
+						padding: 10px;
+					}
+				}
+
+				.entry-content {
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+
+		@media (max-width: 480px) {
+			.content-inner {
+				padding-bottom: 30px;
+			}
+
+			article {
+				.entry-content {
+					.entry-title {
+						margin-top: 0;
+						font-size: 13px;
+						text-align: center;
+					}
+
+					.entry-meta {
+						font-size: 13px;
+						text-align: center;
+					}
+				}
+
+			}
+		}
+	}
+	//End Grid Blog layout
+
+	//List Blog layout
+	@media (max-width: 1024px) {
+		#main {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		//Responsive sidebar
+		#secondary {
+			flex: 0 0 100%;
+			max-width: 100%;
+
+			.theiaStickySidebar {
+				position: static !important;
+			}
+		}
+
+		.thim-sc-testimonials .slider-container .slider .owl-item .item .content {
+			padding-right: 0;
+		}
+	}
+
+	@media (max-width: 480px) {
+		#secondary {
+			.widget_media_image {
+				text-align: center;
+			}
+		}
+	}
+
+	.list-articles.style-list {
+		@media (max-width: 736px) {
+			.content-inner {
+				padding-bottom: 30px;
+				margin-bottom: 39px;
+			}
+
+			.entry-content .entry-title {
+				margin-top: 0;
+			}
+		}
+	}
+
+	//End List Blog layout
+
+}
+
+// Responsive After Main sidebar
+@media (min-width: 769px) and (max-width: 1024px) {
+	.blog, .single-post {
+		.res-blog-cta {
+			padding-bottom: 100px !important;
+
+			.wpb_single_image img {
+				right: unset;
+				left: 10px;
+				top: 136px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.res-blog-cta {
+		.wpb_single_image {
+			text-align: center !important;
+
+			img {
+				position: static;
+			}
+		}
+
+		.thim-sc-text-box.left .title-1 {
+			margin-top: 0;
+		}
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.blog, .single-post {
+		.res-blog-cta {
+			padding-bottom: 32px !important;
+
+			.wpb_single_image img {
+				right: unset;
+				left: 5px;
+				top: 143px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.res-blog-cta {
+		padding-bottom: 50px !important;
+		padding-top: 12px !important;
+	}
+}
+
+//End Responsive After Main sidebar
+
+.responsive {
+	@media (max-width: 768px) {
+		.list-articles article .entry-top .entry-date.no-thumbnail {
+			position: relative;
+			background: transparent;
+			width: 100%;
+			text-align: initial;
+			top: 0;
+			padding: 0;
+			padding-left: 30px;
+		}
+	}
+}
+

@@ -1,0 +1,46 @@
+.thim-sc-post-block-1 {
+	.item {
+		.information {
+			.date {
+				color: $thim_font_title_color;
+			}
+			.title {
+				a {
+					color: $thim_font_title_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+			.data-meta {
+				.tag-post {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+		.author-post {
+			.author {
+				.description {
+					color: $thim_font_body_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+				.author-name {
+					color: $thim_font_title_color;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+		.data-meta {
+			.comment-total {
+				a {
+					color: $thim_font_body_color;
+				}
+			}
+		}
+	}
+}
+

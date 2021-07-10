@@ -1,0 +1,196 @@
+// Shop archive
+@media (max-width: 736px) {
+  .responsive {
+    ul.product-list li.product {
+      padding: 50px 20px 50px 20px;
+
+      .stats .box-price .description {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive.woocommerce-checkout form.checkout #customer_details {
+    .col-2,
+    .col-1 {
+      width: 100% !important;
+    }
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .responsive ul.product-list li.product .feature-image {
+    max-width: 100%;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  ul.product-list li.product .product-content {
+    width: 100% !important;
+    float: none;
+  }
+
+  ul.product-list li.product .product-content .title-product a {
+    line-height: 26px;
+  }
+
+  body.woocommerce-page.woocommerce-checkout .site-content .woocommerce-info {
+    font-size: 16px;
+  }
+  body.woocommerce-page.woocommerce-checkout .site-content form.checkout_coupon .form-row-first,
+  body.woocommerce-page.woocommerce-checkout .site-content form.checkout_coupon .form-row-last {
+    width: 100%;
+  }
+
+  body.woocommerce-page.woocommerce-checkout .woocommerce-info {
+    padding: 0;
+  }
+  body.woocommerce-page.woocommerce-checkout form.checkout_coupon {
+    .form-row-first,
+    .form-row-last {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .responsive {
+    .product-filter {
+      .display {
+        margin-bottom: 10px;
+      }
+
+      .woocommerce-ordering {
+        float: none;
+        clear: both;
+      }
+    }
+
+    ul.product-list li.product {
+      .feature-image {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .stats {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// Single product
+@media (max-width: 1024px) {
+  .responsive {
+    .related.products {
+      .box-price {
+        text-align: center;
+      }
+
+      .wrapper .stats {
+        padding: 0 10px;
+
+        .box-price a.button {
+          float: none;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 736px) {
+  .responsive {
+    .related.products {
+      li.product {
+        margin-bottom: 30px !important;
+      }
+
+      .box-price {
+        text-align: left;
+      }
+
+      .wrapper .stats {
+        .box-price a.button {
+          float: right;
+        }
+      }
+    }
+
+    .woocommerce-tabs .entry-content {
+      padding: 0 10px !important;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .responsive #thim-header-topbar .container .widget_shopping_cart {
+    right: 0 !important;
+  }
+}
+
+body .thim-mini-cart.hidden-lg-up {
+  display: none;
+}
+body .thim-mobile-search-cart {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+
+ body.woocommerce-page.woocommerce-account.responsive .woocommerce #customer_login form.login .lost_password {
+    display: block;
+    float: none;
+    position: static;
+    margin: 15px 0 0;
+  }
+
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    float: left !important;
+  }
+
+  body .widget_shopping_cart .widget_shopping_cart_content {
+    min-width: 300px;
+    width: 300px;
+  }
+
+  body .widget_shopping_cart .widget_shopping_cart_content .buttons a {
+    padding: 0 30px!important;
+    line-height: 46px;
+    margin: 15px 5px;
+    border-radius: 50px;
+    transition: all .5s;
+    background: #222;
+  }
+
+  body .widget_shopping_cart .widget_shopping_cart_content .buttons a.checkout {
+    background-color: #2174ff;
+  }
+
+  .widget_shopping_cart .widget_shopping_cart_content .total,
+  .widget_shopping_cart .widget_shopping_cart_content .cart_list.product_list_widget li .quantity,
+  .widget_shopping_cart .widget_shopping_cart_content .woocommerce-mini-cart__empty-message {
+    color: #202121;
+  }
+}
+
+@media (max-width: 600px) {
+ #customer_login.col2-set .col-1,
+ #customer_login.col2-set .col-2 {
+   flex: 0 0 100% !important;
+   max-width: 100% !important;
+  }
+}
+
+@media (max-width: 375px) {
+
+  #customer_login.col2-set form {
+    padding: 30px !important;
+  }
+
+}

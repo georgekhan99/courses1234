@@ -1,0 +1,79 @@
+.learnpress-page {
+	.learn-press-pagination {
+		&.collections {
+			display: inline-block;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 0;
+			li {
+				margin: 0 5px;
+			}
+		}
+	}
+}
+
+body.single-lp_collection .lp_collection .lp-membership .content .thumbnail .price {
+	display: none;
+}
+
+
+.thim-archive-collection {
+	.lp_collection  {
+		padding-bottom: 40px;
+		.content {
+			@include transition(all .5s);
+			&:hover {
+				@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.08));
+				img {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		.text {
+			padding: 30px 25px;
+		}
+
+		.thumb {
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				-webkit-transition: 0.5s ease-in-out;
+				-moz-transition: 0.5s ease-in-out;
+				-o-transition: 0.5s ease-in-out;
+				transition: 0.5s ease-in-out;
+			}
+			.img-link {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				content: "";
+			}
+		}
+		.title {
+			display: block;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			h3 {
+				font-weight: inherit;
+				font-size: inherit;
+				text-transform: uppercase;
+			}
+		}
+		.collection-introduce {
+			font-weight: 300;
+			strong {
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.single-lp_collection.learnpress .learn-press-courses {
+	margin: 0 -5px;
+}
+

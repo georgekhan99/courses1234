@@ -1,0 +1,59 @@
+/*
+ * Style Options
+ * Import style option all shortcodes, widgets
+ * Style all selector variable form customizer
+ */
+@import "variables";
+@import "options/preloading-style-options";
+@import "options/header-options";
+@import "options/breadcrumb-options";
+@import "options/blog-options";
+@import "options/sidebar-options";
+@import "options/footer-options";
+@import "options/typography-options";
+@import "options/background-options";
+@import "options/buttons-options";
+@import "options/general-style-options";
+@import "options/contact-options";
+@import "options/learnpress/learnpress-options";
+@import "options/learnpress/learnpressv4-options";
+//@import "options/learnpress/learnpressv4-options-default";
+@import "options/events-options";
+@import "options/forums-options";
+@import "options/woo-options";
+@import "options/buddypress/buddypress-options";
+@import "options/home-page-options";
+@import "options/portfolio-options";
+//@import "options/learnpress/learnpressv4-options";
+/* Short code **/
+@import "shortcodes/button-options";
+@import "shortcodes/counter-box-options";
+@import "shortcodes/courses-block-1-options";
+@import "shortcodes/courses-carousel-options";
+@import "shortcodes/courses-collection-options";
+@import "shortcodes/course-search-options";
+@import "shortcodes/icon-box-options";
+@import "shortcodes/courses-block-2-options";
+@import "shortcodes/courses-block-3-options";
+@import "shortcodes/courses-block-4-options";
+@import "shortcodes/count-down-options";
+@import "shortcodes/skillsbar-options";
+@import "shortcodes/steps-options";
+@import "shortcodes/testimonials-options";
+@import "shortcodes/video-box-options";
+@import "shortcodes/post-block-1-options";
+@import "shortcodes/photo-wall-options";
+@import "shortcodes/events-options";
+@import "shortcodes/enroll-course-options";
+@import "shortcodes/review-course-options";
+@import "shortcodes/user-info-options";
+@import "shortcodes/text-box-options";
+@import "shortcodes/instructors-options";
+@import "shortcodes/login-form-options";
+@import "shortcodes/pricing-options";
+@import "shortcodes/introduction-box-options";
+@import "shortcodes/features-list-options";
+@import "shortcodes/courses-megamenu-options";
+@import "shortcodes/gallery-options";
+//new demo
+@import "shortcodes/new-options";

@@ -1,0 +1,157 @@
+/*
+ * Animates styles */
+
+
+.effect-right {
+  -webkit-animation: toright .6s linear infinite;
+  -moz-animation: toright .6s linear infinite;
+  -o-animation: toright .6s linear infinite;
+  animation: toright .6s linear infinite;
+  -webkit-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes toright {
+  from {
+    -webkit-transform: translateX(0px) rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: translateX(7px) rotate(0deg)
+  }
+}
+
+@-moz-keyframes toright {
+  from {
+    -moz-transform: translateX(0px) rotate(0deg)
+  }
+
+  to {
+    -moz-transform: translateX(7px) rotate(0deg)
+  }
+}
+@keyframes toright {
+  from {
+    transform: translateX(0px) rotate(0deg)
+  }
+
+  to {
+    transform: translateX(7px) rotate(0deg)
+  }
+}
+
+
+// Animate: hvr-pulse for product sale
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+// Animate: scissor for heading title
+@keyframes scissor {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(-20deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@-webkit-keyframes scissor {
+  0% {
+    -webkit-transform: rotate(0deg)
+  }
+  50% {
+    -webkit-transform: rotate(-20deg)
+  }
+  100% {
+    -webkit-transform: rotate(0deg)
+  }
+}
+
+@keyframes scissol {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(20deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@-webkit-keyframes scissol {
+  0% {
+    -webkit-transform: rotate(0deg)
+  }
+  50% {
+    -webkit-transform: rotate(20deg)
+  }
+  100% {
+    -webkit-transform: rotate(0deg)
+  }
+}
+
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+

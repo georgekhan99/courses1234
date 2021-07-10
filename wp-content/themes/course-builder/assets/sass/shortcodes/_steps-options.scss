@@ -1,0 +1,66 @@
+.thim-sc-steps {
+	.steps-wrapper {
+		.steps {
+			.nav {
+				.nav-item {
+					.nav-link {
+						&:hover,
+						&.active {
+							color: $thim_body_primary_color;
+						}
+					}
+					&:hover,
+					&.active {
+						.nav-link {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+			.tab-content {
+				.description {
+					color: $thim_font_body_color;
+				}
+				.readmore {
+					background-color: $thim_body_primary_color;
+					&:hover {
+						background-color: darken($thim_body_primary_color, 20%);
+					}
+				}
+			}
+		}
+	}
+
+	&.layout-3 {
+		.steps-wrapper {
+			.steps {
+				.nav {
+					.nav-item {
+						.tab-title {
+							&:hover {
+								color: $thim_font_title_color;
+							}
+						}
+						&.active {
+							.tab-title {
+								color: $thim_font_title_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.has-bg {
+		.steps-wrapper {
+			.steps {
+				.tab-content {
+					.readmore {
+						color: $thim_font_title_color;
+					}
+				}
+			}
+		}
+	}
+}

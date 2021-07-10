@@ -1,0 +1,21 @@
+.thim-sc-counter-box:not(.layout-center) {
+	.counter_box {
+		&:hover {
+			.icon_counter {
+				color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-sc-counter-box{
+	.counter_box{
+		.number{
+			color: $thim_body_primary_color;
+		}
+
+		.title{
+			color: $thim_font_title_color;
+		}
+	}
+}

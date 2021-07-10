@@ -1,0 +1,184 @@
+.elementor-control-type-choose .elementor-control-content,
+.elementor-control-type-choose .elementor-control-content .elementor-control-field {
+	display: block;
+}
+
+.elementor-control-type-choose .elementor-control-content .elementor-control-field .elementor-control-input-wrapper {
+	display:    block;
+	width:      100%;
+	margin-top: 15px;
+}
+
+.elementor-control-type-choose .elementor-control-content .elementor-control-field .elementor-control-input-wrapper .elementor-choices {
+	display: block;
+	height:  auto;
+}
+
+.elementor-control-type-choose .elementor-control-content .elementor-control-field .elementor-control-input-wrapper .elementor-choices .elementor-choices-label {
+	display:       block;
+	width:         100%;
+	border:        2px solid #d5dadf;
+	margin-bottom: 5px;
+	border-radius: 0;
+}
+
+.elementor-control-type-choose .elementor-control-content .elementor-control-field .elementor-control-input-wrapper .elementor-choices .elementor-choices-label .elementor-screen-only {
+	position: static;
+}
+
+.elementor-control-type-choose .elementor-control-content .elementor-control-field .elementor-control-input-wrapper .elementor-choices input:checked + .elementor-choices-label {
+	border-color: red !important;
+}
+
+.thim-widget-icon {
+	display:             inline-block;
+	width:               32px;
+	height:              32px;
+	background-size:     100%;
+	background-repeat:   no-repeat;
+	background-position: center center;
+}
+
+.thim-widget-icon.thim-widget-icon-course-megamenu {
+	background-image: url(../images/icon/course-megamenu.jpg);
+}
+
+.thim-widget-icon.thim-widget-icon-portfolio {
+	background-image: url(../images/icon/portfolio.jpg);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-brands {
+	background-image: url(../images/icon/sc-brands.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-button {
+	background-image: url(../images/icon/sc-button.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-count-down {
+	background-image: url(../images/icon/sc-count-down.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-sc-counter-box {
+	background-image: url(../images/icon/sc-counter-box.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-course-review {
+	background-image: url(../images/icon/sc-course-review.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-course-search {
+	background-image: url(../images/icon/sc-course-search.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-courses-block-1 {
+	background-image: url(../images/icon/sc-courses-block-1.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-courses-block-2 {
+	background-image: url(../images/icon/sc-courses-block-2.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-courses-block-3 {
+	background-image: url(../images/icon/sc-courses-block-3.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-courses-carousel {
+	background-image: url(../images/icon/sc-courses-carousel.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-courses-collection {
+	background-image: url(../images/icon/sc-courses-collection.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-enroll-course {
+	background-image: url(../images/icon/sc-enroll-course.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-events {
+	background-image: url(../images/icon/sc-events.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-features-list {
+	background-image: url(../images/icon/sc-features-list.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-gallery-carousel {
+	background-image: url(../images/icon/sc-gallery-carousel.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-gallery-post {
+	background-image: url(../images/icon/sc-gallery-post.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-google-map {
+	background-image: url(../images/icon/sc-google-map.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-heading {
+	background-image: url(../images/icon/sc-heading.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-icon-box {
+	background-image: url(../images/icon/sc-icon-box.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-image-box {
+	background-image: url(../images/icon/sc-image-box.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-instructors {
+	background-image: url(../images/icon/sc-instructors.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-introduction-box {
+	background-image: url(../images/icon/sc-introduction-box.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-login-form {
+	background-image: url(../images/icon/sc-login-form.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-photo-wall {
+	background-image: url(../images/icon/sc-photo-wall.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-post-block-1 {
+	background-image: url(../images/icon/sc-post-block-1.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-pricing {
+	background-image: url(../images/icon/sc-pricing.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-scroll-heading {
+	background-image: url(../images/icon/sc-scroll-heading.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-skills-bar {
+	background-image: url(../images/icon/sc-skills-bar.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-social-links {
+	background-image: url(../images/icon/sc-social-links.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-steps {
+	background-image: url(../images/icon/sc-steps.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-testimonials {
+	background-image: url(../images/icon/sc-testimonials.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-text-box {
+	background-image: url(../images/icon/sc-text-box.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-user-info {
+	background-image: url(../images/icon/sc-user-info.png);
+}
+
+.thim-widget-icon.thim-widget-icon-sc-video-box {
+	background-image: url(../images/icon/sc-video-box.png);
+}

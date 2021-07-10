@@ -1,0 +1,62 @@
+
+//Filter
+
+.wapper_portfolio .filters {
+
+  .portfolio-tabs {
+    li {
+      a {
+       color: $thim_font_title_color;
+        &:hover {
+          color: $thim_body_primary_color;
+        }
+        &.active {
+          color: $thim_body_primary_color;
+          &:after {
+            background: $thim_body_primary_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wapper_portfolio .item_portfolio {
+  .portfolio-image {
+    .portfolio-hover {
+
+      .thumb-bg {
+        .mask-content {
+          .view-gallery:hover {
+            color: $thim_body_primary_color;
+          }
+
+          .info {
+            .cat_portfolio a:hover {
+              color: $thim_body_primary_color;
+            }
+            h3 {
+              a {
+                &:hover {
+                  color: $thim_body_primary_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.tags {
+  i {
+    color: $thim_font_title_color;
+  }
+  a {
+    background: $thim_body_primary_color;
+    &:hover {
+      background: darken($thim_body_primary_color,20%);
+    }
+  }
+}

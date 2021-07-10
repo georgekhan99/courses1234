@@ -1,0 +1,115 @@
+$text_clip: text;
+$transparent_clip: transparent;
+
+.thim-sc-courses-carousel {
+	.owl-nav {
+		.owl-prev,
+		.owl-next {
+			color: $thim_body_primary_color;
+			&:hover {
+				color: $thim_body_primary_color;
+				opacity: 1;
+			}
+		}
+	}
+	.owl-dots {
+		.owl-dot {
+			span {
+				background: $thim_body_primary_color;
+			}
+			&.active {
+				border-color: $thim_body_primary_color;
+				span {
+					background: $thim_body_primary_color !important;
+				}
+			}
+			&:hover {
+				span {
+					background: $thim_body_primary_color !important;;
+				}
+			}
+		}
+	}
+	.content {
+		.thumbnail {
+			.price {
+				font-family: $thim_font_title_font_family;
+				.course-origin-price {
+					color: $thim_font_title_color;
+				}
+				.course-price {
+					color: $thim_body_primary_color;
+					font-family: $thim_font_title_font_family;
+				}
+			}
+		}
+		.sub-content {
+			.title {
+				a {
+					color: $thim_font_title_color;
+					font-family: $thim_font_title_font_family;
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+
+			}
+			.data-comment {
+				font-family: $thim_font_title_font_family;
+			}
+		}
+	}
+
+	&.style-1 {
+		.content {
+			.sub-content {
+				.price {
+					span {
+						color: $thim_body_primary_color !important;
+					}
+				}
+			}
+
+			.hover-content {
+				.title {
+					a {
+						color: $thim_font_title_color;
+						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+
+				.wrap-author {
+					.name {
+						a {
+							color: $thim_font_title_color;
+							&:hover {
+								color: $thim_body_primary_color;
+							}
+						}
+					}
+				}
+			}
+		}
+		.owl-nav {
+			.owl-prev,
+			.owl-next {
+				body:not(.mix-colors) & {
+					svg ellipse {
+						stroke: $thim_body_primary_color !important;
+					}
+				}
+
+				i:before {
+					body.mix-colors {
+						background: -webkit-linear-gradient($thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+						-webkit-background-clip: $text_clip;
+						-webkit-text-fill-color: $transparent_clip;
+					}
+				}
+			}
+		}
+
+	}
+}

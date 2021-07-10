@@ -1,0 +1,53 @@
+.thim-sc-about-author-course {
+	max-width: 800px;
+	margin: auto;
+	margin-top: 65px;
+	padding-left: 46px;
+	.title {
+		font-size: 40px;
+		font-weight: 100;
+	}
+	.author-wrapper {
+		@include flexbox();
+		margin-top: 30px;
+		.author-avatar {
+			img {
+				@include rounded(50%);
+			}
+			.social {
+				list-style: none;
+				@include flexbox();
+				margin-top: 16px;
+				margin-left: 0;
+				li {
+					margin-left: 26px;
+				}
+			}
+		}
+		.author-bio {
+			margin-left: 35px;
+			font-size: 18px;
+			max-width: 612px;
+			.author-description {
+				line-height: 28px;
+				margin-bottom: 30px;
+				letter-spacing: 0.3px;
+			}
+			.author-name {
+				font-weight: 400;
+				text-transform: capitalize;
+				a {
+					color: #333;
+				}
+				&:before {
+					content: '__';
+				}
+				.author-major {
+					padding-left: 10px;
+					margin-top: 7px;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+//testimonials
+.thim-testimonials {
+	border-bottom: 1px solid #e7e7e7;
+	margin: 89px auto 34px auto;
+	.wpb_content_element {
+		margin-bottom: 0;
+	}
+	.thim-sc-testimonials {
+		margin-top: 70px;
+		.slider-container {
+			letter-spacing: 3.2px;
+			.owl-stage-outer {
+				.content {
+					font-size: 26px;
+					font-style: italic;
+					line-height: 1.46;
+					letter-spacing: 0.5px;
+				}
+				.user-info {
+					letter-spacing: 0;
+					span.regency {
+						color: #2c3339;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+//contact form
+div.wpb_content_element {
+	.wpcf7-form {
+		.row {
+			.wpcf7-form-control-wrap {
+				input,
+				textarea {
+					@include rounded(5px);
+					font-style: italic;
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 1.63;
+					letter-spacing: 0.3px;
+				}
+				input {
+					height: 49px;
+				}
+				textarea {
+					height: 231px;
+					background: #fdffff;
+				}
+			}
+		}
+
+		.heading-button {
+			margin: 28px auto 0 auto;
+			input {
+				height: 55px;
+				color: #fff;
+				@include rounded(30px);
+				font-weight: 400;
+				display: inline-block;
+				width: auto;
+				padding: 0 67px;
+				font-size: 16px;
+				letter-spacing: 0.3px;
+				line-height: 1.5;
+			}
+		}
+		.wpcf7-response-output {
+			text-align: center;
+		}
+	}
+}
+
+div.wpcf7 {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+.thim-breadcrumb-primary-color {
+	.page-title {
+		.breadcrumb-content {
+			#breadcrumbs {
+				li,
+				li a,
+				li span.breadcrum-icon .fa:before {
+					color: #FFF !important;
+				}
+				li a {
+					position: relative;
+					overflow: hidden;
+					&:after {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 1px;
+						bottom: 0;
+						left: 0;
+						background-color: #fff;
+						visibility: hidden;
+						opacity: 0;
+						transition: all 0.3s;
+					}
+					&:hover:after {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.thim-max-width-lg {
+	max-width: 1195px;
+	margin: auto;
+}

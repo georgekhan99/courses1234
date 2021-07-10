@@ -1,0 +1,194 @@
+/*
+ * Style Footer - use variables from customize
+ */
+
+footer#colophon.custom {
+	background-color: $thim_footer_background_color;
+	color: $thim_footer_color_text;
+
+	a {
+		color: $thim_footer_color_link;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $thim_footer_color_title;
+	}
+
+	.copyright-area {
+		.copyright-content {
+			color: $thim_footer_color_copyright;
+		}
+
+		#copyright-menu {
+			li {
+				border-right-color: $thim_footer_color_text;
+
+				a {
+					color: $thim_footer_color_text;
+				}
+			}
+		}
+	}
+
+	.footer-sidebars {
+		.list-link {
+			li {
+				a {
+					color: $thim_footer_color_link;
+				}
+			}
+		}
+	}
+}
+
+footer#colophon {
+
+	&.dark {
+		.footer {
+			.widgettitle,
+			.widget-title {
+				&:after {
+					border-bottom-color: $thim_body_primary_color;
+				}
+			}
+		}
+
+		.copyright-area {
+			#copyright-menu {
+				li {
+					a:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		&:hover {
+			color: $thim_body_primary_color;
+		}
+	}
+
+	.copyright-area {
+		.copyright-content {
+			a {
+				color: $thim_body_primary_color;
+
+				&:hover {
+					color: darken($thim_body_primary_color, 20%);
+				}
+			}
+		}
+	}
+
+	.footer-sidebars {
+		.list-link {
+			li {
+				a {
+					&:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	&.light {
+		.copyright-area {
+			#copyright-menu {
+				li {
+					a:hover {
+						color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+#back-to-top {
+	background: $thim_body_primary_color;
+
+	&:hover {
+		background: darken($thim_body_primary_color, 20%);
+	}
+}
+
+#copyright-menu {
+	.menu-item {
+		a {
+			&[href*="dribbble.com"],
+			&[href*="facebook.com"],
+			&[href*="flickr.com"],
+			&[href*="foursquare.com"],
+			&[href*="plus.google.com"],
+			&[href*="instagram.com"],
+			&[href*="linkedin.com"],
+			&[href*="pinterest.com"],
+			&[href*="reddit.com"],
+			&[href*="tumblr.com"],
+			&[href*="twitter.com"],
+			&[href*="vimeo.com"],
+			&[href*="wordpress.com"],
+			&[href*="wordpress.org"],
+			&[href*="youtube.com"],
+			&[href*="mailto:"],
+			&[href*="twitch.tv"],
+			&[href$="/feed/"] {
+				&:hover {
+					&:after {
+						background-color: $thim_body_primary_color;
+						border-color: $thim_body_primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.newsletter-form {
+	input {
+		font-family: $thim_font_title_font_family;
+
+		&:focus, &:active {
+			border-color: $thim_body_primary_color;
+		}
+	}
+}
+
+footer#colophon {
+	&.style_kit {
+		background-color: $thim_thim_global_mix_color_color1;
+		background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+		background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+	}
+}
+
+footer#colophon.style_kit .newsletter-kit input[type=submit]:hover {
+	background-color: $thim_thim_global_mix_color_color1;
+	background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+	background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+}
+
+footer#colophon.style_kit .thim_footer_kit .wrapper .socials li a:hover {
+	border-color: $thim_thim_global_mix_color_color1;
+	background-color: $thim_thim_global_mix_color_color1;
+	background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+	background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+}

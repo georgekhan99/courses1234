@@ -1,0 +1,229 @@
+// HOME 6
+
+.thim-sc-button.home-6-top {
+	.btn {
+		&.btn-primary {
+			&:hover {
+				color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-sc-text-box.home-6-top .btn.btn-default {
+	color: $thim_body_primary_color;
+}
+
+.thim-sc-button.home-6-top {
+	.btn {
+		&.btn-primary {
+			&:hover {
+				color: $thim_body_primary_color;
+				border-color: $thim_body_primary_color;
+			}
+		}
+	}
+}
+
+.thim-sc-text-box.home-6-top .btn.btn-default {
+	color: $thim_body_primary_color;
+}
+
+.iconbox-home6 {
+	.thim-sc-icon-box.layout-3 .icon-box-wrapper {
+		.box-content {
+			.title {
+				color: $thim_font_title_color;
+			}
+
+			.description {
+				color: $thim_font_body_color;
+			}
+		}
+	}
+}
+
+.thim-home6-form {
+
+	.wpcf7-form {
+
+		p {
+			&.quote {
+				color: $thim_font_body_color;
+			}
+
+			input[type="submit"] {
+				border-color: $thim_body_primary_color;
+				background-color: $thim_body_primary_color;
+
+				&:hover {
+					background: darken($thim_body_primary_color, 10%);
+				}
+			}
+
+		}
+
+		.thim-sc-count-down {
+			.counter .count-item {
+				.label {
+					color: $thim_font_body_color;
+				}
+			}
+		}
+	}
+}
+
+.thim-sc-icon-box.layout-3.form-style .icon-box-wrapper {
+	.box-icon {
+		color: $thim_body_primary_color;
+	}
+}
+
+.thim-sc-testimonials.layout-6 {
+	.slider-container {
+		.owl-next,
+		.owl-prev {
+			&:hover {
+				color: $thim_body_primary_color;
+			}
+		}
+
+		#thumbnails {
+			.owl-item {
+				&.active.center .user-info .name {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}
+
+// Home 5
+.thim-sc-counter-box.style-2.layout-center {
+	.counter-box {
+		.counter_box {
+			&:hover .title_counter .title {
+				color: $thim_font_title_color !important;
+			}
+
+			&:after {
+				border-left-color: $thim_font_body_color !important;
+			}
+		}
+	}
+}
+
+.thim-sc-courses-carousel.style-1 .format {
+	background-color: $thim_body_primary_color;
+}
+
+.home5-contact .wpcf7-form > p.submit input {
+	font-family: $thim_font_body_font_family;
+}
+
+.thim-sc-text-box.center.home5-heading .title-1 {
+	color: $thim_font_body_color;
+}
+
+.home5-section .thim-sc-testimonials.layout-1 .slider-container .slider .item .user-info {
+	color: $thim_font_title_color;
+}
+
+.menu-mobile-effect span.thim-mobile-login .thim-link-login {
+	color: $thim_body_primary_color;
+}
+
+body header#masthead.template-layout-2.palette-transparent.affix-top .header-v2.style2 .width-navigation li .sub-menu li a:hover {
+	color: $thim_body_primary_color;
+}
+
+.thim-home6-form .wpcf7-form input,
+.thim-home6-form .wpcf7-form p input[type="submit"],
+.thim-home6-form .wpcf7-form textarea {
+	font-family: $thim_font_body_font_family;
+}
+
+.home6-section {
+	.thim-sc-button.show-separator .btn,
+	.courses-trusted .thim-sc-text-box.left .btn {
+		background: $thim_body_primary_color;
+
+		&:hover {
+			background: darken($thim_body_primary_color, 10%);
+		}
+	}
+}
+
+.pagetitle-hide header#masthead.header-magic-line.header-overlay.affix-top .width-navigation .main-menu > li > a:hover {
+	color: $thim_main_menu_hover_color;
+}
+
+header.template-layout-2.palette-custom.custom-sticky.affix .width-navigation .main-menu > li.menu-item span.icon-toggle {
+	color: $thim_sticky_menu_text_color;
+}
+
+body {
+	&.logged-in .learn-press-become-teacher-form,
+	&.admin-bar .learn-press-become-teacher-form {
+		input[type="text"],
+		input[type="email"] {
+			border: 1px solid $thim_body_primary_color;
+		}
+	}
+
+	&:not(.mix-colors) {
+		svg ellipse {
+			stroke: $thim_body_primary_color !important;
+		}
+	}
+}
+
+.thim-sc-text-box.style-4.thim-slider-5.size-default .btn,
+.course-collection-squared-2 .view-all-collections a,
+.home5-contact .wpcf7-form > p.submit input {
+	background-color: $thim_body_primary_color;
+
+	&:hover {
+		background-color: darken($thim_body_primary_color, 15%);
+	}
+}
+
+body.mix-colors.page-template-home-page {
+
+	.thim-sc-text-box.style-4.thim-slider-5.size-default .btn,
+	.course-collection-squared-2 .view-all-collections a {
+		background-image: linear-gradient(to right, $thim_thim_global_mix_color_color1 0%, $thim_thim_global_mix_color_color2 41%, $thim_thim_global_mix_color_color1 100%);
+	}
+
+	.courses-trusted .thim-sc-text-box.left .btn,
+	.home5-contact .wpcf7-form > p.submit input {
+		background-image: linear-gradient(to right, $thim_thim_global_mix_color_color1 0%, $thim_thim_global_mix_color_color2 51%, $thim_thim_global_mix_color_color1 100%);
+	}
+
+	svg {
+		.stop1 {
+			stop-color: $thim_thim_global_mix_color_color1 !important;
+		}
+
+		.stop2 {
+			stop-color: $thim_thim_global_mix_color_color2 !important;
+		}
+	}
+}
+
+
+input[type=checkbox]:checked:before, input[type=radio]:checked:before {
+	color: $thim_body_primary_color;
+}
+
+.background-gradient-color {
+	background-color: $thim_thim_global_mix_color_color1;
+	background-image: -webkit-gradient(linear, right top, left top, from($thim_thim_global_mix_color_color1), to($thim_thim_global_mix_color_color2));
+	background-image: -webkit-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -moz-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -ms-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: -o-linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	background-image: linear-gradient(right, $thim_thim_global_mix_color_color1, $thim_thim_global_mix_color_color2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$thim_thim_global_mix_color_color1}', endColorStr='#{$thim_thim_global_mix_color_color2}', gradientType='1');
+}

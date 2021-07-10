@@ -1,0 +1,256 @@
+.thim-sc-new-post {
+
+	&.layout-1 {
+		display: table;
+		width: 100%;
+
+		.thumbnail {
+			width: 50%;
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+
+			img:first-child {
+				border-radius: 50%;
+			}
+
+			.image-upload {
+				position: absolute;
+			}
+		}
+
+		.content {
+			display: table-cell;
+			vertical-align: middle;
+
+			.title {
+				margin-bottom: 25px;
+
+				a {
+					font-size: 26px;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.38;
+					letter-spacing: normal;
+					margin-bottom: 20px;
+					color: #000000;
+				}
+			}
+
+			.description {
+				font-size: 16px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: #6c6c6c;
+			}
+
+			a.view_more {
+				height: 46px;
+				border: solid 2px #01dda6;
+				font-size: 14px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: center;
+				padding: 11px 18px;
+				text-transform: uppercase;
+				display: block;
+				margin-top: 27px;
+				color: #000000;
+
+				&:hover {
+					color: #fff;
+					background: #01dda6;
+				}
+			}
+		}
+
+		&.layout-left {
+			.thumbnail {
+				text-align: right;
+				padding-right: 34px;
+
+				.image-upload {
+					left: 30px;
+					bottom: 0;
+				}
+			}
+
+			.content {
+				padding-left: 34px;
+				text-align: left;
+
+				.title {
+					text-align: left;
+				}
+
+				.description {
+					text-align: left;
+				}
+			}
+		}
+
+		&.layout-right {
+			.thumbnail {
+				text-align: left;
+				padding-left: 34px;
+
+				.image-upload {
+					right: 30px;
+					bottom: 0;
+				}
+			}
+
+			.content {
+				text-align: right;
+				padding-right: 34px;
+
+				.title {
+					text-align: right;
+				}
+
+				.description {
+					text-align: right;
+				}
+
+				a.view_more {
+					float: right;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+
+	&.layout-2 {
+		.content {
+			text-align: center;
+			margin-bottom: 30px;
+			h4.title {
+				padding: 0;
+				margin: 40px 0 24px;
+
+				a {
+					font-size: 20px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1;
+					letter-spacing: normal;
+					text-align: center;
+					color: #000000;
+				}
+			}
+
+			p.description {
+				font-size: 16px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				text-align: center;
+				color: #6c6c6c;
+			}
+
+			a.view_more {
+				color: #000000;
+				border: 2px solid #01dda6;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: normal;
+				text-align: center;
+				padding: 11px 50px;
+				text-transform: uppercase;
+				display: block;
+				margin: 30px auto 0;
+
+				&:hover {
+					color: #fff;
+					background: #01dda6;
+				}
+			}
+		}
+	}
+
+	&.layout-kit {
+		.wrapper {
+			border-radius: 10px;
+			box-shadow: -7.5px 13px 35px 0 rgba(0, 0, 0, 0.05);
+			background-color: #ffffff;
+			margin-top: 0;
+			@include transition(all 0.3s);
+
+			.thumbnail {
+				img {
+					border-top-right-radius: 10px;
+					border-top-left-radius: 10px;
+				}
+			}
+
+			.content {
+				padding: 30px 20px;
+
+				.title {
+					padding: 0;
+					font-size: 16px;
+					font-weight: bold;
+					text-align: left;
+					color: #333333;
+					margin: 0 0 18px;
+				}
+
+				.info {
+					display: flex;
+					justify-content: space-between;
+
+					.author {
+						i {
+							font-size: 14px;
+							font-weight: 400;
+							text-align: left;
+							color: #84cdf0;
+							margin-right: 5px;
+						}
+
+						span {
+							font-size: 15px;
+							font-weight: 400;
+							line-height: 2;
+							text-align: left;
+							color: #848484;
+						}
+					}
+
+					.comment {
+						font-size: 15px;
+						line-height: 2;
+						text-align: left;
+						color: #848484;
+
+						i {
+							-webkit-transform: rotateY(180deg);
+							-moz-transform: rotateY(180deg);
+							-o-transform: rotateY(180deg);
+							-ms-transform: rotateY(180deg);
+							transform: rotateY(180deg);
+							margin-right: 5px;
+							font-size: 14px;
+							text-align: left;
+							color: #ffa0a0;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				margin-top: 30px;
+			}
+		}
+	}
+}

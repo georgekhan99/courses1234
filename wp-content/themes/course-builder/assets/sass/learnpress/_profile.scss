@@ -1,0 +1,547 @@
+.profile-container {
+  .thim-course-grid {
+    margin: 0 -15px;
+    @include clearfix;
+    article {
+      float: left;
+      margin-bottom: 40px;
+      .course-info,
+      .learn-press-course-buttons {
+        display: none;
+      }
+
+      &:nth-child(3n+1) {
+        clear: both;
+      }
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  overflow: hidden;
+
+  .box-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 11px;
+    position: relative;
+    padding-bottom: 19px;
+
+    &:after{
+      content: '';
+      width: 35px;
+      background: #111;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .user-tab {
+    width: 25%;
+    width: calc(300px);
+    width: -webkit-calc(300px);
+    width: -moz-calc(300px);
+    float: left;
+    padding-right: 30px;
+
+    .author-avatar {
+      margin-bottom: 25px;
+      img {
+        margin: 0;
+      }
+    }
+
+    .author-name {
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      padding: 52px 0 27px;
+      margin: 25px 0 30px;
+      position: relative;
+      border-top: 1px solid $border-color;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 36px;
+        height: 1px;
+      }
+    }
+
+    .user-information {
+      .profile-list-social {
+        text-align: center;
+        margin: 0;
+        li {
+          list-style: none;
+          margin: 0 2px;
+          display: inline-block;
+          a {
+            font-size: 14px;
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 50%;
+            color: #999;
+            border: 1px solid $border-color;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+    }
+    .list-contact {
+      list-style: none;
+      margin: 0;
+      text-align: center;
+      li {
+        display: block;
+      }
+    }
+    .description {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+
+  .thim-author-social {
+    clear: both;
+    margin: 0;
+    text-align: center;
+  }
+
+  .profile-tabs {
+    width: 75%;
+    width: calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: -moz-calc(100% - 300px);
+    float: right;
+    .thim-empty-course{
+      margin-bottom: 40px;
+    }
+
+    .learn-press-tabs {
+      list-style: none;
+      margin: 0;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      li {
+        float: left;
+        background: transparent;
+        border-radius: 0;
+        margin: 0;
+        width: 25%;
+        text-align: center;
+        border: 0;
+        padding: 0;
+        position: relative;
+        white-space: nowrap;
+        &.thim-profile-list-6{
+          width: 16.666%;
+          &:nth-child(6n+1) {
+            clear: both;
+          }
+        }
+        &.thim-profile-list-7{
+          width: 14.28%;
+          &:nth-child(7n+1) {
+            clear: both;
+          }
+        }
+        &.thim-profile-list-8, &.thim-profile-list-9, &.thim-profile-list-10{
+          &:nth-child(4n+1) {
+            clear: both;
+          }
+        }
+        &.thim-profile-list-5{
+          width: 20%;
+          &:nth-child(5n+1) {
+            clear: both;
+          }
+        }
+
+        &.thim-profile-list-4 {
+          width: 25%;
+          &:nth-child(4n+1) {
+            clear: both;
+          }
+        }
+        &.thim-profile-list-3{
+          width: 33.33%;
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+        }
+        &:nth-child(4n+1) {
+          //clear: both;
+
+        }
+        a {
+          margin-right: 3px;
+          margin-bottom: 3px;
+          border-radius: 0;
+          border: 1px solid $border-color;
+          font-size: 15px;
+          font-weight: 700;
+          background: #f9f9f9;
+          line-height: 29px;
+          float: none;
+          position: relative;
+          display: block;
+          padding: 10px 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
+          .fa {
+            font-size: 15px;
+            vertical-align: middle;
+            line-height: 29px;
+            margin-right: 8px;
+          }
+        }
+
+        &.active,
+        &:hover {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    
+    #learn-press-profile-content {
+      width: 100%;
+      float: none;
+      margin: 0;
+
+
+      #lp-remove-upload-photo {
+        margin-left: 10px;
+      }
+
+      .lp-avatar-preview .profile-picture {
+       margin-top: 0;
+      }
+    }
+
+    .tab-content {
+      padding: 55px 0 0;
+      > .tab-pane {
+        padding-left: 0;
+        padding-right: 0;
+        > .box-title:first-child {
+          margin-top: 0;
+        }
+      }
+      .thim-course-grid {
+        > p {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        .course-passed {
+          padding-bottom: 20px;
+          .value {
+            font-weight: 700;
+          }
+        }
+        .cert-profile-view{
+          margin: 0 0 15px;
+          display: inline-block;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-heading {
+    font-size: 22px;
+  }
+
+  .lp-tab-sections {
+    background: none;
+    font-size: 14px;
+    li {
+      margin-right: 3px;
+      margin-bottom: 3px;
+      border-radius: 0;
+      border: 1px solid $border-color;
+      font-weight: 700;
+      background: #f9f9f9;
+      line-height: 29px;
+      float: none;
+      position: relative;
+      display: inline-block;
+      padding: 3px 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      min-width: 100px;
+
+      &.active,
+      &:hover {
+        color: #fff !important;
+        a {
+          color: inherit;
+        }
+      }
+      span {
+        border: none !important;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  #your-profile {
+    clear: both;
+    padding: 30px 30px 40px;
+    border: 1px solid $border-color;
+    margin: 30px 0;
+    ul {
+      margin: 0;
+    }
+    li {
+      list-style: none;
+      &.lp-form-field,
+      &.form-field {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 20px;
+        border: 1px solid $border-color;
+      }
+       input:not([type="checkbox"]), select {
+        width: 250px;
+        max-width: 100%;
+         padding: 0 20px;
+         height: 40px;
+         border: 1px solid $border-color;
+      }
+    }
+    button {
+      cursor: pointer;
+      margin-top: 20px;
+      height: 40px;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 14px;
+      padding: 0 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      outline: none;
+      transition: all .5s;
+      border: none !important;
+
+    }
+    button[name="submit"] {
+      font-size: 16px;
+      height: 55px;
+    }
+    input[type="checkbox"],
+    .description {
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .content50 .lp-form-field {
+      width: 50%;
+      float: left;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  button.course-wishlist {
+    display: none;
+  }
+}
+
+table.list-book-event,
+table.order_details,
+table.quiz-history,
+table.table-orders{
+  tr{
+    border: 0;
+    th{
+      border: 1px solid $border-color;
+      border-width: 1px 1px 1px 0;
+      padding: 10px 15px;
+      &:first-child{
+        border-left-width: 1px;
+      }
+    }
+    td{
+      border: 1px solid $border-color;
+      border-width: 1px 1px 1px 0;
+      padding: 10px 15px;
+      &:first-child{
+        border-left-width: 1px;
+      }
+    }
+  }
+}
+
+//Update
+.profile-container {
+  .profile-tabs {
+    .learn-press-subtab-content {
+      .lp-sub-menu {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-left: 0;
+
+        li {
+          list-style: none;
+          display: inline-block;
+          padding-right: 15px;
+
+          a {
+            padding-bottom: 5px;
+          }
+
+          span {
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-orders {
+    .column-order-action {
+      a {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.order-recover {
+  input {
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid $border-color;
+  }
+
+  button {
+    line-height: 42px !important;
+    height: 42px !important;
+    padding: 0 30px;
+    border: none;
+    color: #fff;
+    transition: all .5s;
+  }
+}
+
+.lp-list-table thead tr th {
+  font-weight: 400;
+}
+
+.after-main {
+  overflow: hidden;
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .widget_thim_layout_builder img {
+    position: static;
+  }
+
+  .thim-content-talk p {
+    margin-bottom: 44px;
+  }
+
+  form.wpcf7-form {
+    background-color: #fff;
+    padding: 56px 50px 60px;
+    width: 478px;
+    box-sizing: border-box;
+    border: 5px solid rgba(0, 0, 0, .8);
+    @include rounded(5px);
+
+    .sub-title {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .main-title {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 0.8px;
+      margin-bottom: 26px;
+    }
+
+    label {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+
+    .wpcf7-form-control-wrap {
+      margin-bottom: 30px;
+    }
+
+    input, textarea {
+      border: 1px solid #e2e2e2;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      @include rounded(5px);
+      &.wpcf7-not-valid {
+        border-color: red;
+      }
+    }
+
+    input[type=email] {
+      height: 50px;
+    }
+
+    input[type=submit] {
+      font-size: 18px;
+      letter-spacing: 0.4px;
+      color: #fff;
+      text-transform: none;
+      font-weight: 400;
+      height: 50px;
+    }
+
+    .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+      margin-top: 10px;
+    }
+  }
+
+  .thim-content-talk {
+    margin-top: 190px;
+    margin-left: 0;
+  }
+
+}

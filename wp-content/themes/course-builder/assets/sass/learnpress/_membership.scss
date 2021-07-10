@@ -1,0 +1,452 @@
+/* Table
+-------------------------------------------------------------------*/
+
+#shaon-pricing-table-plus ul,
+#shaon-pricing-table-plus h3,
+#shaon-pricing-table-plus h4,
+#shaon-pricing-table-plus li {
+	list-style: none;
+}
+
+.minimal {
+	margin: 9px auto;
+}
+
+.minimal .plan {
+	width: 25%;
+	float: left;
+	margin-left: -1px;
+	margin-bottom: 20px;
+}
+
+.minimal .plan:first-child {
+	margin-left: 0
+}
+
+.minimal .plan h3 {
+	text-align: center;
+	line-height: 45px;
+	margin: 0;
+}
+
+.minimal .plan li {
+	line-height: 3.8em;
+}
+
+.select, .plan li {
+	text-align: center
+}
+
+.minimal .select {
+	border: 1px solid #ddd;
+}
+
+.minimal .highlight.featured .select {
+	padding-bottom: 20px;
+}
+
+.minimal .features ul {
+	border: 1px solid #ddd;
+}
+
+.minimal .features ul li {
+	border-bottom: 1px solid #ddd;
+}
+
+.minimal .features ul li:last-child {
+	border-bottom: none;
+}
+
+/* specialized
+-------------------------------------------------------------------*/
+
+.interval {
+	font-size: 11px;
+}
+
+.highlight .amount, .interval {
+	display: block;
+	text-align: center
+}
+
+.highlight .amount {
+	font-size: 40px;
+}
+
+.highlight .amount span {
+	vertical-align: super;
+	font-size: 20px
+}
+
+/* Top
+-------------------------------------------------------------------*/
+.minimal .p1 h3 {
+	border: 1px solid #ddd;
+	margin: 0;
+}
+
+.minimal .plan h4 {
+	padding: 10px 0;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin: 0;
+	font-weight: 600 !important;
+}
+
+.minimal .pt-button {
+	color: #FFFFFF;
+	display: block;
+	line-height: 40px;
+	margin: 20px auto;
+	width: 131px;
+	background: #181818;
+	text-transform: uppercase;
+}
+
+/* Highlight
+-------------------------------------------------------------------*/
+.minimal .highlight h3 {
+	padding: 10px 0;
+}
+
+.minimal .highlight.featured h3 {
+	margin-top: -20px;
+	padding: 20px 0;
+	color: #fff !important;
+}
+
+.minimal .highlight {
+	position: relative;
+}
+
+#shaon-pricing-table-plus {
+	.minimal {
+		.features {
+			ul {
+				margin: 0;
+			}
+		}
+	}
+}
+
+//Pricing Table
+#shaon-pricing-table-plus {
+	.minimal {
+		.highlight {
+			border: 1px solid $border-color;
+			width: 16%;
+			background: #fdfdfd;
+			@include transition(all 0.5s);
+			&:hover {
+				background: #fff;
+				@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.08));
+				.detail:after {
+					background-color: #FFF;
+				}
+			}
+			.detail {
+				position: relative;
+				&:after {
+					content: '';
+					width: 161px;
+					height: 20px;
+					background: #fdfdfd;
+					display: block;
+					left: 0;
+					right: 0;
+					margin: auto;
+					bottom: -20px;
+					position: absolute;
+					z-index: 9999;
+					@include rounded(0 0 30px 30px);
+					border: 1px solid $border-color;
+					border-top: 0;
+				}
+			}
+			&.list-interval {
+				background: #fff;
+				width: 49%;
+				.detail {
+					@include opacity(0);
+					padding-bottom: 16px;
+				}
+				.features {
+					padding-top: 0;
+					border-top: 0;
+					ul {
+						li {
+							text-align: left;
+						}
+					}
+				}
+				.select {
+					@include opacity(0);
+				}
+				&:hover {
+					@include box-shadow(none);
+				}
+			}
+			&.featured {
+				background: #fff;
+				width: 19%;
+				position: relative;
+				z-index: 2;
+				@include box-shadow(12.9px 15.3px 18px 0 rgba(0, 0, 0, 0.08));
+				.detail {
+					padding: 55px 0 28px;
+					margin-top: -10px;
+					position: relative;
+					&:before {
+						content: '';
+						position: absolute;
+						right: -7px;
+						top: -6px;
+						width: 109px;
+						height: 109px;
+						background: url("assets/images/popular.png") no-repeat;
+					}
+					h3 {
+						background: none;
+						margin: 0;
+					}
+					.title {
+						color: #fff;
+					}
+					.interval {
+						color: $border-color;
+						font-size: 15px;
+					}
+					h4 {
+						color: #fff;
+						margin-bottom: 25px;
+					}
+					.amount {
+						font-size: 46px;
+					}
+					.select {
+						padding: 32px 0 42px;
+						position: relative;
+						margin-bottom: -10px;
+					}
+				}
+				.features {
+					padding-top: 17px;
+					border-top: 0;
+					padding-bottom: 10px;
+					position: relative;
+				}
+				.select {
+					padding-bottom: 41px;
+					padding-top: 21px;
+					.pt-button {
+						color: #fff;
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.detail {
+			padding: 45px 0 27px 0;
+			text-align: center;
+			h3 {
+				padding: 0;
+				border: none;
+				line-height: 36px;
+			}
+			.icon {
+				width: 100%;
+				display: inline-block;
+				font-size: 40px;
+				line-height: 40px;
+			}
+			.title {
+				display: inline-block;
+				width: 100%;
+				position: relative;
+				font-size: 18px;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #2b3339;
+				line-height: 28px;
+			}
+			.interval {
+				color: #2b3339;
+				font-size: 14px;
+				font-weight: 300;
+				position: relative;
+				margin-top: -12px;
+			}
+			h4 {
+				font-weight: 900 !important;
+				padding: 0;
+				line-height: 30px;
+				margin-top: 15px;
+				border: none;
+				margin-bottom: 12px;
+			}
+			.amount {
+				font-size: 40px;
+			}
+		}
+		.features {
+			padding-top: 30px;
+			border-top: 1px solid $border-color;
+			ul {
+				border: none;
+				padding: 0 30px !important;
+				li {
+					line-height: 46px;
+					border-bottom: 1px solid $border-color;
+					border-top: 0;
+					font-size: 16px;
+					.item-mobile {
+						display: none;
+					}
+					.fa {
+						font-weight: bold;
+					}
+					.fa-check {
+						color: #49c993;
+					}
+				}
+			}
+		}
+		.select {
+			border: none;
+			padding: 31px 0;
+			.pt-button {
+				margin: 0 auto;
+				@include rounded(30px);
+				height: 39px;
+				line-height: 39px;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: normal;
+				padding: 0 25px;
+				width: auto;
+				display: inline-block;
+				@include transition(all 0.5s);
+				background: none;
+				&:hover {
+					color: #fff;
+				}
+				&:after {
+					content: '';
+					font-family: Ionicons;
+					margin-left: 8px;
+					font-size: 16px;
+					line-height: 22px;
+					position: relative;
+					top: 1px;
+				}
+			}
+		}
+	}
+}
+
+.pmpro-checkout {
+	table {
+		thead {
+			background: #eeeeee;
+		}
+		td, th {
+			padding: 15px 30px;
+		}
+	}
+	form.pmpro_form .pmpro_submit {
+		margin-left: 0;
+		margin: 0;
+	}
+
+	form.pmpro_form {
+		label {
+			font-weight: 400;
+			margin: 0;
+			padding: 0;
+		}
+		.select2-container,
+		input, textarea, select {
+			border: 1px solid $border-color;
+			width: 100%;
+			margin: 0;
+			margin-bottom: 20px;
+			padding: 0 20px;
+			height: 50px;
+			line-height: 50px;
+			&:focus {
+				outline: none;
+			}
+		}
+		.pmpro_btn-submit-checkout {
+			width: 100%;
+			@include rounded(5px);
+			height: 50px;
+			line-height: 50px;
+			padding: 0 20px;
+			text-align: center;
+			font-size: 18px;
+			letter-spacing: 0.4px;
+			font-weight: 400;
+			text-transform: capitalize;
+			border-color: transparent;
+		}
+
+	}
+
+	span.pmpro_asterisk {
+		padding: 0 10px;
+		line-height: 50px;
+		color: red;
+	}
+}
+
+.pmpro_form input[type=radio] {
+	border-radius: 50%;
+	line-height: 10px !important;
+	font-size: 14px;
+	border: 1px solid #b4b9be !important;
+	background: #fff;
+	color: #555;
+	clear: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px !important;
+	margin: -4px 4px 0 0 !important;
+	outline: 0;
+	padding: 0 !important;
+	text-align: center;
+	vertical-align: middle;
+	width: 16px !important;
+	min-width: 16px;
+	-webkit-appearance: none;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	-webkit-transition: .05s border-color ease-in-out;
+	transition: .05s border-color ease-in-out;
+}
+.pmpro_form input[type=radio]:checked:before {
+	content: '\2022';
+	text-indent: -9999px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	font-size: 24px;
+	width: 6px;
+	height: 6px;
+	margin: 4px;
+	line-height: 16px;
+	background: #ffb606;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: FontAwesome;
+	font-weight: 400;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pmpro-checkout form.pmpro_form table.pmpro_checkout input {
+	margin-bottom: 0;
+}
